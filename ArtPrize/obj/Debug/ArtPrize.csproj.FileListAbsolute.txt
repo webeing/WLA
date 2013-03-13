@@ -1,7 +1,0 @@
-c:\documents and settings\emidio\my documents\visual studio 2010\Projects\ArtPrize\ArtPrize\bin\ArtPrize.dll
-c:\documents and settings\emidio\my documents\visual studio 2010\Projects\ArtPrize\ArtPrize\bin\ArtPrize.pdb
-c:\documents and settings\emidio\my documents\visual studio 2010\Projects\ArtPrize\ArtPrize\bin\EntityFramework.dll
-c:\documents and settings\emidio\my documents\visual studio 2010\Projects\ArtPrize\ArtPrize\bin\EntityFramework.xml
-c:\documents and settings\emidio\my documents\visual studio 2010\Projects\ArtPrize\ArtPrize\obj\Debug\ResolveAssemblyReference.cache
-c:\documents and settings\emidio\my documents\visual studio 2010\Projects\ArtPrize\ArtPrize\obj\Debug\ArtPrize.dll
-c:\documents and settings\emidio\my documents\visual studio 2010\Projects\ArtPrize\ArtPrize\obj\Debug\ArtPrize.pdb

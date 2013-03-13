@@ -1,0 +1,5 @@
+C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\bin\ArtPrize.dll
+C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\bin\ArtPrize.pdb
+C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\obj\Debug\ArtPrize.dll
+C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\obj\Debug\ArtPrize.pdb
