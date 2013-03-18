@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using ArtPrize.Models;
+using System.ComponentModel.DataAnnotations;
+using ArtPrize.ModelBinders;
 
 namespace ArtPrize
 {
@@ -27,6 +30,16 @@ namespace ArtPrize
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
+
+            DataAnnotationsModelValidatorProvider.RegisterAdapter(
+                typeof(ValidEmailAttribute),
+                typeof(RegularExpressionAttributeAdapter));
+
+            DataAnnotationsModelValidatorProvider.RegisterAdapter(
+                typeof(ValidPhoneNumberAttribute),
+                typeof(RegularExpressionAttributeAdapter));
+
+            System.Web.Mvc.ModelBinders.Binders.Add(typeof(Vote), new VoteModelBinder());
 
             RegisterRoutes(RouteTable.Routes);
         }

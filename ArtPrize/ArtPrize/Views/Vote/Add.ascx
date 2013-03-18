@@ -1,18 +1,18 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<ArtPrize.Models.User>" %>
 
+    <script src="/Scripts/MicrosoftAjax.js" type="text/javascript"></script>
+    <script src="/Scripts/MicrosoftMvcAjax.js" type="text/javascript"></script>
+    <script src="/Scripts/MicrosoftMvcValidation.js" type="text/javascript"></script>
+
+    <% Html.EnableClientValidation(); %>
+
     <% using (Html.BeginForm()) {%>
         <%= Html.ValidationSummary(true) %>
 
         <fieldset>
-            <legend>Fields</legend>
+            <legend>Fields</legend>                       
             
-            <div class="editor-label">
-                <%= Html.LabelFor(model => model.Id) %>
-            </div>
-            <div class="editor-field">
-                <%= Html.TextBoxFor(model => model.Id) %>
-                <%= Html.ValidationMessageFor(model => model.Id) %>
-            </div>
+            <input id="ArtworkId" type="hidden" value="1" name="ArtworkId" />
             
             <div class="editor-label">
                 <%= Html.LabelFor(model => model.Name) %>

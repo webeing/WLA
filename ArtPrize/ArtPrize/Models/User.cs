@@ -6,6 +6,22 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ArtPrize.Models
 {
+    public class ValidEmailAttribute : RegularExpressionAttribute
+    {
+        public ValidEmailAttribute() :
+            base(@"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$")
+        { }
+    }
+
+    public class ValidPhoneNumberAttribute : RegularExpressionAttribute
+    {
+        public ValidPhoneNumberAttribute() :
+            base(@"^\d.*$")
+        { }
+    }
+
+    [PetaPoco.TableName("Users")]
+    [PetaPoco.PrimaryKey("Id")]
     public class User
     {
         public int Id { get; set; }
@@ -15,12 +31,12 @@ namespace ArtPrize.Models
         [Required]
         [StringLength(50)]
         public string LastName { get; set; }
-        public string Address { get; set; }
-        [Required]
-        [DataType(DataType.EmailAddress, ErrorMessage="Indirizzo email non valido")]
+        public string Address { get; set; }        
+        [ValidEmail(ErrorMessage= "email non valida")]
+        [Required]                
         public string Email { get; set; }
-        [Required]
-        [DataType(DataType.PhoneNumber, ErrorMessage = "Numero di telefono non valido")]
+        [ValidPhoneNumber(ErrorMessage= "numero di telefono non valido")]
+        [Required]        
         public string MobilePhone { get; set; }     
     }
 }

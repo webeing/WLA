@@ -3,3 +3,6 @@ C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\bin\A
 C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\obj\Debug\ArtPrize.dll
 C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\obj\Debug\ArtPrize.pdb
+C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\bin\NLog.config
+C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\bin\NLog.dll
+C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\bin\NLog.xml

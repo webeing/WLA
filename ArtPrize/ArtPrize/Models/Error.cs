@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ArtPrize.Models.ModelBinders
+namespace ArtPrize.Models
 {
-    public class VoteModelBinder
+    public class Error
     {
+        public string Description { get; set; }
     }
 }
