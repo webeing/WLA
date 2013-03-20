@@ -31,12 +31,21 @@ namespace ArtPrize.Models
         [Required]
         [StringLength(50)]
         public string LastName { get; set; }
+        [Required]
         public string Address { get; set; }        
         [ValidEmail(ErrorMessage= "email non valida")]
         [Required]                
         public string Email { get; set; }
         [ValidPhoneNumber(ErrorMessage= "numero di telefono non valido")]
         [Required]        
-        public string MobilePhone { get; set; }     
+        public string MobilePhone { get; set; }
+        [Required]
+        public string City { get; set; }
+        // TODO: aggiungere validatore cap
+        [Required]
+        public string CAP { get; set; }
+        [Required]
+        public string District { get; set; }
+
     }
 }
