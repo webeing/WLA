@@ -1,5 +1,12 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<ArtPrize.Models.User>" %>
 
+    <script src="/Scripts/MicrosoftAjax.js" type="text/javascript"></script>
+    <script src="/Scripts/MicrosoftMvcAjax.js" type="text/javascript"></script>
+    <script src="/Scripts/MicrosoftMvcValidation.js" type="text/javascript"></script>
+
+
+    <% Html.EnableClientValidation(); %>
+
     <% using (Html.BeginForm("Add", "Vote", FormMethod.Post, new { id = "vota-artprize" }))
        {%>
         <%= Html.ValidationSummary(true)%>                                                                
@@ -89,7 +96,7 @@
 
             <div class="clear"></div>
 		    <div class="dialogButtons">
-                <input type="submit" value="Accetta e vota" id="vote-btn"/>
+                <button id="vote-btn">Accetta e vota</button>
             </div>
 
     <% } %>

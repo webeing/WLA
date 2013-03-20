@@ -46,6 +46,13 @@ namespace ArtPrize.Models
         public string CAP { get; set; }
         [Required]
         public string District { get; set; }
-
+        [Required]
+        public string Birthday { get; set; }
+        [Required]
+        public bool TermsAcceptance { get; set; }
+        [Required]
+        public bool PrivacyRead { get; set; }
+        [Required]
+        public string Ip { get; set; }
     }
 }

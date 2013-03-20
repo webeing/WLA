@@ -223,3 +223,15 @@
 2013-03-20 15:55:26.4827 DEBUG Executing action Add on controller Vote. Input parameters: 
 2013-03-20 15:55:26.4827 INFO Action Add on controller Vote executed.
 2013-03-20 15:55:26.4827 DEBUG Executed action Add on controller Vote. Result: 200 OK
+2013-03-20 16:29:41.3304 DEBUG Executing action Index on controller Vote. Input parameters: 
+2013-03-20 16:29:41.3304 INFO Action Index on controller Vote executed.
+2013-03-20 16:29:41.3304 DEBUG Executed action Index on controller Vote. Result: 200 OK
+2013-03-20 16:29:41.6377 DEBUG Executing action Add on controller Vote. Input parameters: 
+2013-03-20 16:29:41.6377 INFO Action Add on controller Vote executed.
+2013-03-20 16:29:41.6377 DEBUG Executed action Add on controller Vote. Result: 200 OK
+2013-03-20 16:37:28.1898 DEBUG Executing action Index on controller Vote. Input parameters: 
+2013-03-20 16:37:28.1898 INFO Action Index on controller Vote executed.
+2013-03-20 16:37:28.1998 DEBUG Executed action Index on controller Vote. Result: 200 OK
+2013-03-20 16:37:28.5002 DEBUG Executing action Add on controller Vote. Input parameters: 
+2013-03-20 16:37:28.5002 INFO Action Add on controller Vote executed.
+2013-03-20 16:37:28.5002 DEBUG Executed action Add on controller Vote. Result: 200 OK
