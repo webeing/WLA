@@ -15,7 +15,7 @@
     <div class="horizontal" id="outer">
 
         <!-- header -->
-        <div id="Div1">
+        <div id="header">
             <a href="http://group.barclays.com/home" id="logo" title="Barclays Art Prize">
                 <img alt="Barclays" src="http://group.barclays.com/../mosaic-assets/theme_default/img/barclays-logo.gif">
             </a>
@@ -31,30 +31,37 @@
 
             <div id="primaryNavigation">
                 <ul>
-                    <li class="" id="about_artprize"><a href="about.html" title="Barclays Art Prize: About Barclay">About Barclays Art Prize</a></li>
-                    <li class="" id="vota_artprize"><a href="vota.html" title="Barclays Art Prize: Vota">Vota</a></li>
-                    <li class="" id="barclays_ic"><a href="barclays-innovation-center.html" title="Barclays Art Prize: Barclays Innovation Center">Barclays Innovation Center</a></li>
+                    <li class="" id="about_artprize"><a href="<%= Url.Content("~/Home/About") %>" title="Barclays Art Prize: About Barclay">About Barclays Art Prize</a></li>
+                    <li class="" id="vota_artprize"><a href="<%= Url.Content("~/Vote/Index") %>" title="Barclays Art Prize: Vota">Vota</a></li>
+                    <li class="" id="barclays_ic"><a href="<%= Url.Content("~/Home/Innovation") %>" title="Barclays Art Prize: Barclays Innovation Center">Barclays Innovation Center</a></li>
                 </ul>
             </div>
 
-            <div class="empty" id="secondaryNavigation">
-            </div>
+            <asp:ContentPlaceHolder ID="header" runat="server" /> 
+            
         </div><!-- ./header -->
 
-        <div id="content"><!--- CONTENT --->           
+        <div id="content"><!--- CONTENT --->            
 
-            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
-
-            <footer id="footer" class="footer"><!--- INIZIO FOOTER --->
-
-                <asp:ContentPlaceHolder ID="footer" runat="server" />                    
-
-            </footer><!--- FINE FOOTER --->
-
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" /> 
+	            
         </div><!-- FINE CONTENT -->
+            
+        <footer id="footer" class="footer"><!--- INIZIO FOOTER --->
+
+                <ul id="footerLinks">
+                    <li><a href="<%= Url.Content("~/Home/Prize") %>" title="Barclays Art Prize: Premio" >Premio</a></li>
+                    <li><a href="<%= Url.Content("~/Home/Privacy") %>" title="Barclays Art Prize: Pravacy" >Privacy</a></li>
+                    <li><a href="<%= Url.Content("~/Home/Rule") %>" title="Barclays Art Prize: Regolamento" >Regolamento</a></li>
+                    <li class="copyright">&copy; Barclays 2013</li>
+                </ul>                
+
+                <asp:ContentPlaceHolder ID="footer" runat="server" /> 
+
+        </footer><!--- FINE FOOTER --->
+
 
     </div>
 </div>
 </body>
-
-            
+</html>

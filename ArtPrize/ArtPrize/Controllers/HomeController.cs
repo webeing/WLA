@@ -22,5 +22,30 @@ namespace ArtPrize.Controllers
         {
             return View();
         }
+
+        public ActionResult Innovation() 
+        {
+            return View();
+        }
+
+        public ActionResult Prize() 
+        {
+            return View();
+        }
+
+        public ActionResult Privacy() 
+        {
+            return View();
+        }
+
+        public ActionResult Rule() 
+        {
+            return View();
+        }
+
+        public ActionResult Works() 
+        {
+            return View();
+        }
     }
 }
