@@ -1,82 +1,62 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<ArtPrize.Models.User>" %>
 
-    <% using (Html.BeginForm()) {%>
-        <%= Html.ValidationSummary(true) %>
-
-        <fieldset>
-            <legend>Fields</legend>
+    <% using (Html.BeginForm("Add", "Vote", FormMethod.Post, new { id = "vota-artprize" }))
+       {%>
+        <%= Html.ValidationSummary(true)%>                                                                
             
-            <div class="editor-label">
-                <%= Html.LabelFor(model => model.Id) %>
-            </div>
-            <div class="editor-field">
-                <%= Html.TextBoxFor(model => model.Id) %>
-                <%= Html.ValidationMessageFor(model => model.Id) %>
-            </div>
+            <label for="Name">
+				Nome
+				<%= Html.TextBoxFor(model => model.Name)%>
+                <%= Html.ValidationMessageFor(model => model.Name)%>
+			</label>                                    
             
-            <div class="editor-label">
-                <%= Html.LabelFor(model => model.Name) %>
-            </div>
-            <div class="editor-field">
-                <%= Html.TextBoxFor(model => model.Name) %>
-                <%= Html.ValidationMessageFor(model => model.Name) %>
-            </div>
+            <label for="surname">
+				Cognome
+				<%= Html.TextBoxFor(model => model.LastName)%>
+            <%= Html.ValidationMessageFor(model => model.LastName)%>
+			</label>                                    
             
-            <div class="editor-label">
-                <%= Html.LabelFor(model => model.LastName) %>
-            </div>
-            <div class="editor-field">
-                <%= Html.TextBoxFor(model => model.LastName) %>
-                <%= Html.ValidationMessageFor(model => model.LastName) %>
-            </div>
-            
-            <div class="editor-label">
-                <%= Html.LabelFor(model => model.Address) %>
-            </div>
-            <div class="editor-field">
-                <%= Html.TextBoxFor(model => model.Address) %>
-                <%= Html.ValidationMessageFor(model => model.Address) %>
-            </div>
-            
-            <div class="editor-label">
-                <%= Html.LabelFor(model => model.Email) %>
-            </div>
-            <div class="editor-field">
-                <%= Html.TextBoxFor(model => model.Email) %>
-                <%= Html.ValidationMessageFor(model => model.Email) %>
-            </div>
-            
-            <div class="editor-label">
-                <%= Html.LabelFor(model => model.MobilePhone) %>
-            </div>
-            <div class="editor-field">
-                <%= Html.TextBoxFor(model => model.MobilePhone) %>
-                <%= Html.ValidationMessageFor(model => model.MobilePhone) %>
-            </div>
-            
-            <div class="editor-label">
-                <%= Html.LabelFor(model => model.City) %>
-            </div>
-            <div class="editor-field">
-                <%= Html.TextBoxFor(model => model.City) %>
-                <%= Html.ValidationMessageFor(model => model.City) %>
-            </div>
-            
-            <div class="editor-label">
-                <%= Html.LabelFor(model => model.CAP) %>
-            </div>
-            <div class="editor-field">
-                <%= Html.TextBoxFor(model => model.CAP) %>
-                <%= Html.ValidationMessageFor(model => model.CAP) %>
-            </div>
-            
-            <div class="editor-label">
-                <%= Html.LabelFor(model => model.District) %>
-            </div>
-            <div class="editor-field">
-                <%= Html.TextBoxFor(model => model.District) %>
-                <%= Html.ValidationMessageFor(model => model.District) %>
-            </div>
+            <label for="birthday">
+				    Data di nascita
+				    <input type="text" name="birthday" id="birthday" value="" />
+			    </label>
+			    <label for="gender">
+				    Sesso<br/>
+				    <span>F 
+				    <input type="radio" name="gender" id="F" value="" /></span>
+				    <span>M 
+				    <input type="radio" name="gender" id="M" value="" /></span>
+			    </label>							
+			    <label for="phone">
+				    Telefono
+				    <%= Html.TextBoxFor(model => model.MobilePhone)%>
+            <%= Html.ValidationMessageFor(model => model.MobilePhone)%>
+			    </label>
+			    <label for="mail">
+				    e-mail
+				    <%= Html.TextBoxFor(model => model.Email)%>
+                    <%= Html.ValidationMessageFor(model => model.Email)%>
+			    </label>
+			    <label for="address">
+				    Indirizzo
+				    <%= Html.TextBoxFor(model => model.Address)%>
+            <%= Html.ValidationMessageFor(model => model.Address)%>
+			    </label>
+			    <label for="country">
+				    Comune
+				    <%= Html.TextBoxFor(model => model.City)%>
+                <%= Html.ValidationMessageFor(model => model.City)%>
+			    </label>
+			    <label for="prov">
+				    Provincia
+				    <%= Html.TextBoxFor(model => model.District)%>
+                <%= Html.ValidationMessageFor(model => model.District)%>
+			    </label>
+			    <label for="cap">
+				    CAP
+				    <%= Html.TextBoxFor(model => model.CAP)%>
+                    <%= Html.ValidationMessageFor(model => model.CAP)%>
+			    </label>                                               
             
             <label for="privacy_accept">
 									<textarea>Barclays is committed to safeguarding the privacy of your information. By “your information” we mean any information about you, which you or third parties provide to us.
@@ -107,10 +87,10 @@
 								        <input type="checkbox" name="terms_accept" /> Accetto termini e condizioni
 								</label>
 
-            <p>
-                <input type="submit" value="Create" />
-            </p>
-        </fieldset>
+            <div class="clear"></div>
+		    <div class="dialogButtons">
+                <input type="submit" value="Accetta e vota" id="vote-btn"/>
+            </div>
 
     <% } %>
 
