@@ -1,0 +1,12 @@
+2013-03-20 12:57:58.8088 DEBUG Executing action Index on controller Home. Input parameters: 
+2013-03-20 12:57:58.8589 INFO Action Index on controller Home executed.
+2013-03-20 12:57:58.8589 DEBUG Executed action Index on controller Home. Result: 200 OK
+2013-03-20 12:58:41.0195 DEBUG Executing action Index on controller Home. Input parameters: 
+2013-03-20 12:58:41.0195 INFO Action Index on controller Home executed.
+2013-03-20 12:58:41.0195 DEBUG Executed action Index on controller Home. Result: 200 OK
+2013-03-20 12:58:46.6676 DEBUG Executing action Index on controller Home. Input parameters: 
+2013-03-20 12:58:46.6676 INFO Action Index on controller Home executed.
+2013-03-20 12:58:46.6676 DEBUG Executed action Index on controller Home. Result: 200 OK
+2013-03-20 12:58:48.7406 DEBUG Executing action Index on controller Home. Input parameters: 
+2013-03-20 12:58:48.7406 INFO Action Index on controller Home executed.
+2013-03-20 12:58:48.7406 DEBUG Executed action Index on controller Home. Result: 200 OK

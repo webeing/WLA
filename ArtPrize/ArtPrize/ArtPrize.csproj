@@ -78,6 +78,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="img\barclays-min.css" />
+    <Content Include="img\fonts-min.css" />
+    <Content Include="img\style.css" />
     <Content Include="Views\Vote\Add.ascx" />
     <Content Include="Views\Vote\AddResult.ascx" />
     <Content Include="Views\Vote\Index.aspx" />
@@ -88,7 +91,6 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
@@ -109,6 +111,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="css\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -117,6 +120,16 @@
     <Content Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="img\fonts\expertsans-light-webfont.eot" />
+    <None Include="img\fonts\expertsans-light-webfont.ttf" />
+    <None Include="img\fonts\expertsans-lightitalic-webfont.eot" />
+    <None Include="img\fonts\expertsans-lightitalic-webfont.svg" />
+    <None Include="img\fonts\expertsans-regular-webfont.svg" />
+    <None Include="img\fonts\expertsans-regular-webfont.ttf" />
+    <None Include="img\fonts\expertsans-regular-webfont.woff" />
+    <None Include="img\fonts\expertsans-regularitalic-webfont.eot" />
+    <None Include="img\fonts\expertsans-regularitalic-webfont.svg" />
+    <None Include="img\fonts\expertsans-regularitalic-webfont.ttf" />
     <None Include="NLog.xsd" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
