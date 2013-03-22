@@ -7,6 +7,14 @@ using System.Web.Mvc;
 
 namespace ArtPrize.Models
 {
+    public class ValidBirthdayAttribute : ValidationAttribute
+    {
+        public override bool IsValid(object value)
+        {
+            return new DateTime(DateTime.Now.Subtract(Convert.ToDateTime(value)).Ticks).Year >= 18;
+        }
+    }
+
     public class ValidEmailAttribute : RegularExpressionAttribute
     {
         public ValidEmailAttribute() :
@@ -53,7 +61,8 @@ namespace ArtPrize.Models
         [Required]
         public string District { get; set; }
         [Required]
-        public string Birthday { get; set; }                
+        [ValidBirthday]
+        public DateTime Birthday { get; set; }                
         [Required]
         public bool TermsAcceptance { get; set; }
         [IsTrue(ErrorMessage="Devi accettare le norme sulla privacy")]        

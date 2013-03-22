@@ -28,7 +28,7 @@ namespace ArtPrize.ModelBinders
             vote.User.City = form["City"];
             vote.User.District = form["District"];
             vote.User.CAP = form["CAP"];
-            vote.User.Birthday = form["Birthday"];
+            vote.User.Birthday = Convert.ToDateTime(form["Birthday"]);
             vote.User.PrivacyRead = Convert.ToBoolean(form["PrivacyRead"]);
             vote.User.TermsAcceptance = Convert.ToBoolean(form["TermsAcceptance"]);
             vote.User.RuleAcceptance = Convert.ToBoolean(form["RuleAcceptance"]);
