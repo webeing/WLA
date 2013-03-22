@@ -1,25 +1,25 @@
 ﻿$(document).ready(function () {
     help_form_validation();
-    $('#vota-artprize').submit(function (event) {
-        ajax_submit($('#vota-artprize'));
-        event.preventDefault();
-    });
+    ajax_submit();    
 });
 
 function ajax_submit(form) {
-
-    $.ajax({
-        type: "POST",
-        data: form.serialize(),
-        url: form.attr("action"),
-        success: function (data) {
-            $('body').append(data);
-        },
-        error: function () {
-            $('body').append("<div>sembra che qualcosa sia andato storto</div>");
-         }
+    var form = $('#vota-artprize');
+    form.submit(function (event) {
+        $.ajax({
+            type: "POST",
+            data: form.serialize(),
+            url: form.attr("action"),
+            success: function (data) {
+                $('body').append(data);
+            },
+            error: function () {
+                $('body').append("<div>sembra che qualcosa sia andato storto</div>");
+            }
+        }); 
+        event.preventDefault();
     });
-
+    
  }
 
 /************ Funzioni di utilità per la validazione del form ************/

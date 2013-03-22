@@ -74,6 +74,7 @@
     <Compile Include="Models\Services\VoteService.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Vote.cs" />
+    <Compile Include="Models\VoteResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

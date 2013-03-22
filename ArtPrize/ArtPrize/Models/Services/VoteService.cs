@@ -48,9 +48,9 @@ namespace ArtPrize.Models.Services
             Logger.Debug("Completed Vote.Service execution.");
         }
 
-        public IEnumerable<KeyValuePair<int, int>> GetCurrentVotes() 
+        public IEnumerable<VoteResult> GetCurrentVotes() 
         {
-            return db.Query<KeyValuePair<int, int>>("SELECT ArtworkId as 'Key', count(id) as 'Value' from Votes group by ArtworkId");
+            return db.Query<VoteResult>("SELECT ArtworkId, count(id) as 'Count' from Votes group by ArtworkId");
         }
     }
 }

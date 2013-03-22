@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using ArtPrize.ActionFilters;
+using ArtPrize.Models.Services;
 
 namespace ArtPrize.Controllers
 {    
@@ -45,6 +46,9 @@ namespace ArtPrize.Controllers
 
         public ActionResult Works() 
         {
+            VoteService service = new VoteService();
+            var res = service.GetCurrentVotes().ToDictionary(x => x.ArtworkId, x => x.Count);
+            ViewData["votes"] = res;
             return View();
         }
     }
