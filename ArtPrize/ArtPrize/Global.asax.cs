@@ -37,7 +37,11 @@ namespace ArtPrize
 
             DataAnnotationsModelValidatorProvider.RegisterAdapter(
                 typeof(ValidPhoneNumberAttribute),
-                typeof(RegularExpressionAttributeAdapter));
+                typeof(RegularExpressionAttributeAdapter));            
+
+            DataAnnotationsModelValidatorProvider.RegisterAdapter(
+                typeof(IsTrueAttribute),
+                typeof(RegularExpressionAttributeAdapter));                        
 
             System.Web.Mvc.ModelBinders.Binders.Add(typeof(Vote), new VoteModelBinder());
 

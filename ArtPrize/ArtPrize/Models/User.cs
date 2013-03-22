@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
 
 namespace ArtPrize.Models
 {
@@ -18,6 +19,11 @@ namespace ArtPrize.Models
         public ValidPhoneNumberAttribute() :
             base(@"^\d.*$")
         { }
+    }
+
+    public class IsTrueAttribute : RegularExpressionAttribute
+    {
+        public IsTrueAttribute() : base(@"^True$") { }
     }
 
     [PetaPoco.TableName("Users")]
@@ -47,12 +53,16 @@ namespace ArtPrize.Models
         [Required]
         public string District { get; set; }
         [Required]
-        public string Birthday { get; set; }
+        public string Birthday { get; set; }                
         [Required]
         public bool TermsAcceptance { get; set; }
-        [Required]
+        [IsTrue(ErrorMessage="Devi accettare le norme sulla privacy")]        
         public bool PrivacyRead { get; set; }
         [Required]
         public string Ip { get; set; }
+        [IsTrue(ErrorMessage="Devi accettare il regolamento")]             
+        public bool RuleAcceptance { get; set; }
+        [Required]
+        public char Gender { get; set; }
     }
 }

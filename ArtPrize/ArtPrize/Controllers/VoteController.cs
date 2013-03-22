@@ -24,9 +24,9 @@ namespace ArtPrize.Controllers
         //
         // GET: /Vote/
 
-        public ActionResult Index(int artworkId)
+        public ActionResult Index(int id)
         {
-            return View(String.Format("Index{0}",artworkId));
+            return View(String.Format("Index{0}",id));
         }
 
         //

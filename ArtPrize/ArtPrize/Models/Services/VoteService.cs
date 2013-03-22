@@ -6,12 +6,7 @@ using PetaPoco;
 using NLog;
 
 namespace ArtPrize.Models.Services
-{
-    public class AlreadyExistingIpException : Exception
-    {
-        public AlreadyExistingIpException(string message) : base(message) { }
-    }
-
+{   
     public class VoteService
     {
         private Database db;
@@ -32,10 +27,8 @@ namespace ArtPrize.Models.Services
                 throw new ArgumentNullException("Vote is null.");
             Logger.Debug("Started Vote.Service execution.");
             Logger.Debug(
-                string.Format("Vote: ArworkId: {0}, Ip: {1}, SessionId: {2}, VoteDate: {0}",
-                vote.ArtworkId, vote.Ip, vote.SessionId, vote.VoteDate));
-            if (db.Query<Vote>("WHERE ip = @0",vote.Ip).Count() > 0)
-                throw new AlreadyExistingIpException("There was a vote with the same ip.");
+                string.Format("Vote: ArworkId: {0}, SessionId: {1}, VoteDate: {2}",
+                vote.ArtworkId,  vote.SessionId, vote.VoteDate));            
             Logger.Debug("Validating vote...");
             DataValidator.Validate(vote);
             Logger.Debug("The vote is valid. Entering transaction...");
