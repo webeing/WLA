@@ -2,6 +2,8 @@
 <html>
 
   <head>
+  	<meta charset="utf-8">
+  	  	
     <title>Barclay Art Prize Home</title>
     <link href="../css/style.css" rel="stylesheet" media="screen">
     <link href="../img/icons/favicon.ico" rel="shortcut icon">
@@ -14,24 +16,15 @@
 
         <!-- header -->
         <div id="header">
-            <a href="http://group.barclays.com/home" id="logo" title="Barclays Art Prize">
-                <img alt="Barclays" src="http://group.barclays.com/../mosaic-assets/theme_default/img/barclays-logo.gif">
+            <a href="/" id="logo" title="Barclays Art Prize">
+                <img alt="Barclays" src="../img/barclays-logo.gif" />
             </a>
-
-            <div id="topNavigation">
-                <ul>
-                    <li class="official-site"><a href="#" title="Sito ufficiale Barclasy.it">barclays.it</a></li>
-                    <li class="facebook"><a href="#" title="Barclays Art Prize: Seguici anche su facebook">facebook</a></li>
-                    <li class="twitter"><a href="#" title="Barclays Art Prize: Seguici anche su twitter">twitter</a></li>
-                    <li class="e-mail"><a href="#" title="Barclays Art Prize: Contattaci via e-mail">e-mail</a></li>
-                </ul>
-            </div>
 
             <div id="primaryNavigation">
                 <ul>
                     <li class="" id="about_artprize"><a href="about.html" title="Barclays Art Prize: About Barclay">About Barclays Art Prize</a></li>
-                    <li class="" id="vota_artprize"><a href="vota.html" title="Barclays Art Prize: Vota">Vota</a></li>
-                    <li class="" id="barclays_ic"><a href="barclays-innovation-center.html" title="Barclays Art Prize: Barclays Innovation Center">Barclays Innovation Center</a></li>
+                    <li class="" id="vota_artprize"><a href="opere-in-gara.html" title="Barclays Art Prize: Vota">Vota</a></li>
+                    <li class="" id="barclays_ic"><a href="innovation.html" title="Barclays Art Prize: Barclays Innovation Center">Barclays Innovation Center</a></li>
                 </ul>
             </div>
 
@@ -39,9 +32,16 @@
             </div>
         </div><!-- ./header -->
 
-        <div id="content"><!--- CONTENT --->
+        <div id="content" class="cycle-slideshow" 
+            data-cycle-fx="scrollHorz"
+            data-cycle-timeout="0"
+            data-cycle-swipe="true"
+            data-cycle-prev="#previous"
+            data-cycle-next="#next"
+            data-cycle-slides="> section"
+            ><!--- CONTENT --->
 
-	            <section id="citizenship-at-barclays" class="lens lensTypeApertureVideo lazyloaded"><!-- PRIMA SLIDER --->
+	            <section id="barclays-artprize" class="lens"><!-- PRIMA SLIDER --->
 	                <div class="inner">
 	                    <div class="widthSix primary">
 	                        <div class="aperture">
@@ -53,12 +53,7 @@
 	                            </span>
 	
 	                            <div class="imageWithCaption">
-	
-	                                <img src="../img/fire.jpg" alt="Barclays Group Chief Executive, Antony Jenkins" data="/Satellite?blobcol=urldata&amp;blobkey=id&amp;blobtable=MungoBlobs&amp;blobwhere=1330696348854&amp;ssbinary=true">
-	
-	
-	                                <p>Barclays Group Chief Executive, Antony Jenkins</p>
-	
+	                                <img src="../img/home/01home_visual.png" alt="Barclays Art Prize"/>
 	                            </div>
 	
 	                            <span class="curtain right">
@@ -71,20 +66,17 @@
 	
 	                    </div>
 	
-	                    <div class="widthFive secondary">
+	                    <div class="widthSix secondary">
 	                        <h2>Barclays Art Prize</h2>
-	                            <h3>For Young Talents</h3>
+	                            <h3>for young talents</h3>
 	                        <div class="rte">
-	                            <p>
-	                                Barclays investe nel talento dei giovani artisti emergenti. La prima edizione del concorso Barclays Art Prize For Young Talents si rivolge agli studenti e agli ex studenti dell'Accademia di Belle Arti di Brera. Scopri come vincere un weekend in una citt&#224; d'arte italiana.
-	                            </p>
+	                            <p>Barclays investe nel talento dei giovani artisti emergenti. La prima edizione del concorso Barclays Art Prize for young talents si rivolge agli studenti e agli ex studenti dell'Accademia di Belle Arti di Brera.
+	                               Vota la tua opera preferita e scopri come vincere un weekend in una citt&agrave; d'arte italiana.</p>
 	                        </div>
 	
 	                        <ul class="listLinks">
 	                            <li><a href="concorso.html" title="Barclays Art Prize: Il concorso">Il concorso</a></li>
 	                            <li><a href="opere-in-gara.html" title="Barclays Art Prize: Le opere in gara">Le opere in gara</a></li>
-	                            <li><a href="premi.html" title="Barclays Art Prize: Premi">Premi</a></li>
-	                            <li><a href="regolamento.html" title="Barclays Art Prize: Regolamento">Regolamento</a></li>
 	                        </ul>
 	
 	                    </div>
@@ -93,82 +85,67 @@
 	
 	            </section><!-- FINE PRIMA SLIDER --->
 
-	            <section id="citizenship-news" class="lens bleedHalf lensTypeNews lazyloaded"><!-- INIZIO SECONDO SLIDER --->
+	            <section id="artprize-preview" class="lens"><!-- INIZIO SECONDO SLIDER --->
 	
 	                <div class="inner">
-	                    <div class="primary">
-	                        <h2>Vota una delle <br/>tre opere</h2>
-	                        <h3>Vinci un weekend <br/>in una citt&#224; d'arte italiana</h3>
+	                    <div class="widthFive primary">
+	                        <h2>Vota una delle tre <br/>opere in gara</h2>
+	                        <h3>Vinci un weekend in una citt&#224; d'arte italiana</h3>
 	                        <p></p>
 	
 	                        <div class="listNewsItems">
-	                            <div class="inner">
 	                                <ul>
 	                                    <li class="column">
-	                                        <ol>
-	                                            <li>
-	                                                <p>
-	                                                    <a href="#" title="Barclays Art Prize: Opera in gara - La barca che naviga, Andrea Silvestri">
-	                                                    La barca che naviga <br/>
-	                                                    Andrea Silvestri
-	                                                    </a>
-	                                                </p>
-	                                                <img src="../img/minion.jpg" alt="Barclays Art Prize: Opera in gara - La barca che naviga, Andrea Silvestri">
-	                                            </li>
+                                            <p>
+                                                <a href="#" title="Barclays Art Prize: Opera in gara - La barca che naviga, Andrea Silvestri">
+                                                La barca che naviga <br/>
+                                                Andrea Silvestri
+                                                </a>
+                                            </p>
+                                            <img src="../img/minion.jpg" alt="Barclays Art Prize: Opera in gara - La barca che naviga, Andrea Silvestri">
+                                        </li>
 	
-	                                            <li>
-	                                                <p>
-	                                                    <a href="#" title="Barclays Art Prize: Opera in gara - La donna con i fiori, Chiara Stella">
-	                                                        La donna con i fiori <br/>
-	                                                        Chiara Stella
-	                                                    </a>
-	                                                </p>
-	                                                <img src="../img/minion.jpg" alt="Barclays Art Prize: Opera in gara - La donna con i fiori, Chiara Stella">
-	                                            </li>
+                                        <li>
+                                            <p>
+                                                <a href="#" title="Barclays Art Prize: Opera in gara - La donna con i fiori, Chiara Stella">
+                                                    La donna con i fiori <br/>
+                                                    Chiara Stella
+                                                </a>
+                                            </p>
+                                            <img src="../img/minion.jpg" alt="Barclays Art Prize: Opera in gara - La donna con i fiori, Chiara Stella">
+                                        </li>
 	
-	                                            <li class="last">
-	                                                <p>
-	                                                    <a href="#" title="Barclays Art Prize: Opera in gara - Explosion, Matteo Falcini">
-	                                                        Explosion <br/>
-	                                                        Matteo Falcini
-	                                                    </a>
-	                                                </p>
-	                                                <img src="../img/minion.jpg" alt="Barclays Art Prize: Opera in gara - Explosion, Matteo Falcini">
-	                                            </li>
-	                                        </ol>
-	                                    </li>
+                                        <li class="last">
+                                            <p>
+                                                <a href="#" title="Barclays Art Prize: Opera in gara - Explosion, Matteo Falcini">
+                                                    Explosion <br/>
+                                                    Matteo Falcini
+                                                </a>
+                                            </p>
+                                            <img src="../img/minion.jpg" alt="Barclays Art Prize: Opera in gara - Explosion, Matteo Falcini">
+                                        </li>
 	                                </ul>
-	                            </div>
 	                        </div>
 	                    </div><!-- fine primary -->
 	
-	                    <div class="secondary">
-	                        <div class="imageWithCaption">
-	                            <img src="../img/fire.jpg" alt="Opera in gara: Explosion, Matteo Falcini" data="/Satellite?blobcol=urldata&amp;blobkey=id&amp;blobtable=MungoBlobs&amp;blobwhere=1330695982421&amp;ssbinary=true">
-	                            <p>Explosion, Matteo Falcini</p>
-	                        </div>
-	
-	                        <div class="newsItemsPagination">
-	                            <div class="newsItemsPaginationWrapper">
-	                                <a class="previous" href="#">Previous</a>
-	                                <ol>
-	                                    <li class="">
-	                                        <span>Page view: </span>
-	                                        <em unselectable="on">1</em>
-	                                    </li>
-	                                    <li class="selected">
-	                                        <span>Page view: </span>
-	                                        <em unselectable="on">2</em>
-	                                    </li>
-	                                    <li class="">
-	                                        <span>Page view: </span>
-	                                        <em unselectable="on">3</em>
-	                                    </li>
-	                                </ol>
-	                                <a class="next " href="#">Next</a>
-	                            </div>
-	                        </div>
-	
+	                    <div class="widthSeven secondary">
+	                        <div class="imageWithCaption cycle-slideshow"	                            data-cycle-fx="scrollHorz" data-cycle-timeout="2000" data cycle-swipe="true" data-cycle-slides="> figure" data-cycle-loader="wait">
+
+	                            <div class="cycle-pager"></div>
+
+	                        	<figure class="image">
+		                            <img src="http://placehold.it/540x307&text=opera01" alt="Opera in gara: Explosion, Matteo Falcini" />
+		                            <p>Explosion, Matteo Falcini</p>
+	                            </figure>
+	                            <figure class="image">
+	                                <img src="http://placehold.it/540x307&text=opera02" alt="Opera in gara: Explosion, Matteo Falcini" />
+	                                <p>Didascalia opera 2</p>
+	                            </figure>
+	                            <figure class="image">
+	                                <img src="http://placehold.it/540x307&text=opera03" alt="Opera in gara: Explosion, Matteo Falcini" />
+	                                <p>Didascalia opera 3</p>
+	                            </figure>
+	                        </div>	
 	                        <ul class="listLinks">
 	                            <li><a href="vota.html" title="Barclays Art Prize: Vota la tua opera preferita">Vota la tua opera preferita</a></li>
 	                            <li><a href="premio.html" title="Barclays Art Prize: Premio">Premio</a></li>
@@ -181,8 +158,8 @@
 	
 	            </section><!-- FINE SECONDA SLIDER --->
 
-	            <section id="supporting-our-communities" class="lens lensTypeApertureVideo lazyloaded"><!-- TERZA SLIDER --->
-	                <div id="supporting-our-communities:supporting-our-communities-" class="lensCarouselPanel selected">
+	            <section id="barclays-flagship" class="lens"><!-- TERZA SLIDER --->
+	                <div class="inner">
 	                    <div class="widthSix">
 	                        <h2>Apertura nuovo centro d&#8217;innovazione</h2>
 	
@@ -196,15 +173,12 @@
 	                                    <a href="#" title="Barclays Art Prize: Scopri di più su Barclays Innovation Center">Scopri di pi&#249;</a>
 	                                </li>
 	                            </ul>
-	
 	                        </div>
-	
-	
-	                    </div>
+		                </div>
 	
 	                    <div class="widthSix">
 	                        <div class="imageWithCaption">
-	                            <img src="../img/fire.jpg" alt="Building Young Futures in Egypt." data="/Satellite?blobcol=urldata&amp;blobkey=id&amp;blobtable=MungoBlobs&amp;blobwhere=1330687257759&amp;ssbinary=true">
+	                            <img src="../img/Satellite_2.jpg" alt="Apertura nuovo centro di innovazione" />
 	                        </div>
 	                    </div>
 	                </div>
@@ -215,7 +189,7 @@
 
                     <ul id="footerLinks">
                         <li><a href="premio.html" title="Barclays Art Prize: Premio" target="_blank">Premio</a></li>
-                        <li><a href="pravacy.html" title="Barclays Art Prize: Pravacy" target="_blank">Pravacy</a></li>
+                        <li><a href="privacy.html" title="Barclays Art Prize: Pravacy" target="_blank">Privacy</a></li>
                         <li><a href="regolamento.html" title="Barclays Art Prize: Regolamento" target="_blank">Regolamento</a></li>
                         <li class="copyright">&copy; Barclays 2013</li>
                     </ul>
@@ -227,8 +201,8 @@
 
             </footer><!--- FINE FOOTER --->
 
-
     </div>
 </div>
+<script type="text/javascript" src="../script/lib-and-custom-js-min.js"></script>
 </body>
 </html>
