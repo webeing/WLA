@@ -71,7 +71,7 @@
 	                    <!--social links -->
 
 						<a href="#zoom-op01" id="zoom-op01" class="btn zoom-btn" title="Ingrandisci Opera 1">Ingrandisci</a>
-						<a href="<%= Url.Content("~/Vote/Index1") %>" id="vote-op01" class="btn vote-btn btn-cyan75">Vota questa opera</a>
+						<a href="<%= Url.Content("~/Vote/Works/1") %>" id="vote-op01" class="btn vote-btn btn-cyan75">Vota questa opera</a>
 					</div><!--/dialogButton-->
                     
             	</div><!--/secondary-->
@@ -112,7 +112,7 @@
 	                    <!--social links -->
 
 						<a href="#zoom-op02" id="zoom-op02" class="btn zoom-btn" title="Ingrandisci Opera 2">Ingrandisci</a>
-						<a href="<%= Url.Content("~/Vote/Index2") %>" id="vote-op02" class="btn vote-btn btn-cyan75">Vota questa opera</a>
+						<a href="<%= Url.Content("~/Vote/Works/2") %>" id="vote-op02" class="btn vote-btn btn-cyan75">Vota questa opera</a>
 					</div><!--/dialogButton-->
                     
             	</div><!--/secondary-->
@@ -153,7 +153,7 @@
 	                    <!--social links -->
 
 						<a href="#zoom-op03" id="zoom-op03" class="btn zoom-btn" title="Ingrandisci Opera 3">Ingrandisci</a>
-						<a href="<%= Url.Content("~/Vote/Index3") %>" id="vote-op03" class="btn vote-btn btn-cyan75">Vota questa opera</a>
+						<a href="<%= Url.Content("~/Vote/Works/3") %>" id="vote-op03" class="btn vote-btn btn-cyan75">Vota questa opera</a>
 					</div><!--/dialogButton-->
                     
             	</div><!--/secondary-->

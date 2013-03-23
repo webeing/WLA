@@ -1,23 +1,78 @@
 ﻿$(document).ready(function () {
-    help_form_validation();
-    ajax_submit();    
+    $("#User_Birthday").datepicker({
+        changeMonth: true,
+        changeYear: true,
+        dateFormat: "dd/mm/yy",
+        minDate: '-90Y',
+        maxDate: '-18Y'
+    });
+    enable_custom_validation();
+    
+
+    $('#vota-artprize').validate();
+    ajax_submit();
 });
+
+function enable_custom_validation() {
+ 
+    jQuery.validator.addMethod(
+        "dateIT",
+        function (value, element) {
+            var check = false;
+            var re = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+            if (re.test(value)) {
+                var adata = value.split('/');
+                var dd = parseInt(adata[0], 10); // was gg (giorno / day)
+                var mm = parseInt(adata[1], 10); // was mm (mese / month)
+                var yyyy = parseInt(adata[2], 10); // was aaaa (anno / year)
+                var xdata = new Date(yyyy, mm - 1, dd);
+                if ((xdata.getFullYear() == yyyy) && (xdata.getMonth() == mm - 1) && (xdata.getDate() == dd))
+                    check = true;
+                else
+                    check = false;
+            } else
+                check = false;
+            return this.optional(element) || check;
+        },
+        "La data inserita non è valida."
+    );
+
+    
+    jQuery.validator.addMethod(
+        "checked",
+        function (value, element) {
+            return value == "true";            
+        },
+        "Accetta!!"
+    );
+
+        jQuery.validator.addMethod(
+        "selected",
+        function (value, element) {            
+            return value != "";
+        },
+        "Devi selezionare la provincia."
+    );
+
+ }
 
 function ajax_submit(form) {
     var form = $('#vota-artprize');
     form.submit(function (event) {
-        $.ajax({
-            type: "POST",
-            data: form.serialize(),
-            url: form.attr("action"),
-            success: function (data) {
-                $('body').append(data);
-            },
-            error: function () {
-                $('body').append("<div>sembra che qualcosa sia andato storto</div>");
-            }
-        }); 
-        event.preventDefault();
+        if (form.valid()) {
+            $.ajax({
+                type: "POST",
+                data: form.serialize(),
+                url: form.attr("action"),
+                success: function (data) {
+                    $('body').append(data);
+                },
+                error: function () {
+                    $('body').append("<div>sembra che qualcosa sia andato storto</div>");
+                }
+            });
+            event.preventDefault();
+        }
     });
     
  }

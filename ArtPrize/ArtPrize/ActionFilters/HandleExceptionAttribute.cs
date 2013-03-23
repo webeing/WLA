@@ -40,7 +40,7 @@ namespace ArtPrize.ActionFilters
 
                 string key = (string)currentController.RouteData.Values["action"] + "_" + filterContext.Exception.GetType().Name;
 
-                string message = "";// currentController.Resource(key);
+                string message = filterContext.Exception.Message;
 
                 /*
                  * if the message is not found, so try to get a generic message for

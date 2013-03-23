@@ -43,7 +43,7 @@ namespace ArtPrize
                 typeof(IsTrueAttribute),
                 typeof(RegularExpressionAttributeAdapter));                        
 
-            System.Web.Mvc.ModelBinders.Binders.Add(typeof(Vote), new VoteModelBinder());
+            //System.Web.Mvc.ModelBinders.Binders.Add(typeof(Vote), new VoteModelBinder());
 
             RegisterRoutes(RouteTable.Routes);
         }

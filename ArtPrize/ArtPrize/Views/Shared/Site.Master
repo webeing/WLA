@@ -56,10 +56,11 @@
         </footer><!--- FINE FOOTER --->
     </div>
 </div>
-<!--<script src="<%= Url.Content("~/Scripts/jquery-1.4.1.min.js") %>"></script>-->
 <asp:ContentPlaceHolder ID="Script" runat="server" />
 
 <script src="<%= Url.Content("~/Scripts/lib-and-custom-js-min.js") %>"></script>
+<script src="<%= Url.Content("~/Scripts/jquery.validate.min.js") %>"></script>
+<script src="<%= Url.Content("~/Scripts/additional-methods.min.js") %>"></script>
 <script src="<%= Url.Content("~/Scripts/wla.js") %>"></script>
 </body>
 </html>

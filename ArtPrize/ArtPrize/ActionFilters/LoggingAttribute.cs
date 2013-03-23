@@ -83,7 +83,7 @@ namespace ArtPrize.ActionFilters
         /// <param name="filterContext"></param>
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            base.OnActionExecuting(filterContext);
+            base.OnActionExecuting(filterContext);            
             logger.Debug(String.Format("Executing action {0} on controller {1}. Input parameters: {2}",
                 filterContext.ActionDescriptor.ActionName,
                 filterContext.ActionDescriptor.ControllerDescriptor.ControllerName,

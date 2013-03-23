@@ -12,7 +12,7 @@ namespace ArtPrize.Controllers
 {
     [LoggingAttribute]
     [HandleException]
-    public class VoteController : Controller
+    public class VoteController : BaseController
     {        
         VoteService voteService;
 
@@ -24,18 +24,10 @@ namespace ArtPrize.Controllers
         //
         // GET: /Vote/
 
-        public ActionResult Index(int id)
+        public ActionResult Works(int id)
         {
-            return View(String.Format("Index{0}",id));
-        }
-
-        //
-        // GET: /Vote/Create
-
-        public ActionResult Add()
-        {
-            return View();
-        } 
+            return View(id);
+        }       
 
         //
         // POST: /Vote/Create
@@ -45,8 +37,9 @@ namespace ArtPrize.Controllers
         {
             try
             {
+                vote.SessionId = Session.SessionID;                
                 voteService.Create(vote);
-                return View("AddResult");
+                return View("AddResult");                
             }
             catch (ArgumentNullException ex)
             {

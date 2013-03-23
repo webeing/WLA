@@ -61,6 +61,8 @@
   <ItemGroup>
     <Compile Include="ActionFilters\HandleExceptionAttribute.cs" />
     <Compile Include="ActionFilters\LoggingAttribute.cs" />
+    <Compile Include="ActionFilters\LogSetter.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\VoteController.cs" />
     <Compile Include="Global.asax.cs">
@@ -121,9 +123,7 @@
     <Content Include="Views\Home\Works.aspx" />
     <Content Include="Views\Vote\Add.ascx" />
     <Content Include="Views\Vote\AddResult.ascx" />
-    <Content Include="Views\Vote\Index3.aspx" />
-    <Content Include="Views\Vote\Index2.aspx" />
-    <Content Include="Views\Vote\Index1.aspx" />
+    <Content Include="Views\Vote\Works.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
