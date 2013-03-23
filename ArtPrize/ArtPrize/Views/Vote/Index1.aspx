@@ -10,12 +10,12 @@
 					<ol>
 						<li class="preSelected">
 							<span id="home">
-							<a title="Home" href="http://www.barclays.it/artprize/">Home</a>
+							<a title="Home" href="<%= Url.Content("~/Home/Index") %>">Home</a>
 							</span>
 						</li>
 						<li class="selected">
 							<span>
-							<a href="http://www.barclays.it/artprize/vota.html" id="about_artprize">Vota</a>
+							<a href="<%= Url.Content("~/Home/Works") %>" id="link_vota_artprize">Vota</a>
 							</span>
 						</li>
 					</ol>
@@ -28,55 +28,39 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-     <section id="barclays-strategic-review" class="lens lensTypeAperture lazyloaded">
-	            <div class="inner">
-	                <div class="widthSix primary">
-	                    <div class="aperture">
-	                        <span class="curtain left">
-	                            <span class="edge">
-	                                <span class="top"></span>
-	                                <span class="bottom"></span>
-	                            </span>
-	                        </span>
-	                        
-	                        <!-- imageWithCaption -->
-							<div class="imageWithCaption">
-								<img data="" alt="Art Prize Barclay" src="../img/fire.jpg" />
-							</div><!--/imageWithCaption-->
-	                        <!--/Video About -->
-	
-	                        <span class="curtain right">
-							<span class="edge">
-								<span class="top"></span>
-								<span class="bottom"></span>
-							</span>
-						</span>
-	                    </div>
+     <section id="vote-art-01" class="lens">
+	    <div class="inner">
+	        <div class="widthSix primary">
+	            
+	            <!-- imageWithCaption -->
+				<div class="imageWithCaption">
+					<img alt="Art Prize Barclay" src="http://placehold.it/460x546&amp;text=opera01" />
+				</div><!--/imageWithCaption-->
+
 	                    
-	                    <ul class="listLinks">
-	                        <li><a href="<%= Url.Content("~/Home/Prize") %>" title="Barclays Art Prize: Premio">Premio</a></li>
-	                        <li><a href="<%= Url.Content("~/Home/Rule") %>" title="Barclays Art Prize: Regolamento">Regolamento</a></li>
-	                        <li><a href="<%= Url.Content("~/Home/Works") %>" title="Barclays Art Prize: Opera in gara">Torna alle altre opere</a></li>                   
-	                    </ul>
+	            <ul class="listLinks">
+	                <li><a href="<%= Url.Content("~/Home/Prize") %>" title="Barclays Art Prize: Premio">Premio</a></li>
+	                <li><a href="<%= Url.Content("~/Home/Rule") %>" title="Barclays Art Prize: Regolamento">Regolamento</a></li>
+	                <li><a href="<%= Url.Content("~/Home/Works") %>" title="Barclays Art Prize: Opere in gara">Torna alle altre opere</a></li>                    
+	            </ul>
 	
-	                </div>
+	        </div>
 	
-	                <div class="widthSix">
-	                    <h2>Per votare<br/>devi essere registrato</h2>
-	                    <div class="rte">
-							<% Html.RenderAction("Add"); %>
-	                    </div>
-	                </div>
-	
+	        <div class="widthSix secondary">
+	            <h2>Per votare l’opera, partecipare al concorso
+	                    e vincere un week end d’atrte devi essere
+	                    Registrato.</h2>
+	            <div class="rte">
+					<% Html.RenderAction("Add"); %>
 	            </div>
+	        </div><!--/secondary-->
 	
-	        </section>
+	    </div><!--/inner-->
+	
+	</section>
 
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="server">
-    <ul id="lensNavigator">
-        <li id="previous"><a href="#" class="prev" title="">Previous</a></li>
-        <li id="next"><a href="#" class="next" title="">Next</a></li>
-    </ul>
+
 </asp:Content>

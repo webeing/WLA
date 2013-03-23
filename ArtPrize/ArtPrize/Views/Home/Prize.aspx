@@ -7,12 +7,12 @@
 					<ol>
 						<li class="preSelected">
 							<span id="home">
-							<a title="Home" href="http://www.barclays.it/artprize/" title="">Home</a>
+							<a title="Home" href="<%= Url.Content("~/Home/Index") %>" title="">Home</a>
 							</span>
 						</li>
 						<li class="selected">
 							<span>
-							<a href="http://www.barclays.it/artprize/about.html" title="" id="about_artprize">Premio</a>
+							<a href="<%= Url.Content("~/Home/Prize") %>" title="" id="link_prize">Premio</a>
 							</span>
 						</li>
 					</ol>
@@ -24,11 +24,11 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-     <section id="citizenship-at-barclays" class="lens lensTypeApertureVideo lazyloaded"><!-- PRIMA SLIDER --->
+     <section id="premio" class="lens"><!-- PRIMA SLIDER --->
         <div class="inner">
             <div class="widthSix primary">
 
-                <h2>Premi</h2>
+                <h2>Premio</h2>
 
                 <div class="rte">
                     <p>
@@ -40,22 +40,35 @@
                 </div>
 
                 <ul class="listLinks">
-                    <li><a href="concorso.html" title="Barclays Art Prize: Opere in gara">Opere in gara</a></li>
-                    <li><a href="opere-in-gara.html" title="Barclays Art Prize: Regolamento">Regolamento</a></li>
-                    <li><a href="premi.html" title="Barclays Art Prize: Pravacy">Privacy</a></li>
+                    <li><a href="<%= Url.Content("~/Home/Works") %>" title="Barclays Art Prize: Opere in gara">Vota le opere in gara</a></li>
                 </ul>
 
             </div>
 
-            <div class="widthFive secondary">
-                <div class="imageWithCaption">
+            <div class="widthSix secondary">
+                <div class="aperture">
+					<span class="curtain left">
+						<span class="edge">
+							<span class="top"></span>
+							<span class="bottom"></span>
+						</span>
+					</span>
+						
+					<div class="imageWithCaption">
+						<img src="../img/premio.jpg" alt="Barclays Art Prize premio"/>
+					</div>
+						
+					<span class="curtain right">
+						<span class="edge">
+							<span class="top"></span>
+							<span class="bottom"></span>
+						</span>
+					</span>
+				</div><!--/aperture-->
+            </div><!--/secondary-->
 
-                    <img src="../img/viaggiando-l-italia.jpg" alt="Barclays Premio: Viaggiando l'Italia, 16 destinazioni da visitare nel nostro Paese." data="/Satellite?blobcol=urldata&amp;blobkey=id&amp;blobtable=MungoBlobs&amp;blobwhere=1330696348854&amp;ssbinary=true">
-
-                </div>
-            </div>
-
-        </div>
+        </div><!--/inner-->
+    </section>
 
 </asp:Content>
 

@@ -8,12 +8,12 @@
 					<ol>
 						<li class="preSelected">
 							<span id="home">
-							<a title="Home" href="http://www.barclays.it/artprize/">Home</a>
+							<a title="Home" href="<%= Url.Content("~/Home/Index") %>">Home</a>
 							</span>
 						</li>
 						<li class="selected">
 							<span>
-							<a href="http://www.barclays.it/artprize/about.html" id="about_artprize">About Barclay Art Prize</a>
+							<a href="<%= Url.Content("~/Home/About") %>" id="about_artprize">About Barclay Art Prize</a>
 							</span>
 						</li>
 					</ol>
@@ -25,7 +25,7 @@
 </asp:Content>
 
 <asp:Content ID="aboutContent" ContentPlaceHolderID="MainContent" runat="server">
-    <section id="barclays-strategic-review" class="lens lensTypeAperture lazyloaded">
+    <section id="barclays-about-artprize" class="lens">
 	            <div class="inner">
 	                <div class="widthSix primary">
 	                    <div class="aperture">
@@ -46,35 +46,59 @@
 	                        <!--/Video About -->
 	
 	                        <span class="curtain right">
-							<span class="edge">
-								<span class="top"></span>
-								<span class="bottom"></span>
-							</span>
-						</span>
-	                    </div>
+							    <span class="edge">
+								    <span class="top"></span>
+								    <span class="bottom"></span>
+							    </span>
+						    </span>
+	                    </div><!--/aperture-->
+	                </div><!--/primary-->
 	
-	                </div>
-	
-	                <div class="widthFive secondary">
+	                <div class="widthSix secondary">
 	                    <h2>Barclays Art Prize</h2>
-	                        <h3>For Young Talents</h3>
+	                        <h3>for young talents</h3>
 	                    <div class="rte">
-	                        <p>In questa prima edizione del concorso i ragazzi sono stati invitati a reinterpretare gli asset del brand e a presentare delle opere dal tema &grave;Accessible Art&grave; Rispetto, Integrit&agrave;, Servizio, Eccellenza e Stewardship sono i brand values di Barclays che hanno inspirato anche le due commissioni di esperti nella selezione delle tre opere finaliste. La parola adesso passa agli utenti che, sempre nel rispetto di tali valori, sono chiamati ad esprimere la loro preferenza.</p>
+	                        <p>In questa prima edizione del concorso, realizzata in partnership con l’Accademia di Belle Arti di Brera, i ragazzi sono stati invitati a reinterpretare i valori su cui si fonda il marchio Barclays e a presentare delle opere dal tema &grave;Accessible Art&acute;, rappresentando lo sviluppo e l&grave;affermazione della cultura dell’Accessibilità ad ogni sistema, da quello della finanza a quello dell’arte contemporanea. I brand values del gruppo, Rispetto, Integrit&agrave;, Servizio, Eccellenza e Stewardship, hanno inspirato anche le due commissioni di esperti che si sono riunite il 21 e il 27 marzo scorsi per selezionare le tre opere finaliste. Le due giurie, composte dai professori Andrea del Guercio, Elisabetta Longari, Anna Mariani, e da esponenti del gruppo Barclays, hanno scelto le tre opere finaliste secondo il merito artistico dei partecipanti e il rispetto della tematica del concorso.
+	                        Adesso tocca a te esprimere la tua preferenza.
+	                        L’autore dell’opera più votata vincerà un viaggio per due persone, destinazione Tate Modern di Londra.
+	                        Tu potresti essere estratto e aggiudicarti un viaggio per due persone in una città d’arte italiana.</p>
 	                        
 	                    </div>
 	
 	                    <ul class="listLinks">
-	                        <li><a href="opere-in-gara.html" title="Barclays Art Prize: Opera in gara">Opera in gara</a></li>
-	                        <li><a href="regolamento.html" title="Barclays Art Prize: Regolamento">Regolamento</a></li>
-	                        <li><a href="premio.html" title="Barclays Art Prize: Premio">Premio</a></li>
+	                        <li><a href="<%= Url.Content("~/Home/Works") %>" title="Barclays Art Prize: Opere in gara">Opere in gara</a></li>
+	                        <li><a href="<%= Url.Content("~/Home/Prize") %>" title="Barclays Art Prize: Premio">Premio</a></li>
 	                        <li><a href="http://www.accademiadibrera.milano.it/" title="Barclays Art Prize: Premio" target="_blank">Accademia delle Belle Arti di Brera</a></li>                        
 	                    </ul>
+                        <!--social links -->
+	                    <ul class="social-links">
+	                    	<li>
+	                    		<div class="fb-like" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+	                    	</li>
+	                    	<li><a href="https://twitter.com/share" class="twitter-share-button" data-via="agatacruciani" data-lang="it">Tweet</a>
+	                    	</li>
+	                    </ul>
+	                    <!--social links -->
 	
-	                </div>
+	                </div><!--/secondary-->
 	
-	            </div>
+	            </div><!--/inner-->
 	
 	        </section>
+</asp:Content>
+<asp:Content ContentPlaceHolderID="Script" ID="socialScript" runat="server">
+<script>
+    /* facebook button */
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/it_IT/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    } (document, 'script', 'facebook-jssdk'));
+    /* twitter button */
+    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } } (document, "script", "twitter-wjs");
+</script>
 </asp:Content>
 
 

@@ -9,13 +9,18 @@
 .clear {
     clear: both;
 }
-figure{
+figure, section{
 	margin: 0!important;
 	padding: 0!important;
 }
 
 /*HOME HEADER */
-
+.inner{
+	min-width: 960px!important;
+}
+#content{
+	padding-top: 50px;
+}
 body #secondaryNavigation.empty {
     background: url("../img/header_shadow.png") no-repeat scroll center top transparent;
 }
@@ -90,7 +95,9 @@ ul.listLinks li {
 #lensNavigator a {
     background-image: url("../img/lens-navigator-arrows.gif");
 }
-
+#footer{
+	margin-top: 30px;	
+}
 .wrapper .footer ul#footerLinks {
     text-align: center !important;
 }
@@ -103,8 +110,9 @@ body section.lens {
 /* List item */
 
 body .listNewsItems {
-    height: 348px !important;
+    height: 390px !important;
     overflow-y: inherit !important;
+    border-bottom: none!important;
 }
 
 .listNewsItems a {
@@ -139,6 +147,36 @@ body .pageLens h1 {
     background-image: none !important;
 }
 
+/* content */
+.social-links {
+    border-top: 1px solid #EDEDED;
+    padding-top: 15px;
+ }
+ .social-links > li {
+     float: left;
+     width: 25%;
+ }
+ .social-links .pluginSkinLight form{
+ 	display: none!important;
+ }
+ 
+ #opere .social-links{
+ 	border: none!important;
+ 	width: 47%;
+ 	overflow: auto;
+ 	float: left;
+ 	padding-top: 5px;
+ }
+ #opere .social-links > li {
+ float: left;
+ width: 50%!important;
+ text-align: left;
+ }
+ #opere button{
+ 	max-width: 30%!important;
+ }
+ 
+
 /* Section Form Vota */
 #vota-artprize label {
     color: #017EB4;
@@ -170,10 +208,67 @@ input[type="checkbox"] {
     width: 8% !important;
 }
 
+input[type="radio"] {
+    display: inline !important;
+    width: 6% !important;
+}
+
+#vota-artprize span {
+    line-height: 36px !important;
+    padding-left: 2px;
+    color: #007EB6;
+    margin-left: 20px;
+}
+.disclaimer{
+	border-top: 1px solid #DBDBDB;
+	padding-top: 15px;
+}
+
 .dialogButtons {
     border-top: 1px solid #CCCCCC;
     clear: both;
     margin-top: 20px;
     padding: 15px 0;
     text-align: right;
+}
+.ui-dialog{
+	text-align: center;
+	top: 120px !important;
+	width: 100% !important;
+	background: transparent url('../img/white-80-percent.png') repeat left top;
+	margin: 0 auto!important;
+}
+.dialog-wrap{
+	width: 980px;
+	position: relative;
+	margin: 0 auto!important;
+}
+.dialog-wrap .close{
+    display: block;
+    text-align: right;
+}
+.ui-button, .ui-dialog-titlebar{
+	display: none!important;
+}
+.modal img {
+	max-width: 800px;
+	height: auto;
+}
+/* color btn */
+.btn-cyan75{
+	background-color: #40c2f3!important;
+	color: #fff!important;
+}
+
+/* Cycle */
+.cycle-pager{
+	text-align: center;
+	margin-top: 10px;
+}
+.cycle-pager span{
+	font-size: 3em;
+	cursor: pointer;
+}
+.cycle-pager span.cycle-pager-active{
+	color: #3E668A!important;
 }
