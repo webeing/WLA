@@ -40,7 +40,7 @@
 						<p>Sed sed dui ut velit facilisis malesuada a sit amet velit. Nam ipsum augue, tristique vel lacinia vitae, gravida id leo. Vivamus accumsan lobortis euismod. Aenean eget pellentesque augue. Pellentesque in lacus risus.
                         </p>
                     </div>
-
+                    <span><%= ((System.Collections.Generic.Dictionary<int,int>)ViewData["votes"])[1] %></span>
                     <ul class="listLinks">
                         <li><a href="premi.html" title="Barclays Art Prize: Premi">Premi</a></li>
                         <li><a href="regolamento.html" title="Barclays Art Prize: Regolamento">Regolamento</a></li>

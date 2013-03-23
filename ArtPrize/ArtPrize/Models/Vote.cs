@@ -18,9 +18,7 @@ namespace ArtPrize.Models
         public string SessionId { get; set; }
         public DateTime VoteDate { get; set; }
         [Ignore]
-        public User User { get; set; }
-        [Required]
-        public string Ip { get; set; }
+        public User User { get; set; }        
         [Ignore]
         public VoteWrapper Wrapper
         {
@@ -96,18 +94,6 @@ namespace ArtPrize.Models
             {
                 vote.User.Id = value;
             }
-        }
-
-        public string Ip
-        {
-            get
-            {
-                return vote.Ip;
-            }
-            set
-            {
-                vote.Ip = value;
-            }
-        }
+        }        
     }
 }

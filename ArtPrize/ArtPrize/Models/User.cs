@@ -3,9 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
 
 namespace ArtPrize.Models
 {
+    public class ValidBirthdayAttribute : ValidationAttribute
+    {
+        public override bool IsValid(object value)
+        {
+            return new DateTime(DateTime.Now.Subtract(Convert.ToDateTime(value)).Ticks).Year >= 18;
+        }
+    }
+
     public class ValidEmailAttribute : RegularExpressionAttribute
     {
         public ValidEmailAttribute() :
@@ -18,6 +27,11 @@ namespace ArtPrize.Models
         public ValidPhoneNumberAttribute() :
             base(@"^\d.*$")
         { }
+    }
+
+    public class IsTrueAttribute : RegularExpressionAttribute
+    {
+        public IsTrueAttribute() : base(@"^True$") { }
     }
 
     [PetaPoco.TableName("Users")]
@@ -46,6 +60,18 @@ namespace ArtPrize.Models
         public string CAP { get; set; }
         [Required]
         public string District { get; set; }
-
+        [Required]
+        [ValidBirthday]
+        public DateTime Birthday { get; set; }                
+        [Required]
+        public bool TermsAcceptance { get; set; }
+        [IsTrue(ErrorMessage="Devi accettare le norme sulla privacy")]        
+        public bool PrivacyRead { get; set; }
+        [Required]
+        public string Ip { get; set; }
+        [IsTrue(ErrorMessage="Devi accettare il regolamento")]             
+        public bool RuleAcceptance { get; set; }
+        [Required]
+        public char Gender { get; set; }
     }
 }

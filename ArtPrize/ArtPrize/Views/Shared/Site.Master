@@ -5,8 +5,8 @@
 
   <head>
     <title>Barclay Art Prize Home</title>
-    <link href="../css/style.css" rel="stylesheet" media="screen">
-    <link href="../img/icons/favicon.ico" rel="shortcut icon">
+    <link href="<%= Url.Content("~/css/style.css") %>" rel="stylesheet" media="screen">
+    <link href="<%= Url.Content("~/img/icons/favicon.ico") %>" rel="shortcut icon">
   </head>
 
 <body>
@@ -23,16 +23,13 @@
             <div id="topNavigation">
                 <ul>
                     <li class="official-site"><a href="#" title="Sito ufficiale Barclasy.it">barclays.it</a></li>
-                    <li class="facebook"><a href="#" title="Barclays Art Prize: Seguici anche su facebook">facebook</a></li>
-                    <li class="twitter"><a href="#" title="Barclays Art Prize: Seguici anche su twitter">twitter</a></li>
-                    <li class="e-mail"><a href="#" title="Barclays Art Prize: Contattaci via e-mail">e-mail</a></li>
                 </ul>
             </div>
 
             <div id="primaryNavigation">
                 <ul>
                     <li class="" id="about_artprize"><a href="<%= Url.Content("~/Home/About") %>" title="Barclays Art Prize: About Barclay">About Barclays Art Prize</a></li>
-                    <li class="" id="vota_artprize"><a href="<%= Url.Content("~/Vote/Index") %>" title="Barclays Art Prize: Vota">Vota</a></li>
+                    <li class="" id="vota_artprize"><a href="<%= Url.Content("~/Home/Works") %>" title="Barclays Art Prize: Vota">Vota</a></li>
                     <li class="" id="barclays_ic"><a href="<%= Url.Content("~/Home/Innovation") %>" title="Barclays Art Prize: Barclays Innovation Center">Barclays Innovation Center</a></li>
                 </ul>
             </div>
@@ -59,7 +56,9 @@
                 <asp:ContentPlaceHolder ID="footer" runat="server" /> 
 
         </footer><!--- FINE FOOTER --->
-
+        
+        <script src="<%= Url.Content("~/Scripts/jquery-1.4.1.min.js") %>"></script>
+        <script src="<%= Url.Content("~/Scripts/wla.js") %>"></script>
 
     </div>
 </div>

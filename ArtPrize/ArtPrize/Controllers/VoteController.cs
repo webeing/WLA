@@ -24,10 +24,10 @@ namespace ArtPrize.Controllers
         //
         // GET: /Vote/
 
-        public ActionResult Index()
+        public ActionResult Index(int id)
         {
-            return View();
-        }        
+            return View(String.Format("Index{0}",id));
+        }
 
         //
         // GET: /Vote/Create

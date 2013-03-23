@@ -74,6 +74,7 @@
     <Compile Include="Models\Services\VoteService.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Vote.cs" />
+    <Compile Include="Models\VoteResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -112,6 +113,7 @@
     <Content Include="img\top-navigation-repeater.gif" />
     <Content Include="img\viaggiando-l-italia.jpg" />
     <Content Include="img\white-80-percent.png" />
+    <Content Include="Scripts\wla.js" />
     <Content Include="Views\Home\Innovation.aspx" />
     <Content Include="Views\Home\Privacy.aspx" />
     <Content Include="Views\Home\Prize.aspx" />
@@ -119,7 +121,9 @@
     <Content Include="Views\Home\Works.aspx" />
     <Content Include="Views\Vote\Add.ascx" />
     <Content Include="Views\Vote\AddResult.ascx" />
-    <Content Include="Views\Vote\Index.aspx" />
+    <Content Include="Views\Vote\Index3.aspx" />
+    <Content Include="Views\Vote\Index2.aspx" />
+    <Content Include="Views\Vote\Index1.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
