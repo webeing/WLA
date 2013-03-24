@@ -1,6 +1,8 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<ArtPrize.Models.Vote>" %>    
    
- <form method="post" id="vota-artprize" action="/Vote/Add" novalidate="novalidate"><input type="hidden" value="1" name="ArtworkId" id="ArtworkId">           
+ <form method="post" id="vota-artprize" action="/Vote/Add" novalidate="novalidate">
+ 
+            <input type="hidden" value="<%= Model.ArtworkId %>" name="ArtworkId" id="ArtworkId">           
 
             <label for="Name">
 				Nome
