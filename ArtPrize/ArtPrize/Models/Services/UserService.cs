@@ -10,22 +10,23 @@ namespace ArtPrize.Models.Services
 {
     public class AlreadyExistingAnagException : Exception
     {
-        public AlreadyExistingAnagException() : base("There was an user with the same name, lastname, city and address") { }
+        public AlreadyExistingAnagException() : 
+            base("Risulta già un utente con stesso nome, cognome, città e indirizzo.") { }
     }
 
     public class AlreadyExistingIpException : Exception
     {
-        public AlreadyExistingIpException() : base("There was an user with the same name ip name and last name") { }
+        public AlreadyExistingIpException() : base("Risulta già un utente con stesso ip, nome e cognome.") { }
     }
     
     public class AlreadyExistingEmailException : Exception
     {
-        public AlreadyExistingEmailException() : base("There was an user with the same mail.") { }
+        public AlreadyExistingEmailException() : base("Risulta già un utente con lo stesso indirizzo email.") { }
     }
 
     public class AlreadyExistingMobileException : Exception
     {
-        public AlreadyExistingMobileException() : base("There was an user with the same mail.") { }
+        public AlreadyExistingMobileException() : base("Risulta già un utente con lo stesso numero di cellulare.") { }
     }
 
     public class UserService
@@ -48,7 +49,10 @@ namespace ArtPrize.Models.Services
         public void Create(User user) 
         {
             if (user == null)
-                throw new ArgumentNullException("The user is null.");
+            {
+                Logger.Fatal("The user was null");
+                throw new ArgumentNullException("user");
+            }
             Logger.Debug("Started UserService.Create execution.");
             Logger.Debug(
                 string.Format("User: Name: {0}, LastName: {1}, Email: {2}, MobilePhone: {3}, Address: {4}",

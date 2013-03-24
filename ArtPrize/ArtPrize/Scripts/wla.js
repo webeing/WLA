@@ -39,7 +39,7 @@ function enable_custom_validation() {
 
     
     jQuery.validator.addMethod(
-        "checked",
+        "isTrue",
         function (value, element) {
             return value == "true";            
         },

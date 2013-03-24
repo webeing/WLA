@@ -12,31 +12,13 @@ namespace ArtPrize.ModelBinders
     {
         public override object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
         {
+            Vote receivedVote = base.BindModel(controllerContext, bindingContext) as Vote;
             NameValueCollection form = controllerContext.HttpContext.Request.Form;
-
-            Vote vote = new Vote();
-            vote.ArtworkId = Convert.ToInt32(form["ArtworkId"]);
-            vote.SessionId = HttpContext.Current.Session.SessionID;
-            vote.VoteDate = DateTime.Now;            
-
-            vote.User = new User();
-            vote.User.Email = form["Email"];
-            vote.User.Address = form["Address"];
-            vote.User.LastName = form["LastName"];
-            vote.User.MobilePhone = form["MobilePhone"];
-            vote.User.Name = form["Name"];
-            vote.User.City = form["City"];
-            vote.User.District = form["District"];
-            vote.User.CAP = form["CAP"];
-            int[] splittedBirthday = form["Birthday"].Split('/').Select(s => Convert.ToInt32(s)).ToArray();
-            vote.User.Birthday = new DateTime(splittedBirthday[2],splittedBirthday[1],splittedBirthday[0]);
-            vote.User.PrivacyRead = Convert.ToBoolean(form["PrivacyRead"]);
-            vote.User.TermsAcceptance = Convert.ToBoolean(form["TermsAcceptance"]);
-            vote.User.RuleAcceptance = Convert.ToBoolean(form["RuleAcceptance"]);
-            vote.User.Gender = form["Gender"][0];
-            vote.User.Ip = HttpContext.Current.Request.ServerVariables["REMOTE_ADDR"];
-
-            return vote;
+            receivedVote.SessionId = HttpContext.Current.Session.SessionID;
+            receivedVote.User.Ip = HttpContext.Current.Request.ServerVariables["REMOTE_ADDR"];
+            receivedVote.User.Birthday = DateTime.Parse(form["User.Birthday"], System.Globalization.CultureInfo.CurrentUICulture);
+            receivedVote.VoteDate = DateTime.Now;
+            return receivedVote;
         }
     }
 }

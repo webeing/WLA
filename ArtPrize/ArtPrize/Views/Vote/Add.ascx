@@ -52,7 +52,7 @@
 			    </label>
 			    <label for="prov">
 				    Provincia                                                           
-                    <select name="User_District" id="User_District" class="selected">
+                    <select name="User.District" id="User_District" class="selected">
                         <option value="">- -</option>
                         <option value="AG">AGRIGENTO</option>
                         <option value="AL">ALESSANDRIA</option>

@@ -65,6 +65,7 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\VoteController.cs" />
+    <Compile Include="Controllers\WorksController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -124,6 +125,7 @@
     <Content Include="Views\Vote\Add.ascx" />
     <Content Include="Views\Vote\AddResult.ascx" />
     <Content Include="Views\Vote\Works.aspx" />
+    <Content Include="Views\Works\Like.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
