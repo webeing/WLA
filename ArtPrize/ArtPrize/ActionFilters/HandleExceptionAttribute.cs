@@ -58,7 +58,7 @@ namespace ArtPrize.ActionFilters
             }
             else if (filterContext.Exception != null)
             {
-                filterContext.Result = new RedirectToRouteResult("Error", null);                
+                filterContext.Result = new RedirectToRouteResult("Error",null);                
             }
         }
     }

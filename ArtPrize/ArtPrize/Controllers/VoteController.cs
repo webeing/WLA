@@ -34,9 +34,25 @@ namespace ArtPrize.Controllers
 
         [HttpPost]
         public ActionResult Add(Vote vote)
-        {                       
-            voteService.Create(vote);
-            return View("AddResult");                                        
+        {
+            try
+            {
+                voteService.Logger = Logger;
+                voteService.Create(vote);
+                return View("AddResult");
+            }
+            catch (AlreadyExistingUserException ex)
+            {
+                return View("AddResult", new Error { Description = ex.Message });
+            }
+            catch (ValidationException ex)
+            {
+                return View("AddResult", new Error { Description = ex.Message });
+            }
+            catch (Exception ex) 
+            {
+                return View("AddResult", new Error { Description = "Siamo spiacenti ma si è verificato un errore." });
+            }
         }
     }
 }

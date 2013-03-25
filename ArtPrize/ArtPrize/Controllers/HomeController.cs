@@ -53,8 +53,9 @@ namespace ArtPrize.Controllers
             return View();
         }
 
-        public ActionResult Works() 
+        public ActionResult Works()
         {
+            service.Logger = Logger;
             Logger.Trace("Retrieving votes from database");
             var res = service.GetCurrentVotes();//.ToDictionary(x => x.ArtworkId, x => x.Count);
             Logger.Debug("Retrieved votes. Votes: {0}",res.Aggregate(string.Empty,(acc,x) => acc + string.Format("Artwork: {0} -> {1}",x.ArtworkId,x.Count)));

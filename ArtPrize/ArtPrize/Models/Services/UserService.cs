@@ -8,26 +8,10 @@ using NLog;
 
 namespace ArtPrize.Models.Services
 {
-    public class AlreadyExistingAnagException : Exception
+    public class AlreadyExistingUserException : Exception 
     {
-        public AlreadyExistingAnagException() : 
-            base("Risulta già un utente con stesso nome, cognome, città e indirizzo.") { }
-    }
-
-    public class AlreadyExistingIpException : Exception
-    {
-        public AlreadyExistingIpException() : base("Risulta già un utente con stesso ip, nome e cognome.") { }
-    }
-    
-    public class AlreadyExistingEmailException : Exception
-    {
-        public AlreadyExistingEmailException() : base("Risulta già un utente con lo stesso indirizzo email.") { }
-    }
-
-    public class AlreadyExistingMobileException : Exception
-    {
-        public AlreadyExistingMobileException() : base("Risulta già un utente con lo stesso numero di cellulare.") { }
-    }
+        public AlreadyExistingUserException(string message) : base(message) { }
+    }    
 
     public class UserService
     {
@@ -61,13 +45,13 @@ namespace ArtPrize.Models.Services
             DataValidator.Validate(user);
             Logger.Debug("User is valid.");
             if (db.Query<User>("WHERE Email = @0", user.Email).Count() > 0)
-                throw new AlreadyExistingEmailException();
+                throw new AlreadyExistingUserException("Risulta già un utente con lo stesso indirizzo email.");
             if (db.Query<User>("WHERE MobilePhone = @0", user.MobilePhone).Count() > 0)
-                throw new AlreadyExistingMobileException();
+                throw new AlreadyExistingUserException("Risulta già un utente con lo stesso numero di cellulare.");
             if (db.Query<User>("WHERE Ip = @0 AND Name = @1 AND LastName = @2", user.Ip,user.Name,user.LastName).Count() > 0)
-                throw new AlreadyExistingIpException();
+                throw new AlreadyExistingUserException("Risulta già un utente con stesso ip, nome e cognome.");
             if (db.Query<User>("WHERE Name = @0 AND LastName = @1 AND City = @2 AND Address = @3", user.Name, user.LastName, user.City, user.Address).Count() > 0)
-                throw new AlreadyExistingIpException();
+                throw new AlreadyExistingUserException("Risulta già un utente con stesso nome, cognome, città e indirizzo.");
             db.Insert(user);
             Logger.Info(string.Format("User {0} correctly saved.",user.Id));
             Logger.Debug("Completed UserService.Create execution.");
