@@ -23,3 +23,80 @@
 2013-03-26 19:22:03.2794 DEBUG Executing action About on controller Home. Input parameters: 
 2013-03-26 19:22:03.2794 INFO Action About on controller Home executed.
 2013-03-26 19:22:03.2794 DEBUG Executed action About on controller Home. Result: 200 OK
+2013-03-26 22:57:30.0745 DEBUG Executing action Index on controller Home. Input parameters: 
+2013-03-26 22:57:30.1746 INFO Action Index on controller Home executed.
+2013-03-26 22:57:30.1847 DEBUG Executed action Index on controller Home. Result: 200 OK
+2013-03-26 22:59:13.2429 DEBUG Executing action About on controller Home. Input parameters: 
+2013-03-26 22:59:13.2529 INFO Action About on controller Home executed.
+2013-03-26 22:59:13.2529 DEBUG Executed action About on controller Home. Result: 200 OK
+2013-03-26 22:59:39.3204 DEBUG Executing action Works on controller Home. Input parameters: 
+2013-03-26 22:59:39.3304 TRACE Retrieving votes from database
+2013-03-26 23:00:49.5513 FATAL An error occurred in the action Works of the controller Home
+2013-03-26 23:00:49.5614 FATAL System.Data.SqlClient.SqlException: Login failed for user 'webeing'.
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection() in C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\Models\Services\PetaPoco.cs:line 227
+   at PetaPoco.Database.<Query>d__7`1.MoveNext() in C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\Models\Services\PetaPoco.cs:line 711
+   at System.Linq.Enumerable.Aggregate[TSource,TAccumulate](IEnumerable`1 source, TAccumulate seed, Func`3 func)
+   at ArtPrize.Controllers.HomeController.Works() in C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\Controllers\HomeController.cs:line 61
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+2013-03-26 23:00:54.4484 DEBUG Executing action Index on controller Home. Input parameters: 
+2013-03-26 23:00:54.4484 INFO Action Index on controller Home executed.
+2013-03-26 23:00:54.4484 DEBUG Executed action Index on controller Home. Result: 200 OK
+2013-03-26 23:00:56.9720 DEBUG Executing action Works on controller Home. Input parameters: 
+2013-03-26 23:00:56.9820 TRACE Retrieving votes from database
+2013-03-26 23:03:21.1593 FATAL An error occurred in the action Works of the controller Home
+2013-03-26 23:03:21.1593 FATAL System.Data.SqlClient.SqlException: Login failed for user 'webeing'.
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection() in C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\Models\Services\PetaPoco.cs:line 227
+   at PetaPoco.Database.<Query>d__7`1.MoveNext() in C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\Models\Services\PetaPoco.cs:line 711
+   at System.Linq.Enumerable.Aggregate[TSource,TAccumulate](IEnumerable`1 source, TAccumulate seed, Func`3 func)
+   at ArtPrize.Controllers.HomeController.Works() in C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\Controllers\HomeController.cs:line 61
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+2013-03-26 23:03:25.4755 DEBUG Executing action Index on controller Home. Input parameters: 
+2013-03-26 23:03:25.4856 INFO Action Index on controller Home executed.
+2013-03-26 23:03:25.4856 DEBUG Executed action Index on controller Home. Result: 200 OK
+2013-03-26 23:03:28.1995 DEBUG Executing action Works on controller Home. Input parameters: 
+2013-03-26 23:03:28.2095 TRACE Retrieving votes from database
+2013-03-26 23:03:33.1666 DEBUG Retrieved votes. Votes: 
+2013-03-26 23:03:38.4342 INFO Action Works on controller Home executed.
+2013-03-26 23:03:38.4442 DEBUG Executed action Works on controller Home. Result: 200 OK
