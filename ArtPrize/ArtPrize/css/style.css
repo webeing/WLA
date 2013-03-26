@@ -2,6 +2,7 @@
 
 @import url("fonts-min.css");
 @import url("barclays-min.css");
+@import url("barclays-tablet.css");
 /*@import url("bootstrap.min.css");*/
 
 /* clear */
@@ -13,10 +14,18 @@ figure, section{
 	margin: 0!important;
 	padding: 0!important;
 }
-
+#meta{
+	display: none;
+}
+.fb_iframe_widget_lift{
+	z-index: 2000!important;
+}
 /*HOME HEADER */
 .inner{
 	min-width: 960px!important;
+}
+.inner .inner {
+    min-width: 100% !important;
 }
 #content{
 	padding-top: 50px;
@@ -120,18 +129,25 @@ color: #007EB6 !important;
 }
 
 body .listNewsItems li {
-    padding: 0 10px 0 0px;
+    padding: 0 2% 0 0 !important;
+    width: 98%;
 }
 
 .listNewsItems li p {
     padding-left: 190px !important;
-    padding-top: 27px;
+    padding-top: 15px;
 }
-
+.listNewsItems li p small{
+	font-size: 12px;
+}
 body .imageWithCaption p {
     background: url("../img/white-80-percent.png") repeat scroll left top transparent;
 }
-
+.imageWithCaption strong {
+    color: #00AEEF;
+    font-size: 18px;
+    font-weight: normal;
+}
 body .pageLens h1 {
     display: block;
     font-size: 3.2em;
@@ -172,10 +188,16 @@ body .pageLens h1 {
  width: 50%!important;
  text-align: left;
  }
- #opere button{
- 	max-width: 30%!important;
+ #opere button, #opere .btn {
+	display: block;
+	float: left;
+	text-align: center;
+	max-width: 31%!important;
+	margin: 0 5px;
  }
- 
+ #opere section.lens{
+ 	top: 50px!important;
+ }
 
 /* Section Form Vota */
 #vota-artprize label {
@@ -186,7 +208,7 @@ body .pageLens h1 {
     width: 50%;
 }
 
-#vota-artprize input, #vota-artprize textarea {
+#vota-artprize input, #vota-artprize textarea, #vota-artprize select {
     border: 1px solid #CCCCCC;
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 -5px 7px rgba(0, 0, 0, 0.05) inset;
@@ -219,9 +241,13 @@ input[type="radio"] {
     color: #007EB6;
     margin-left: 20px;
 }
+#vota-artprize iframe input[type=submit]{
+	display: none!important;
+}
 .disclaimer{
-	border-top: 1px solid #DBDBDB;
-	padding-top: 15px;
+	border: solid #DBDBDB;
+	border-width: 1px 0;
+	padding: 15px 0;
 }
 
 .dialogButtons {
@@ -255,7 +281,7 @@ input[type="radio"] {
 	height: auto;
 }
 /* color btn */
-.btn-cyan75{
+.btn-cyan75, body .btn-cyan75{
 	background-color: #40c2f3!important;
 	color: #fff!important;
 }

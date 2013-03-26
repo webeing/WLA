@@ -81,10 +81,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\style.css" />
     <Content Include="Global.asax" />
     <Content Include="css\barclays-min.css" />
     <Content Include="css\fonts-min.css" />
-    <Content Include="css\style.css" />
     <Content Include="img\arrows-sprite.png" />
     <Content Include="img\artprize-opera01.jpg" />
     <Content Include="img\artprize-opera01_min.jpg" />
@@ -125,7 +125,9 @@
     <Content Include="Views\Vote\Add.ascx" />
     <Content Include="Views\Vote\AddResult.ascx" />
     <Content Include="Views\Vote\Works.aspx" />
-    <Content Include="Views\Works\Like.aspx" />
+    <Content Include="Views\Works\Like03.aspx" />
+    <Content Include="Views\Works\Like02.aspx" />
+    <Content Include="Views\Works\Like01.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -63,7 +63,7 @@
 	                    <ul class="social-links">
                             <!-- link button da modificare -->
 	                        <li>
-	                    	    <div class="fb-like" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+                                <div class="fb-like" data-href="<%= Url.Content("~/Works/Like01") %>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
 	                        </li>
 	                        <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="agatacruciani" data-lang="it">Tweet</a>
 	                        </li>
@@ -104,7 +104,7 @@
 	                    <ul class="social-links">
                             <!-- link button da modificare -->
 	                        <li>
-	                    	    <div class="fb-like" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+                                <div class="fb-like" data-href="<%= Url.Content("~/Works/Like02") %>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
 	                        </li>
 	                        <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="agatacruciani" data-lang="it">Tweet</a>
 	                        </li>
@@ -145,7 +145,7 @@
 	                    <ul class="social-links">
                             <!-- link button da modificare -->
 	                        <li>
-	                    	    <div class="fb-like" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+	                    	  <div class="fb-like" data-href="<%= Url.Content("~/Works/Like03") %>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
 	                        </li>
 	                        <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="agatacruciani" data-lang="it">Tweet</a>
 	                        </li>
