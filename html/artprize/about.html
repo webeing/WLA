@@ -21,7 +21,7 @@
 
         <!-- header -->
         <div id="header">
-            <a href="/" id="logo" title="Barclays Art Prize">
+            <a href="index.html" id="logo" title="Barclays Art Prize">
                 <img alt="Barclays" src="../img/barclays-logo.gif">
             </a>
 
@@ -39,7 +39,7 @@
 					<ol>
 						<li class="preSelected">
 							<span id="home">
-							<a title="Home" href="http://www.barclays.it/artprize/">Home</a>
+							<a title="Home" href="index.html">Home</a>
 							</span>
 						</li>
 						<li class="selected">
@@ -68,11 +68,15 @@
 	                        </span>
 	                        
 	                        <!-- Video About -->
-	                        <div class="videoWithCaption">
+	                        <div id="about-artprize" class="videoWithCaption">
+	                        	<iframe id="video1" height="259" width="460" frameborder="0" scrolling="no" src="http://www.media.barclays.co.uk/player/?id=160089-8522623&amp;autostart=n&amp;enablesharing=n&amp;showrelated=n&amp;r=616413&amp;cookie=y">
+	                        	</iframe>
+	                        
+	    					    <!--
 	    					    <div data-source="http://www.media.barclays.co.uk/player/?id=160023-6776516&amp;autostart=n&amp;enablesharing=n&amp;showrelated=n&amp;r=73893" data-height="259" data-width="460" class="linkToVideo">
 	    					    	<iframe width="460" scrolling="no" height="259" frameborder="0" id="video0" src="http://www.media.barclays.co.uk/player/?id=160023-6776516&amp;autostart=n&amp;enablesharing=n&amp;showrelated=n&amp;r=73893&amp;cookie=y">
 	    					    	</iframe>
-	    					    </div>
+	    					    </div>-->
 	    					</div><!--/videoWithCaption-->
 	                        <!--/Video About -->
 	
@@ -120,10 +124,10 @@
 
         <footer id="footer" class="footer">
             <ul id="footerLinks">
-                <li><a href="/premio.html" target="_blank">Premio</a></li>
-                <li><a href="/privacy.html" target="_blank">Privacy</a></li>
-                <li><a href="/regolamento.html" target="_blank">Regolamento</a></li>
-                <li class="copyright">&copy; Barclays 2013</li>
+				<li><a href="premio.html" title="Barclays Art Prize: Premio" target="_blank">Premio</a></li>
+				<li><a href="privacy.html" title="Barclays Art Prize: Pravacy" target="_blank">Privacy</a></li>
+				<li><a href="regolamento.html" title="Barclays Art Prize: Regolamento" target="_blank">Regolamento</a></li>
+				<li class="copyright">&copy; Barclays 2013</li>
             </ul>
         </footer>
 
@@ -143,5 +147,11 @@
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 </script>
 <script type="text/javascript" src="../script/lib-and-custom-js-min.js"></script>
+<!--<script type="text/javascript">
+	jwplayer("about-artprize").setup({
+		file: "../video/barclays_about.mp4",
+		image: "../video/video.jpg"
+	});
+</script>-->
 </body>
 </html>
