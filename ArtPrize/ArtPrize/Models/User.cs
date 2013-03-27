@@ -18,7 +18,7 @@ namespace ArtPrize.Models
     public class ValidEmailAttribute : RegularExpressionAttribute
     {
         public ValidEmailAttribute() :
-            base(@"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$")
+            base(@"^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$")
         { }
     }
 
@@ -62,10 +62,8 @@ namespace ArtPrize.Models
         public string District { get; set; }
         [Required]
         [ValidBirthday]
-        public DateTime Birthday { get; set; }                
+        public DateTime Birthday { get; set; }                                
         [Required]
-        public bool TermsAcceptance { get; set; }
-        [IsTrue(ErrorMessage="Devi accettare le norme sulla privacy")]        
         public bool PrivacyRead { get; set; }
         [Required]
         public string Ip { get; set; }

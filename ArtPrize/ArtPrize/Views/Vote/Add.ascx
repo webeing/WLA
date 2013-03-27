@@ -196,7 +196,7 @@
                 Dichiaro di aver preso visione dell’<a title="informativa sulla privacy" href="/Home/Privacy">informativa sulla privacy</a> e di acconsentire al trattamento dei miei dati da parte della Banca per le finalità menzionate alle lettere (a) e (b) della suddetta informativa. Inoltre
                 <br>
                 <span>
-                    <input type="radio" value="true" name="User.PrivacyRead" id="User_PrivacyRead" class="isTrue"/>do il consenso
+                    <input type="radio" value="true" name="User.PrivacyRead" id="User_PrivacyRead"/>do il consenso
                 </span>
                 <span>
                     <input type="radio" value="false" name="User.PrivacyRead" id="User_PrivacyRead_NO" checked="checked"/>nego il consenso
@@ -211,7 +211,7 @@
 								
             <div class="clear"></div>
 
-                <%=  Html.GenerateCaptcha("recaptcha", "clean")%>
+            <%=  Html.GenerateCaptcha("recaptcha", "clean")%>
 
             <div class="dialogButtons">
                 <input type="submit" class="btn btn-cyan75" id="vote-btn" value="Accetta e vota">

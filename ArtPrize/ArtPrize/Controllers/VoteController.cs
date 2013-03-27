@@ -46,7 +46,7 @@ namespace ArtPrize.Controllers
                 if (!captchaValid)
                     throw new CaptchaValidationException();
                 voteService.Create(vote);
-                return View("Ok");
+                return View("Ok",vote.ArtworkId);
             }
             catch (CaptchaValidationException ex) 
             {

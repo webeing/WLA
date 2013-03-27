@@ -15,25 +15,32 @@
 });
 
 function enable_custom_validation() {
- 
+
     jQuery.validator.addMethod(
         "dateIT",
         function (value, element) {
             var check = false;
             var re = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+            var date = null;
             if (re.test(value)) {
                 var adata = value.split('/');
                 var dd = parseInt(adata[0], 10); // was gg (giorno / day)
                 var mm = parseInt(adata[1], 10); // was mm (mese / month)
                 var yyyy = parseInt(adata[2], 10); // was aaaa (anno / year)
                 var xdata = new Date(yyyy, mm - 1, dd);
+                date = new Date(yyyy, mm - 1, dd);
                 if ((xdata.getFullYear() == yyyy) && (xdata.getMonth() == mm - 1) && (xdata.getDate() == dd))
                     check = true;
                 else
                     check = false;
             } else
                 check = false;
-            return this.optional(element) || check;
+            /*var now = new Date();                                               
+            
+            now.setFullYear(date.getFullYear() - 18);            
+
+            return (this.optional(element) || check) && currdate > mydate;*/
+            return (this.optional(element) || check);
         },
         "La data inserita non è valida."
     );
@@ -44,7 +51,7 @@ function enable_custom_validation() {
         function (value, element) {
             return value == "true";            
         },
-        "Accetta!!"
+        "Devi accettare il regolamento."
     );
 
         jQuery.validator.addMethod(
@@ -57,7 +64,10 @@ function enable_custom_validation() {
 
  }
 
-function ajax_submit(form) {
+ function ajax_submit(form) {
+     //avoid multiple popup by removing previously
+     //added modals
+     $('.modal').remove();
     var form = $('#vota-artprize');
     form.submit(function (event) {
         if (form.valid()) {
