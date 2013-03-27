@@ -165,7 +165,12 @@
         </section><!-- OPERA 03 --->
     </div><!--/cycle-slideshow-->
 
+<<<<<<< HEAD
        <!-- BIG IMG MODAL OPENING -->
+=======
+
+    <!-- BIG IMG MODAL OPENING -->
+>>>>>>> responsive style & fix
     <div id="opera-modal1" class="modal">
         <div class="dialog-wrap">
             <a id="close-op01" class="close" href="#close" title="chiudi"><img src="../img/icon-close.gif" alt="chiudi"/></a>
@@ -196,6 +201,14 @@
     </ul>
 </asp:Content>
 
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="server">
+    <ul id="lensNavigator">
+        <li id="previous"><a href="#" class="prev" title="">Previous</a></li>
+        <li id="next"><a href="#" class="next" title="">Next</a></li>
+    </ul>
+</asp:Content>
 
 <asp:Content ID="socialScript" ContentPlaceHolderID="Script" runat="server">
 <div id="fb-root"></div>

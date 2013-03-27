@@ -12,6 +12,8 @@
     <link href="<%= ConfigurationManager.AppSettings["BasePath"] %>/css/style.css" rel="stylesheet" media="screen">
     <link href="<%= ConfigurationManager.AppSettings["BasePath"] %>/img/icons/favicon.ico")" rel="shortcut icon">
     <script src="<%= ConfigurationManager.AppSettings["BasePath"] %>/Scripts/modernizr.js"></script>
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
   </head>
 
 <body>
