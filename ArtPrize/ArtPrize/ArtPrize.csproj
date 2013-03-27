@@ -124,6 +124,7 @@
     <Content Include="Views\Home\Innovation.aspx" />
     <Content Include="Views\Home\Privacy.aspx" />
     <Content Include="Views\Home\Prize.aspx" />
+    <Content Include="Views\Home\Qr.aspx" />
     <Content Include="Views\Home\Rule.aspx" />
     <Content Include="Views\Home\Works.aspx" />
     <Content Include="Views\Vote\Add.ascx" />

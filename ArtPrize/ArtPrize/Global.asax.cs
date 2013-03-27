@@ -17,8 +17,13 @@ namespace ArtPrize
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
-            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");            
-         
+            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+            routes.MapRoute(
+                "QRCode",
+                "qr/opere-in-gara",
+                new { controller = "Home", action = "Qr"});
+
             routes.MapRoute(
                 "OnlyAction", // Route name
                 "{action}", // URL with parameters

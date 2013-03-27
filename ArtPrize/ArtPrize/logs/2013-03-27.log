@@ -65,6 +65,7 @@
 2013-03-27 11:56:43.1059 DEBUG Retrieved votes. Votes: 
 2013-03-27 11:56:43.1059 INFO Action opere-in-gara on controller Home executed.
 2013-03-27 11:56:43.1059 DEBUG Executed action opere-in-gara on controller Home. Result: 200 OK
+<<<<<<< HEAD
 2013-03-27 12:47:49.8975 DEBUG Executing action Index on controller Home. Input parameters: 
 2013-03-27 12:47:49.9376 INFO Action Index on controller Home executed.
 2013-03-27 12:47:49.9376 DEBUG Executed action Index on controller Home. Result: 200 OK
@@ -183,3 +184,19 @@
 2013-03-27 14:01:18.9978 DEBUG Executing action Works on controller Vote. Input parameters: id: 1
 2013-03-27 14:01:18.9978 INFO Action Works on controller Vote executed.
 2013-03-27 14:01:18.9978 DEBUG Executed action Works on controller Vote. Result: 200 OK
+=======
+2013-03-27 13:43:21.8244 DEBUG Executing action Index on controller Home. Input parameters: 
+2013-03-27 13:43:21.8644 INFO Action Index on controller Home executed.
+2013-03-27 13:43:21.8644 DEBUG Executed action Index on controller Home. Result: 200 OK
+2013-03-27 13:43:28.1434 DEBUG Executing action opere-in-gara on controller Home. Input parameters: 
+2013-03-27 13:43:28.1535 TRACE Retrieving votes from database
+2013-03-27 13:43:28.2536 DEBUG Retrieved votes. Votes: Artwork: 1 -> 1Artwork: 3 -> 1
+2013-03-27 13:43:28.2536 INFO Action opere-in-gara on controller Home executed.
+2013-03-27 13:43:28.2536 DEBUG Executed action opere-in-gara on controller Home. Result: 200 OK
+2013-03-27 13:48:59.1194 DEBUG Executing action Index on controller Home. Input parameters: 
+2013-03-27 13:48:59.1394 INFO Action Index on controller Home executed.
+2013-03-27 13:48:59.1394 DEBUG Executed action Index on controller Home. Result: 200 OK
+2013-03-27 13:49:10.2454 DEBUG Executing action Qr on controller Home. Input parameters: 
+2013-03-27 13:49:10.2454 INFO Action Qr on controller Home executed.
+2013-03-27 13:49:10.2454 DEBUG Executed action Qr on controller Home. Result: 200 OK
+>>>>>>> Aggiunto path e files per report qr

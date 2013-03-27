@@ -72,6 +72,11 @@ namespace ArtPrize.Controllers
                         } );            
             return View("Works");
         }
+        
+        public ActionResult Qr() 
+        {
+            return View();
+        }
 
     }
 }
