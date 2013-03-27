@@ -4,7 +4,8 @@
         changeYear: true,
         dateFormat: "dd/mm/yy",
         yearRange: "-100:-18",
-        monthNamesShort: ["Gen", "Feb", "Mar", "Apr", "Mag", "Giu", "Lug", "Ago", "Set", "Ott", "Nov", "Dic"]        
+        monthNamesShort: ["Gen", "Feb", "Mar", "Apr", "Mag", "Giu", "Lug", "Ago", "Set", "Ott", "Nov", "Dic"],
+        dayNamesMin: [ "Do", "Lu", "Ma", "Me", "Gi", "Ve", "Sa"]
     });
     enable_custom_validation();
     
@@ -91,7 +92,17 @@ function ajax_submit(form) {
                     Recaptcha.reload();
                 },
                 error: function () {
-                    $('body').append("<div>sembra che qualcosa sia andato storto</div>");
+                    $('body').append('<div class="modal error" data-result="Error"><div class="dialog-wrap"><a class="close" href="#close" title="chiudi"><img src="<%= ConfigurationManager.AppSettings["BasePath"] %>"/img/icon-close.gif" alt="chiudi" /></a><h3>Siamo spiacenti</h3><p>Non è stato possibile completare l\'operazione di voto, riprova in seguito.</p></div><!--/dialog-wrap--></div><!--modal-->');
+                    
+                    $('.modal').dialog({
+                        modal: true                        
+                    });
+
+                    $('.dialog-wrap a.close').click(function () {
+                        $('.modal').dialog('close');
+                    });
+
+                    Recaptcha.reload();
                 }
             });
             event.preventDefault();
