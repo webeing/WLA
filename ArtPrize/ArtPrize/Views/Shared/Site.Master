@@ -11,6 +11,7 @@
     <title>Barclay Art Prize Home</title>
     <link href="<%= ConfigurationManager.AppSettings["BasePath"] %>/css/style.css" rel="stylesheet" media="screen">
     <link href="<%= ConfigurationManager.AppSettings["BasePath"] %>/img/icons/favicon.ico")" rel="shortcut icon">
+    <script src="<%= ConfigurationManager.AppSettings["BasePath"] %>/Scripts/modernizr.js"></script>
   </head>
 
 <body>
@@ -38,7 +39,8 @@
 
         <div id="content"><!--- CONTENT --->            
 
-            <asp:ContentPlaceHolder ID="MainContent" runat="server" /> 
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            <asp:ContentPlaceHolder ID="footer" runat="server" />
 	            
         </div><!-- FINE CONTENT -->
             
@@ -50,8 +52,6 @@
                     <li><a href="<%= Url.Content("~/Regolamento") %>" title="Barclays Art Prize: Regolamento" >Regolamento</a></li>
                     <li class="copyright">&copy; Barclays 2013</li>
                 </ul>                
-
-                <asp:ContentPlaceHolder ID="footer" runat="server" /> 
 
         </footer><!--- FINE FOOTER --->
     </div>

@@ -59,8 +59,8 @@
 	
 	                        <div class="inner">
 	                            <div class="widthFive primary">
-	                                <h2>Vota una delle tre <br/>opere in gara</h2>
-	                            <h3>Vinci un weekend in una citt&#224; d'arte italiana</h3>
+	                                <h2>Vota una delle 3 <br/>opere in gara</h2>
+	                            <h3>Puoi vincere un weekend in una citt&#224; d'arte italiana</h3>
 	                            <p></p>
 	
 	                            <div class="listNewsItems">

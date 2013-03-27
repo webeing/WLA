@@ -23,9 +23,7 @@
 	        </div>
 	
 	        <div class="widthSix secondary">
-	            <h2>Per votare l’opera, partecipare al concorso
-	                    e vincere un week end d’atrte devi essere
-	                    Registrato.</h2>
+	            <h2>Vota la tua opera preferita, partecipa al concorso e vinci un week end d’arte. Registrati subito.</h2>
 	            <div class="rte">
 					<% Html.RenderPartial("Add", new ArtPrize.Models.Vote() { ArtworkId = Model }); %>
 	            </div>

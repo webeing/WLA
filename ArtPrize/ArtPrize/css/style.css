@@ -15,7 +15,7 @@ figure, section{
 	padding: 0!important;
 }
 #meta{
-	display: none;
+	/*display: none;*/
 }
 .fb_iframe_widget_lift{
 	z-index: 2000!important;
@@ -100,7 +100,10 @@ body .aperture .curtain {
 ul.listLinks li {
     padding-bottom: 15px;
 }
-
+#lensNavigator{
+	z-index: 200!important;
+	bottom:15px
+}
 #lensNavigator a {
     background-image: url("../img/lens-navigator-arrows.gif");
 }
@@ -176,16 +179,16 @@ body .pageLens h1 {
  	display: none!important;
  }
  
- #opere .social-links{
+/* #opere .social-links{
  	border: none!important;
  	width: 47%;
  	overflow: auto;
  	float: left;
  	padding-top: 5px;
- }
+ }*/
  #opere .social-links > li {
  float: left;
- width: 50%!important;
+ width: 30%!important;
  text-align: left;
  }
  #opere button, #opere .btn {

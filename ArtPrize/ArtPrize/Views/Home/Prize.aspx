@@ -28,15 +28,23 @@
         <div class="inner">
             <div class="widthSix primary">
 
-                <h2>Premio</h2>
+                <h2>Vota e parti con Barclays</h2>
 
                 <div class="rte">
                     <p>
-                        Barclays investe nel talento dei giovani artisti emergenti. La prima edizione del concorso Barclays Art Prize For Young Talents si rivolge agli studenti e agli ex studenti dell'Accademia di Belle Arti di Brera. Scopri come vincere un weekend in una citt&#224; d'arte italiana.
-                        Barclays investe nel talento dei giovani artisti emergenti. La prima edizione del concorso Barclays Art Prize For Young Talents si rivolge agli studenti e agli ex studenti dell'Accademia di Belle Arti di Brera. Scopri come vincere un weekend in una citt&#224; d'arte italiana.
-                        Barclays investe nel talento dei giovani artisti emergenti. La prima edizione del concorso Barclays Art Prize For Young Talents si rivolge agli studenti e agli ex studenti dell'Accademia di Belle Arti di Brera. Scopri come vincere un weekend in una citt&#224; d'arte italiana.
-                        Barclays investe nel talento dei giovani artisti emergenti. La prima edizione del concorso Barclays Art Prize For Young Talents si rivolge agli studenti e agli ex studenti dell'Accademia di Belle Arti di Brera. Scopri come vincere un weekend in una citt&#224; d'arte italiana.
-                    </p>
+                      Vota la tua opera preferita e potrai essere estratto per vincere un viaggio per due persone
+                      in una città d’arte italiana<span class="cyan75">*</span>.
+                      Per te due notti in albergo in camera doppia, un’auto a disposizione all’aeroporto di arrivo per 3
+                      giorni e il viaggio aereo verso la destinazione preferita con partenza venerdì e ritorno di domenica.
+                      E l’artista che vince riceverà in premio un viaggio per due persone con soggiorno a Londra e
+                      ingresso ad una mostra della Tate Modern.<span class="cyan75">**</span>
+                      Un’esperienza dove piacere e cultura si intrecciano per lasciare a te e al tuo artista preferito un
+                      ricordo indimenticabile.</p>
+                      <p>
+                      <span class="cyan75">*</span> Il premio non è sostituibile, né modificabile, né convertibile in denaro. Offerta soggetta a condizioni e secondo disponibilità.<br/>
+
+                      <span class="cyan75">**</span> per le condizioni consulta il regolamento del concorso.
+                      </p>
                 </div>
 
                 <ul class="listLinks">

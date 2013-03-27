@@ -49,28 +49,28 @@
 						<p>Sed sed dui ut velit facilisis malesuada a sit amet velit. Nam ipsum augue, tristique vel lacinia vitae, gravida id leo. Vivamus accumsan lobortis euismod. Aenean eget pellentesque augue. Pellentesque in lacus risus.
                         </p>
                     </div>
-                    <span><%= ((System.Collections.Generic.Dictionary<int,int>)ViewData["votes"])[1] %></span>
+                   <!--social links -->
+                    <ul class="social-links">
+                        <li>
+                            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-href="<%= Url.Content("~/opere-in-gara/Like01") %>"></div>
+                        </li>
+                        <li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it">Tweet</a>
+                        </li>
+                    </ul>
+                    <!--social links -->
                 </div><!--/primary-->
 
                 <div class="widthSix secondary">
                     <div class="imageWithCaption">
-                        <img src="http://placehold.it/460x546&text=opera01" alt="Titolo opera 1" />
+                        <img src="http://placehold.it/460x345&text=opera01" alt="Titolo opera 1" />
+                        <p><strong><%= ((System.Collections.Generic.Dictionary<int,int>)ViewData["votes"])[1] %></strong>
+                        persone hanno votato quest'opera</p>
                     </div>
                     
                     <!--buttons-->
                     <div class="dialogButtons">
-                        <!--social links -->
-	                    <ul class="social-links">
-                            <!-- link button da modificare -->
-	                        <li>
-                                <div class="fb-like" data-href="<%= Url.Content("~/opere-in-gara/Like01") %>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
-	                        </li>
-	                        <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="agatacruciani" data-lang="it">Tweet</a>
-	                        </li>
-	                    </ul>
-	                    <!--social links -->
 
-						<a href="#zoom-op01" id="zoom-op01" class="btn zoom-btn" title="Ingrandisci Opera 1">Ingrandisci</a>
+						<a href="#zoom-op01" id="zoom-op01" class="btn zoom-btn btn-grey75" title="Ingrandisci Opera 1">Ingrandisci</a>
 						<a href="<%= Url.Content("~/Vote/Works/1") %>" id="vote-op01" class="btn vote-btn btn-cyan75">Vota questa opera</a>
 					</div><!--/dialogButton-->
                     
@@ -90,28 +90,29 @@
 						<p>Sed sed dui ut velit facilisis malesuada a sit amet velit. Nam ipsum augue, tristique vel lacinia vitae, gravida id leo. Vivamus accumsan lobortis euismod. Aenean eget pellentesque augue. Pellentesque in lacus risus.
                         </p>
                     </div>
-                    <span><%= ((System.Collections.Generic.Dictionary<int,int>)ViewData["votes"])[2] %></span>
+                    <!--social links -->
+                    <ul class="social-links">
+                        <li>
+                            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-href="<%= Url.Content("~/opere-in-gara/Like02") %>"></div>
+                        </li>
+                        <li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it">Tweet</a>
+                        </li>
+                    </ul>
+                    <!--social links -->
+
                 </div><!--/primary-->
 
                 <div class="widthSix secondary">
                     <div class="imageWithCaption">
-                        <img src="http://placehold.it/460x546&text=opera02" alt="Titolo opera 2" />
+                        <img src="http://placehold.it/460x345&text=opera02" alt="Titolo opera 2" />
+                        <p><strong><%= ((System.Collections.Generic.Dictionary<int,int>)ViewData["votes"])[2] %></strong>
+                                                persone hanno votato quest'opera</p>
                     </div>
                     
                     <!--buttons-->
                     <div class="dialogButtons">
-                        <!--social links -->
-	                    <ul class="social-links">
-                            <!-- link button da modificare -->
-	                        <li>
-                                <div class="fb-like" data-href="<%= Url.Content("~/opere-in-gara/Like02") %>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
-	                        </li>
-	                        <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="agatacruciani" data-lang="it">Tweet</a>
-	                        </li>
-	                    </ul>
-	                    <!--social links -->
 
-						<a href="#zoom-op02" id="zoom-op02" class="btn zoom-btn" title="Ingrandisci Opera 2">Ingrandisci</a>
+						<a href="#zoom-op02" id="zoom-op02" class="btn zoom-btn btn-grey75" title="Ingrandisci Opera 2">Ingrandisci</a>
 						<a href="<%= Url.Content("~/Vote/Works/2") %>" id="vote-op02" class="btn vote-btn btn-cyan75">Vota questa opera</a>
 					</div><!--/dialogButton-->
                     
@@ -131,28 +132,30 @@
 						<p>Sed sed dui ut velit facilisis malesuada a sit amet velit. Nam ipsum augue, tristique vel lacinia vitae, gravida id leo. Vivamus accumsan lobortis euismod. Aenean eget pellentesque augue. Pellentesque in lacus risus.
                         </p>
                     </div>
-                    <span><%= ((System.Collections.Generic.Dictionary<int,int>)ViewData["votes"])[3] %></span>
+
+                    <!--social links -->
+                    <ul class="social-links">
+                        <!-- link button da modificare -->
+                        <li>
+                          <div class="fb-like" data-href="<%= Url.Content("~/Works/Like03") %>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+                        </li>
+                        <li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it">Tweet</a>
+                        </li>
+                    </ul>
+                    <!--social links -->
                 </div><!--/primary-->
 
                 <div class="widthSix secondary">
                     <div class="imageWithCaption">
-                        <img src="http://placehold.it/460x546&text=opera03" alt="Titolo opera 3" />
+                        <img src="http://placehold.it/460x345&text=opera03" alt="Titolo opera 3" />
+                        <p><strong><%= ((System.Collections.Generic.Dictionary<int,int>)ViewData["votes"])[3] %></strong>
+                                                                        persone hanno votato quest'opera</p>
                     </div>
                     
                     <!--buttons-->
                     <div class="dialogButtons">
-                        <!--social links -->
-	                    <ul class="social-links">
-                            <!-- link button da modificare -->
-	                        <li>
-	                    	  <div class="fb-like" data-href="<%= Url.Content("~/Works/Like03") %>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
-	                        </li>
-	                        <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="agatacruciani" data-lang="it">Tweet</a>
-	                        </li>
-	                    </ul>
-	                    <!--social links -->
 
-						<a href="#zoom-op03" id="zoom-op03" class="btn zoom-btn" title="Ingrandisci Opera 3">Ingrandisci</a>
+						<a href="#zoom-op03" id="zoom-op03" class="btn zoom-btn btn-grey75" title="Ingrandisci Opera 3">Ingrandisci</a>
 						<a href="<%= Url.Content("~/Vote/Works/3") %>" id="vote-op03" class="btn vote-btn btn-cyan75">Vota questa opera</a>
 					</div><!--/dialogButton-->
                     
@@ -160,34 +163,9 @@
             </div><!--/inner-->
             	
         </section><!-- OPERA 03 --->
-
-        <!-- BIG IMG MODAL OPENING -->   
-        <div id="opera-modal1" class="modal">
-            <div class="dialog-wrap">
-            	<a id="close-op01" class="close" href="#close" title="chiudi"><img src="../img/icon-close.gif" alt="chiudi"/></a>
-              	<img src="http://placehold.it/1024x1200&text=opera01%20big" alt="Opera 01 artista bla bla bla"/>
-            </div>
-        </div>
-            
-        <div id="opera-modal2" class="modal">
-            <div class="dialog-wrap">
-            	<a id="close-op02" class="close" href="#close" title="chiudi"><img src="../img/icon-close.gif" alt="chiudi"/></a>
-              	<img src="http://placehold.it/1024x1200&text=opera02%20big" alt="Opera 01 artista bla bla bla"/>
-            </div>
-        </div>
-            
-        <div id="opera-modal3" class="modal">
-            <div class="dialog-wrap">
-            	<a id="close-op03" class="close" href="#close" title="chiudi"><img src="../img/icon-close.gif" alt="chiudi"/></a>
-              	<img src="http://placehold.it/1024x1200&text=opera03%20big" alt="Opera 01 artista bla bla bla"/>
-            </div>
-        </div>
-        <!-- /BIG IMG MODAL OPENING -->
     </div><!--/cycle-slideshow-->
 
 </asp:Content>
-
-
 
 <asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="server">
     <ul id="lensNavigator">
@@ -196,18 +174,40 @@
     </ul>
 </asp:Content>
 
+    <!-- BIG IMG MODAL OPENING -->
+    <div id="opera-modal1" class="modal">
+        <div class="dialog-wrap">
+            <a id="close-op01" class="close" href="#close" title="chiudi"><img src="../img/icon-close.gif" alt="chiudi"/></a>
+            <img src="http://placehold.it/1024x1200&text=opera01%20big" alt="Opera 01 artista bla bla bla"/>
+        </div>
+    </div>
+
+    <div id="opera-modal2" class="modal">
+        <div class="dialog-wrap">
+            <a id="close-op02" class="close" href="#close" title="chiudi"><img src="../img/icon-close.gif" alt="chiudi"/></a>
+            <img src="http://placehold.it/1024x1200&text=opera02%20big" alt="Opera 01 artista bla bla bla"/>
+        </div>
+    </div>
+
+    <div id="opera-modal3" class="modal">
+        <div class="dialog-wrap">
+            <a id="close-op03" class="close" href="#close" title="chiudi"><img src="../img/icon-close.gif" alt="chiudi"/></a>
+            <img src="http://placehold.it/1024x1200&text=opera03%20big" alt="Opera 01 artista bla bla bla"/>
+        </div>
+    </div>
+    <!-- /BIG IMG MODAL OPENING -->
+
+
 <asp:Content ID="socialScript" ContentPlaceHolderID="Script" runat="server">
 <div id="fb-root"></div>
-<script>
-    /* facebook button */
-    (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/it_IT/all.js#xfbml=1";
-        fjs.parentNode.insertBefore(js, fjs);
-    } (document, 'script', 'facebook-jssdk'));
-    /* twitter button */
-    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } } (document, "script", "twitter-wjs");
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/it_IT/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+/* twitter button */
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 </script>
 </asp:Content>

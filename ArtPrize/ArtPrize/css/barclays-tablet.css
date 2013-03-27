@@ -1,0 +1,199 @@
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+/* GENERAL */
+
+body {
+    width: 96%;
+    margin: 0 auto;
+    background: #ccc;
+}
+
+#outer {
+    width: 100%;
+}
+
+.widthOne, .widthTwo, .widthThree, .widthFour, .widthFive, .widthSix, .widthSeven, .widthEight, .widthNine, .widthTen, .widthEleven, .widthTwelve{
+    margin:0 1%;
+}
+
+body #secondaryNavigation.empty{
+    background-size: 100% !important;
+}
+
+/*.widthSix {
+    width: 48.6188%;
+}
+
+.primary {
+    margin-left: 0px !important;
+}
+
+.secondary {
+    margin-right: 0px !important;
+}*/
+
+.widthThree {
+    width: 21.928%;
+}
+
+.widthSix {
+    width: 47%;
+}
+
+.widthFive {
+    width: 40.0552%;
+}
+
+.widthSeven {
+    width: 55.447%;
+}
+
+.widthNine {
+    width: 73.309%;
+}
+
+.widthSix .imageWithCaption p, .widthSix .videoWithCaption p{
+    width: 100% !important;
+}
+
+#primaryNavigation li a {
+    font-size: 1.4em;
+}
+
+body .inner{
+    min-width: inherit !important;
+    max-width: inherit !important;
+    width: 100%;
+}
+
+.imageWithCaption img {
+    width: 100%;
+}
+
+.aperture .imageWithCaption, .aperture .imageWithCaption img{
+    width: 100%;
+    height: auto;
+}
+/* home */
+
+.aperture {
+    width: 100% !important;
+}
+
+.aperture .curtain {
+    background-size: 84% !important;
+}
+
+.aperture .curtain.right {
+    background-position: left top;
+    float: right;
+    margin-top: -238px;
+}
+
+/* figure home slide2*/
+
+body .listNewsItems {
+    width: 100%;
+}
+
+figure.cycle-slide img{
+    width: 100% !important;
+}
+
+.listNewsItems img{
+    height: 97% !important;
+}
+
+.listNewsItems li{
+    height: 90px !important;
+}
+
+body .listNewsItems li p {
+    font-size: 9px !important;
+    padding-left: 155px !important;
+    padding-top: 15px;
+}
+
+#opere .social-links {
+    border: medium none !important;
+    float: left;
+    overflow: inherit !important;
+    padding-top: 5px;
+    width: 100% !important;
+}
+
+#opere .social-links > li {
+    float: left;
+    text-align: left;
+    width: 30% !important;
+}
+
+html body #opere .dialogButtons .btn, html body #opere .dialogButtons .button {
+    width: 33% !important;
+}
+
+
+/* innovation center */
+
+.bleedHalf .primary {
+    width: 40.0552%;
+}
+
+.bleedHalf .secondary {
+    width: 55.447%;
+    padding-left: 0px !important;
+}
+
+body .bleedHalf .imageWithCaption p {
+    width: 95% !important;
+}
+
+#tabs-innovation .listNewsItems ul li p a {
+    line-height: 15px;
+    margin-top: -8px;
+}
+/* About Barclays ArtPrize */
+
+.widthSix .videoWithCaption iframe#video1 {
+    width: 100% !important;
+    height: 200px !important;
+}
+
+#barclays-about-artprize .aperture .curtain {
+    background-size: 79% auto !important;
+}
+
+#barclays-about-artprize .aperture .curtain.right {
+    margin-top: -224px;
+}
+
+#player_wrapper {
+    height: 200px !important;
+    position: relative;
+    width: 100%;
+}
+
+/* CAPCHTA */
+
+#recaptcha_widget_div {
+    width: 55%;
+}
+
+.recaptchatable{
+    width: 100%;
+}
+
+body td#recaptcha_image {
+    width: 60% !important;
+}
+
+body td#recaptcha_image img {
+    width: 100% !important;
+}
+
+input#recaptcha_response_field {
+    width: 45% !important;
+}
+}
