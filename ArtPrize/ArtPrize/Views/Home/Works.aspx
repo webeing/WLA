@@ -39,7 +39,7 @@
            data-cycle-next="#next"
            data-cycle-slides="> section"
            >
-    <section id="opera-one" class="lens"><!-- PRIMA SLIDER --->
+    <section id="opera-one" class="lens opera"><!-- PRIMA SLIDER --->
             <div class="inner">
                 <div class="widthSix primary">
                     <h2>Titolo opera 01<br/>
@@ -80,7 +80,7 @@
             </section><!-- OPERA 01 --->
 
             <!-- OPERA 02 -->
-            <section id="opera-two" class="lens"><!-- PRIMA SLIDER --->
+            <section id="opera-two" class="lens opera"><!-- PRIMA SLIDER --->
             <div class="inner">
                 <div class="widthSix primary">
                     <h2>Titolo opera 02<br/>
@@ -122,7 +122,7 @@
         </section><!-- OPERA 02 --->
 
         <!-- OPERA 03 -->
-        <section id="opera-three" class="lens"><!-- PRIMA SLIDER --->
+        <section id="opera-three" class="lens opera"><!-- PRIMA SLIDER --->
             <div class="inner">
                 <div class="widthSix primary">
                     <h2>Titolo opera 03<br/>
@@ -165,12 +165,8 @@
         </section><!-- OPERA 03 --->
     </div><!--/cycle-slideshow-->
 
-<<<<<<< HEAD
-       <!-- BIG IMG MODAL OPENING -->
-=======
 
-    <!-- BIG IMG MODAL OPENING -->
->>>>>>> responsive style & fix
+       <!-- BIG IMG MODAL OPENING -->
     <div id="opera-modal1" class="modal">
         <div class="dialog-wrap">
             <a id="close-op01" class="close" href="#close" title="chiudi"><img src="../img/icon-close.gif" alt="chiudi"/></a>
@@ -195,19 +191,12 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="server">
+ <div class="horizontal">
     <ul id="lensNavigator">
         <li id="previous"><a href="#" class="prev" title="">Previous</a></li>
         <li id="next"><a href="#" class="next" title="">Next</a></li>
     </ul>
-</asp:Content>
-
-</asp:Content>
-
-<asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="server">
-    <ul id="lensNavigator">
-        <li id="previous"><a href="#" class="prev" title="">Previous</a></li>
-        <li id="next"><a href="#" class="next" title="">Next</a></li>
-    </ul>
+</div>
 </asp:Content>
 
 <asp:Content ID="socialScript" ContentPlaceHolderID="Script" runat="server">

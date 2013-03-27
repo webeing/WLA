@@ -32,7 +32,7 @@ y+="</select>"}if(_||(b+=y+(!a&&g&&v?"":"&#xa0;")),!t.yearshtml)if(t.yearshtml="
 })();
 /* Modal script */
 $(function() {
-    $( '#opere .modal' ).dialog({
+    $( '.modal' ).dialog({
           autoOpen: false,
           closeOnEscape: false,
           show: {
@@ -53,12 +53,12 @@ $(function() {
         });
         
         $( '#close-op01' ).click(function(){
-        	 $( '#opere #opera-modal1' ).dialog( 'close' );
+        	 $( '#opera-modal1' ).dialog( 'close' );
         });
         $( '#close-op02' ).click(function(){
-        	 $( '#opere #opera-modal2' ).dialog( 'close' );
+        	 $( '#opera-modal2' ).dialog( 'close' );
         });
         $( '#close-op03' ).click(function(){
-        	 $( '#opere #opera-modal3' ).dialog( 'close' );
+        	 $( '#opera-modal3' ).dialog( 'close' );
         });
   });

@@ -119,6 +119,7 @@
     <Content Include="img\top-navigation-repeater.gif" />
     <Content Include="img\viaggiando-l-italia.jpg" />
     <Content Include="img\white-80-percent.png" />
+    <Content Include="Scripts\lib-and-custom-js-min.js" />
     <Content Include="Scripts\wla.js" />
     <Content Include="Views\Home\Innovation.aspx" />
     <Content Include="Views\Home\Privacy.aspx" />
@@ -134,7 +135,9 @@
     <Content Include="Views\Works\Like03.aspx" />
     <Content Include="Views\Works\Like02.aspx" />
     <Content Include="Views\Works\Like01.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

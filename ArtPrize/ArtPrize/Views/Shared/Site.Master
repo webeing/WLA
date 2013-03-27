@@ -19,7 +19,7 @@
 <body>
 
 <div class="pageLens" id="wrapper">
-    <div class="horizontal" id="outer">
+    <div id="outer">
 
         <!-- header -->
         <div id="header">

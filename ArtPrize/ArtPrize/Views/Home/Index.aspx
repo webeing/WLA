@@ -65,7 +65,7 @@
 	
 	                            <div class="listNewsItems">
 	                                <ul>
-	                                    <li class="column">
+	                                    <li>
                                             <p>
                                                 <a href="#" title="Barclays Art Prize: Opera in gara - La barca che naviga, Andrea Silvestri">
                                                 La barca che naviga <br/>
@@ -162,8 +162,10 @@
 </asp:Content>
 
 <asp:Content ID="footer" ContentPlaceHolderID="footer" runat="server">
-    <ul id="lensNavigator">
-        <li id="previous"><a href="#" class="prev" title="">Previous</a></li>
-        <li id="next"><a href="#" class="next" title="">Next</a></li>
-    </ul>
+    <div class="horizontal">
+        <ul id="lensNavigator">
+            <li id="previous"><a href="#" class="prev" title="">Previous</a></li>
+            <li id="next"><a href="#" class="next" title="">Next</a></li>
+        </ul>
+    </div>
 </asp:Content>

@@ -15,7 +15,7 @@ figure, section{
 	padding: 0!important;
 }
 #meta{
-	/*display: none;*/
+	display: none;
 }
 .fb_iframe_widget_lift{
 	z-index: 2000!important;
@@ -101,7 +101,7 @@ ul.listLinks li {
     padding-bottom: 15px;
 }
 #lensNavigator{
-	z-index: 200!important;
+	z-index: 100!important;
 	bottom:15px
 }
 #lensNavigator a {
@@ -209,7 +209,13 @@ body .pageLens h1 {
     font-size: 12px;
     margin: 0 0 10px;
     width: 50%;
+    min-height:65px;
 }
+label label.error {
+    color: #D5630A !important;
+    float: none !important;
+    font-size: 10px !important;
+    line-height: 5px}
 
 #vota-artprize input, #vota-artprize textarea, #vota-artprize select {
     border: 1px solid #CCCCCC;
@@ -220,7 +226,8 @@ body .pageLens h1 {
     padding: 5px;
     width: 90%;
 }
-
+#vota-artprize input.btn-cyan75 {
+    max-width: 30% !important;}
 textarea {
     color: #777777;
     font-family: verdana;
@@ -268,9 +275,11 @@ input[type="radio"] {
 	margin: 0 auto!important;
 }
 .dialog-wrap{
-	width: 980px;
+	text-align: center;
+    width: 100%;
 	position: relative;
 	margin: 0 auto!important;
+	max-width:980px;
 }
 .dialog-wrap .close{
     display: block;
@@ -288,6 +297,9 @@ input[type="radio"] {
 	background-color: #40c2f3!important;
 	color: #fff!important;
 }
+.btn-grey75, body .btn-grey75{
+	background-color: #d9d9d9!important;
+}
 
 /* Cycle */
 .cycle-pager{
@@ -300,4 +312,7 @@ input[type="radio"] {
 }
 .cycle-pager span.cycle-pager-active{
 	color: #3E668A!important;
+}
+section.opera, body .opera{
+    min-height:500px!important;
 }
