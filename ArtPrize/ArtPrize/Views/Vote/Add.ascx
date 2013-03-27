@@ -227,4 +227,8 @@
 
     </form>
 
+    <script type"text/javascript">
+        var redirectUrl = '<%= ConfigurationManager.AppSettings["BasePath"] %>/ArtPrize/opere-in-gara';
+    </script>
+
 

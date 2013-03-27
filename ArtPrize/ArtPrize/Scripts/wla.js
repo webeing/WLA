@@ -3,8 +3,8 @@
         changeMonth: true,
         changeYear: true,
         dateFormat: "dd/mm/yy",
-        minDate: '-90Y',
-        maxDate: '-18Y'
+        yearRange: "-100:-18",
+        monthNamesShort: ["Gen", "Feb", "Mar", "Apr", "Mag", "Giu", "Lug", "Ago", "Set", "Ott", "Nov", "Dic"]        
     });
     enable_custom_validation();
     
@@ -65,11 +65,30 @@ function ajax_submit(form) {
                 data: form.serialize(),
                 url: form.attr("action"),
                 success: function (data) {
+
+                    var result = $(data).attr('data-result');
+
                     $('body').append(data);
-                    $('.unsuccess').dialog({
-                        modal: true
+
+                    var action = null;
+
+                    if (result == 'Ok' || result == "AlreadyRegistered")
+                        action = function () { window.location = 'http://www.barclay.it/ArtPrize/opere-in-gara'; }
+                    else 
+                        action = function () { }                    
+
+                    $('.modal').dialog({
+                        modal: true,
+                        close: function (event, ui) {
+                            action();
+                        }
                     });
-                    //Recaptcha.reload();
+
+                    $('.dialog-wrap a.close').click(function () {
+                        $('.modal').dialog('close');
+                    });
+
+                    Recaptcha.reload();
                 },
                 error: function () {
                     $('body').append("<div>sembra che qualcosa sia andato storto</div>");

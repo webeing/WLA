@@ -58,7 +58,7 @@ namespace ArtPrize.Controllers
             }
             catch (ValidationException ex)
             {
-                return View("AddResult", new Error { Description = ex.Message });
+                return View("Invalid", new Error { Description = ex.Message });
             }
             catch (Exception ex)
             {

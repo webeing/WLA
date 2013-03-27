@@ -13,7 +13,7 @@ namespace ArtPrize.Controllers
 
         public ActionResult Like(int artworkId)
         {
-            return View();
+            return View("Like0" + artworkId);
         }
 
     }

@@ -126,7 +126,6 @@
     <Content Include="Views\Home\Rule.aspx" />
     <Content Include="Views\Home\Works.aspx" />
     <Content Include="Views\Vote\Add.ascx" />
-    <Content Include="Views\Vote\AddResult.ascx" />
     <Content Include="Views\Vote\AlreadyRegistered.ascx" />
     <Content Include="Views\Vote\Error.ascx" />
     <Content Include="Views\Vote\Invalid.ascx" />
