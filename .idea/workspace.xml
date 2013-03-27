@@ -23,7 +23,7 @@
       <file leaf-file-name="About.aspx" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ArtPrize/ArtPrize/Views/Home/About.aspx">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -33,14 +33,7 @@
         <entry file="file://$PROJECT_DIR$/html/script/lib-and-custom-js-min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="40" column="7" selection-start="300995" selection-end="300995" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <marker date="1364384485000" expanded="false" signature="107480:107533" placeholder="..." />
-                <marker date="1364384485000" expanded="false" signature="107547:107571" placeholder="..." />
-                <marker date="1364384485000" expanded="false" signature="114045:114062" placeholder="..." />
-                <marker date="1364384485000" expanded="false" signature="131956:131973" placeholder="..." />
-                <marker date="1364384485000" expanded="false" signature="140698:140714" placeholder="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -57,7 +50,7 @@
       <file leaf-file-name="barclays-tablet.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/css/barclays-tablet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="205" column="8" selection-start="0" selection-end="6291" vertical-scroll-proportion="-5.269231">
+            <state line="205" column="8" selection-start="0" selection-end="6291" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -75,7 +68,7 @@
       <file leaf-file-name="Works.aspx" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ArtPrize/ArtPrize/Views/Home/Works.aspx">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="189" column="35" selection-start="11106" selection-end="11106" vertical-scroll-proportion="0.9075426">
+            <state line="189" column="35" selection-start="10935" selection-end="10935" vertical-scroll-proportion="0.03156146">
               <folding />
             </state>
           </provider>
@@ -504,7 +497,7 @@
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
       <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
       <method />
@@ -514,6 +507,7 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="b4403f2c-781b-476f-8399-0121edf7b7a7" name="Default" comment="" />
       <created>1364375135397</created>
       <updated>1364375135397</updated>
     </task>
@@ -521,26 +515,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="241" y="73" width="1386" height="791" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985073" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985073" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28507462" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25671643" sideWeight="0.71492535" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26044777" sideWeight="0.71492535" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28507462" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -598,9 +592,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ArtPrize/ArtPrize/Models/Vote.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ArtPrize/ArtPrize/Views/Vote/Works.aspx">
@@ -612,30 +604,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ArtPrize/ArtPrize/Views/Works/Like01.aspx">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="10" selection-start="93" selection-end="1335" vertical-scroll-proportion="0.34717607">
-          <folding />
-        </state>
+        <state line="11" column="10" selection-start="93" selection-end="1335" vertical-scroll-proportion="0.34717607" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ArtPrize/ArtPrize/Views/Works/Like02.aspx">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="81" selection-start="864" selection-end="864" vertical-scroll-proportion="0.410299">
-          <folding />
-        </state>
+        <state line="13" column="81" selection-start="864" selection-end="864" vertical-scroll-proportion="0.410299" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ArtPrize/ArtPrize/Views/Works/Like03.aspx">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="6" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.5996678">
-          <folding />
-        </state>
+        <state line="19" column="6" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.5996678" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/artprize/fb/vote1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="10" selection-start="35" selection-end="934" vertical-scroll-proportion="0.12624584">
-          <folding />
-        </state>
+        <state line="4" column="10" selection-start="35" selection-end="934" vertical-scroll-proportion="0.12624584" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ArtPrize/ArtPrize/Views/Home/Rule.aspx">
@@ -680,14 +664,7 @@
     <entry file="file://$PROJECT_DIR$/html/script/lib-and-custom-js-min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="7" selection-start="300995" selection-end="300995" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1364384485000" expanded="false" signature="107480:107533" placeholder="..." />
-            <marker date="1364384485000" expanded="false" signature="107547:107571" placeholder="..." />
-            <marker date="1364384485000" expanded="false" signature="114045:114062" placeholder="..." />
-            <marker date="1364384485000" expanded="false" signature="131956:131973" placeholder="..." />
-            <marker date="1364384485000" expanded="false" signature="140698:140714" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -700,7 +677,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/css/barclays-tablet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="8" selection-start="0" selection-end="6291" vertical-scroll-proportion="-5.269231">
+        <state line="205" column="8" selection-start="0" selection-end="6291" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -714,7 +691,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ArtPrize/ArtPrize/Views/Home/Works.aspx">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="35" selection-start="11106" selection-end="11106" vertical-scroll-proportion="0.9075426">
+        <state line="189" column="35" selection-start="10935" selection-end="10935" vertical-scroll-proportion="0.03156146">
           <folding />
         </state>
       </provider>
