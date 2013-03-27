@@ -60,3 +60,8 @@
 2013-03-27 11:51:09.2959 DEBUG Retrieved votes. Votes: 
 2013-03-27 11:51:09.3059 INFO Action opere-in-gara on controller Home executed.
 2013-03-27 11:51:09.3059 DEBUG Executed action opere-in-gara on controller Home. Result: 200 OK
+2013-03-27 11:56:34.3133 DEBUG Executing action opere-in-gara on controller Home. Input parameters: 
+2013-03-27 11:56:43.0859 TRACE Retrieving votes from database
+2013-03-27 11:56:43.1059 DEBUG Retrieved votes. Votes: 
+2013-03-27 11:56:43.1059 INFO Action opere-in-gara on controller Home executed.
+2013-03-27 11:56:43.1059 DEBUG Executed action opere-in-gara on controller Home. Result: 200 OK
