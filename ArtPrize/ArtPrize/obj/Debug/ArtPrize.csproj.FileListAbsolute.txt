@@ -6,5 +6,4 @@ C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\obj\D
 C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\bin\NLog.config
 C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\bin\NLog.dll
 C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\bin\NLog.xml
-C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\bin\Recaptcha.dll
 C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\bin\Recaptcha.pdb

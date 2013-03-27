@@ -165,16 +165,7 @@
         </section><!-- OPERA 03 --->
     </div><!--/cycle-slideshow-->
 
-</asp:Content>
-
-<asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="server">
-    <ul id="lensNavigator">
-        <li id="previous"><a href="#" class="prev" title="">Previous</a></li>
-        <li id="next"><a href="#" class="next" title="">Next</a></li>
-    </ul>
-</asp:Content>
-
-    <!-- BIG IMG MODAL OPENING -->
+       <!-- BIG IMG MODAL OPENING -->
     <div id="opera-modal1" class="modal">
         <div class="dialog-wrap">
             <a id="close-op01" class="close" href="#close" title="chiudi"><img src="../img/icon-close.gif" alt="chiudi"/></a>
@@ -196,6 +187,14 @@
         </div>
     </div>
     <!-- /BIG IMG MODAL OPENING -->
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="server">
+    <ul id="lensNavigator">
+        <li id="previous"><a href="#" class="prev" title="">Previous</a></li>
+        <li id="next"><a href="#" class="next" title="">Next</a></li>
+    </ul>
+</asp:Content>
 
 
 <asp:Content ID="socialScript" ContentPlaceHolderID="Script" runat="server">

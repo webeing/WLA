@@ -1,0 +1,62 @@
+2013-03-27 11:34:10.5187 DEBUG Executing action Index on controller Home. Input parameters: 
+2013-03-27 11:34:10.5628 INFO Action Index on controller Home executed.
+2013-03-27 11:34:10.5628 DEBUG Executed action Index on controller Home. Result: 200 OK
+2013-03-27 11:35:53.1006 DEBUG Executing action Index on controller Home. Input parameters: 
+2013-03-27 11:35:53.1006 INFO Action Index on controller Home executed.
+2013-03-27 11:35:53.1006 DEBUG Executed action Index on controller Home. Result: 200 OK
+2013-03-27 11:36:18.3769 DEBUG Executing action Index on controller Home. Input parameters: 
+2013-03-27 11:36:18.3769 INFO Action Index on controller Home executed.
+2013-03-27 11:36:18.3769 DEBUG Executed action Index on controller Home. Result: 200 OK
+2013-03-27 11:37:42.4378 DEBUG Executing action opere-in-gara on controller Home. Input parameters: 
+2013-03-27 11:37:42.4378 TRACE Retrieving votes from database
+2013-03-27 11:37:56.3578 DEBUG Retrieved votes. Votes: 
+2013-03-27 11:37:56.5080 INFO Action opere-in-gara on controller Home executed.
+2013-03-27 11:37:56.5080 DEBUG Executed action opere-in-gara on controller Home. Result: 200 OK
+2013-03-27 11:39:05.5573 DEBUG Executing action Index on controller Home. Input parameters: 
+2013-03-27 11:39:05.5573 INFO Action Index on controller Home executed.
+2013-03-27 11:39:05.5573 DEBUG Executed action Index on controller Home. Result: 200 OK
+2013-03-27 11:39:08.1510 DEBUG Executing action opere-in-gara on controller Home. Input parameters: 
+2013-03-27 11:39:08.1510 TRACE Retrieving votes from database
+2013-03-27 11:39:08.1610 DEBUG Retrieved votes. Votes: 
+2013-03-27 11:39:08.1610 INFO Action opere-in-gara on controller Home executed.
+2013-03-27 11:39:08.1610 DEBUG Executed action opere-in-gara on controller Home. Result: 200 OK
+2013-03-27 11:39:15.9523 DEBUG Executing action Index on controller Home. Input parameters: 
+2013-03-27 11:39:15.9523 INFO Action Index on controller Home executed.
+2013-03-27 11:39:15.9523 DEBUG Executed action Index on controller Home. Result: 200 OK
+2013-03-27 11:39:18.2255 DEBUG Executing action opere-in-gara on controller Home. Input parameters: 
+2013-03-27 11:39:18.2255 TRACE Retrieving votes from database
+2013-03-27 11:39:18.2255 DEBUG Retrieved votes. Votes: 
+2013-03-27 11:39:18.2255 INFO Action opere-in-gara on controller Home executed.
+2013-03-27 11:39:18.2255 DEBUG Executed action opere-in-gara on controller Home. Result: 200 OK
+2013-03-27 11:39:52.7740 DEBUG Executing action Index on controller Home. Input parameters: 
+2013-03-27 11:39:52.7740 INFO Action Index on controller Home executed.
+2013-03-27 11:39:52.7740 DEBUG Executed action Index on controller Home. Result: 200 OK
+2013-03-27 11:39:56.0567 DEBUG Executing action opere-in-gara on controller Home. Input parameters: 
+2013-03-27 11:39:56.0567 TRACE Retrieving votes from database
+2013-03-27 11:39:56.0567 DEBUG Retrieved votes. Votes: 
+2013-03-27 11:39:56.0567 INFO Action opere-in-gara on controller Home executed.
+2013-03-27 11:39:56.0567 DEBUG Executed action opere-in-gara on controller Home. Result: 200 OK
+2013-03-27 11:43:38.5878 DEBUG Executing action Index on controller Home. Input parameters: 
+2013-03-27 11:43:38.5878 INFO Action Index on controller Home executed.
+2013-03-27 11:43:38.5878 DEBUG Executed action Index on controller Home. Result: 200 OK
+2013-03-27 11:44:33.7872 DEBUG Executing action opere-in-gara on controller Home. Input parameters: 
+2013-03-27 11:44:33.7872 TRACE Retrieving votes from database
+2013-03-27 11:44:33.7972 DEBUG Retrieved votes. Votes: 
+2013-03-27 11:44:33.7972 INFO Action opere-in-gara on controller Home executed.
+2013-03-27 11:44:33.7972 DEBUG Executed action opere-in-gara on controller Home. Result: 200 OK
+2013-03-27 11:46:29.8641 DEBUG Executing action Index on controller Home. Input parameters: 
+2013-03-27 11:46:29.8641 INFO Action Index on controller Home executed.
+2013-03-27 11:46:29.8641 DEBUG Executed action Index on controller Home. Result: 200 OK
+2013-03-27 11:46:57.3436 DEBUG Executing action opere-in-gara on controller Home. Input parameters: 
+2013-03-27 11:47:05.7357 TRACE Retrieving votes from database
+2013-03-27 11:47:06.6370 DEBUG Retrieved votes. Votes: 
+2013-03-27 11:47:11.6542 INFO Action opere-in-gara on controller Home executed.
+2013-03-27 11:47:11.6542 DEBUG Executed action opere-in-gara on controller Home. Result: 200 OK
+2013-03-27 11:50:59.0512 DEBUG Executing action Index on controller Home. Input parameters: 
+2013-03-27 11:50:59.0812 INFO Action Index on controller Home executed.
+2013-03-27 11:50:59.0812 DEBUG Executed action Index on controller Home. Result: 200 OK
+2013-03-27 11:51:03.6178 DEBUG Executing action opere-in-gara on controller Home. Input parameters: 
+2013-03-27 11:51:09.2459 TRACE Retrieving votes from database
+2013-03-27 11:51:09.2959 DEBUG Retrieved votes. Votes: 
+2013-03-27 11:51:09.3059 INFO Action opere-in-gara on controller Home executed.
+2013-03-27 11:51:09.3059 DEBUG Executed action opere-in-gara on controller Home. Result: 200 OK
