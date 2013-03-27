@@ -73,7 +73,7 @@ function ajax_submit(form) {
                     var action = null;
 
                     if (result == 'Ok' || result == "AlreadyRegistered")
-                        action = function () { window.location = 'http://www.barclay.it/ArtPrize/opere-in-gara'; }
+                        action = function () { window.location = redirectUrl; }
                     else 
                         action = function () { }                    
 
