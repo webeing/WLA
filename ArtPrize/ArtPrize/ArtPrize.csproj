@@ -119,7 +119,10 @@
     <Content Include="img\top-navigation-repeater.gif" />
     <Content Include="img\viaggiando-l-italia.jpg" />
     <Content Include="img\white-80-percent.png" />
+    <Content Include="Scripts\additional-methods.min.js" />
     <Content Include="Scripts\lib-and-custom-js-min.js" />
+    <Content Include="Scripts\messages_it.js" />
+    <Content Include="Scripts\modernizr.js" />
     <Content Include="Scripts\wla.js" />
     <Content Include="Views\Home\Innovation.aspx" />
     <Content Include="Views\Home\Privacy.aspx" />
@@ -145,18 +148,9 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Scripts\jquery-1.4.1.js" />
-    <Content Include="Scripts\jquery-1.4.1.min.js" />
-    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\MicrosoftAjax.js" />
-    <Content Include="Scripts\MicrosoftAjax.debug.js" />
-    <Content Include="Scripts\MicrosoftMvcAjax.js" />
-    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
-    <Content Include="Scripts\MicrosoftMvcValidation.js" />
-    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
     <Content Include="Views\Home\About.aspx" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\Shared\Error.aspx" />
