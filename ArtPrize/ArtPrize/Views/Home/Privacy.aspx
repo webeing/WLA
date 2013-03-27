@@ -7,12 +7,12 @@
 					<ol>
 						<li class="preSelected">
 							<span id="home">
-							<a title="Home" href="<%= Url.Content("~/Home/Index") %>">Home</a>
+							<a title="Home" href="<%= Url.Content("~/Index") %>">Home</a>
 							</span>
 						</li>
 						<li class="selected">
 							<span>
-							<a href="<%= Url.Content("~/Home/Privacy") %>" id="link_privacy">Privacy</a>
+							<a href="<%= Url.Content("~/Privacy") %>" id="link_privacy">Privacy</a>
 							</span>
 						</li>
 					</ol>
@@ -52,12 +52,12 @@
                     <h3>In questa sezione:</h3>
                     <ul class="twoLevels">
                         <li>
-                            <h3><a href="<%= Url.Content("~/Home/Prize") %>" title="Barclays Art Prize: Premio">Premio</a></h3>
+                            <h3><a href="<%= Url.Content("~/Premi") %>" title="Barclays Art Prize: Premio">Premio</a></h3>
 
                         </li>
 
                         <li>
-                            <h3><a href="<%= Url.Content("~/Home/Rule") %>" title="Barclays Art Prize: Regolamento">Regolamento</a></h3>
+                            <h3><a href="<%= Url.Content("~/Regolamento") %>" title="Barclays Art Prize: Regolamento">Regolamento</a></h3>
                         </li>
                     </ul>
                 </div>

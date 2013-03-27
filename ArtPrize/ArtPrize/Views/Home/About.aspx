@@ -8,12 +8,12 @@
 					<ol>
 						<li class="preSelected">
 							<span id="home">
-							<a title="Home" href="<%= Url.Content("~/Home/Index") %>">Home</a>
+							<a title="Home" href="<%= Url.Content("~/Index") %>">Home</a>
 							</span>
 						</li>
 						<li class="selected">
 							<span>
-							<a href="<%= Url.Content("~/Home/About") %>" id="about_artprize">About Barclay Art Prize</a>
+							<a href="<%= Url.Content("~/About") %>" id="about_artprize">About Barclay Art Prize</a>
 							</span>
 						</li>
 					</ol>
@@ -66,8 +66,8 @@
 	                    </div>
 	
 	                    <ul class="listLinks">
-	                        <li><a href="<%= Url.Content("~/Home/Works") %>" title="Barclays Art Prize: Opere in gara">Opere in gara</a></li>
-	                        <li><a href="<%= Url.Content("~/Home/Prize") %>" title="Barclays Art Prize: Premio">Premio</a></li>
+	                        <li><a href="<%= Url.Content("~/opere-in-gara") %>" title="Barclays Art Prize: Opere in gara">Opere in gara</a></li>
+	                        <li><a href="<%= Url.Content("~/Premi") %>" title="Barclays Art Prize: Premio">Premio</a></li>
 	                        <li><a href="http://www.accademiadibrera.milano.it/" title="Barclays Art Prize: Premio" target="_blank">Accademia delle Belle Arti di Brera</a></li>                        
 	                    </ul>
                         <!--social links -->

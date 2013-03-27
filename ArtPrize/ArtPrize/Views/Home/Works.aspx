@@ -7,12 +7,12 @@
 					<ol>
 						<li class="preSelected">
 							<span id="home">
-							<a title="Home" href="<%= Url.Content("~/Home/Index") %>">Home</a>
+							<a title="Home" href="<%= Url.Content("~/Index") %>">Home</a>
 							</span>
 						</li>
 						<li class="selected">
 							<span>
-							<a href="<%= Url.Content("~/Home/Works") %>" id="link_vota_artprize">Vota</a>
+							<a href="<%= Url.Content("~/opere-in-gara") %>" id="link_vota_artprize">Vota</a>
 							</span>
 						</li>
 					</ol>
@@ -63,7 +63,7 @@
 	                    <ul class="social-links">
                             <!-- link button da modificare -->
 	                        <li>
-                                <div class="fb-like" data-href="<%= Url.Content("~/Works/Like01") %>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+                                <div class="fb-like" data-href="<%= Url.Content("~/opere-in-gara/Like01") %>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
 	                        </li>
 	                        <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="agatacruciani" data-lang="it">Tweet</a>
 	                        </li>
@@ -104,7 +104,7 @@
 	                    <ul class="social-links">
                             <!-- link button da modificare -->
 	                        <li>
-                                <div class="fb-like" data-href="<%= Url.Content("~/Works/Like02") %>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+                                <div class="fb-like" data-href="<%= Url.Content("~/opere-in-gara/Like02") %>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
 	                        </li>
 	                        <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="agatacruciani" data-lang="it">Tweet</a>
 	                        </li>

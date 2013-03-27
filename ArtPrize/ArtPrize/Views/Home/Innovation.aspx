@@ -8,12 +8,12 @@
 			<ol>
 				<li class="preSelected">
 					<span id="home">
-					<a title="Home" href="<%= Url.Content("~/Home/Index") %>">Home</a>
+					<a title="Home" href="<%= Url.Content("~/Index") %>">Home</a>
 					</span>
 				</li>
 				<li class="selected">
 					<span>
-					<a href="<%= Url.Content("~/Home/Innovation") %>" id="link_barclays_ic">Barclays Innovation Center</a>
+					<a href="<%= Url.Content("~/Innovation") %>" id="link_barclays_ic">Barclays Innovation Center</a>
 					</span>
 				</li>
 			</ol>
@@ -90,10 +90,10 @@
 	                    </div><!--/imageWithCaption & cycle-slideshow-->
 
 	                    <ul class="listLinks">
-							<li><a href="<%= Url.Content("~/Home/About") %>" title="About Barclays Art Prize">Il concorso</a></li>
-							<li><a href="<%= Url.Content("~/Home/Works") %>" title="Barclays Art Prize: Opere in gara">Opere in gara</a></li>
-							<li><a href="<%= Url.Content("~/Home/Rule") %>" title="Barclays Art Prize: Regolamento">Regolamento</a></li>
-							<li><a href="<%= Url.Content("~/Home/Prize") %>" title="Barclays Art Prize: Premio">Premio</a></li>  
+							<li><a href="<%= Url.Content("~/About") %>" title="About Barclays Art Prize">Il concorso</a></li>
+							<li><a href="<%= Url.Content("~/opere-in-gara") %>" title="Barclays Art Prize: Opere in gara">Opere in gara</a></li>
+							<li><a href="<%= Url.Content("~/Regolamento") %>" title="Barclays Art Prize: Regolamento">Regolamento</a></li>
+							<li><a href="<%= Url.Content("~/Premi") %>" title="Barclays Art Prize: Premio">Premio</a></li>  
 	                    </ul>
 	
 	                </div><!-- fine secondary -->

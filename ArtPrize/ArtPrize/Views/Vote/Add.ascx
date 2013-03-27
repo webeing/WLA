@@ -1,4 +1,5 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<ArtPrize.Models.Vote>" %>    
+<%@ Import Namespace="Recaptcha" %>
    
  <form method="post" id="vota-artprize" action="/Vote/Add" novalidate="novalidate">
  
@@ -217,6 +218,8 @@
 				</p>
 								
 				<div class="clear"></div>				
+
+                <%=  Html.GenerateCaptcha("recaptcha", "clean")%>
 
 		        <div class="dialogButtons">
                     <input type="submit" class="btn btn-cyan75" id="vote-btn" value="Accetta e vota">

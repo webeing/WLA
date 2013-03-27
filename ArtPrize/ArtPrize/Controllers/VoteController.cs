@@ -10,8 +10,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ArtPrize.Controllers
 {
+    public class CaptchaValidationException : Exception 
+    {}
+
     [LoggingAttribute]
     [HandleException]
+    [LogSetter]
     public class VoteController : BaseController
     {        
         VoteService voteService;
@@ -33,25 +37,32 @@ namespace ArtPrize.Controllers
         // POST: /Vote/Create
 
         [HttpPost]
-        public ActionResult Add(Vote vote)
+        [Recaptcha.RecaptchaControlMvc.CaptchaValidator]
+        public ActionResult Add(Vote vote, bool captchaValid)
         {
             try
             {
                 voteService.Logger = Logger;
+                if (!captchaValid)
+                    throw new CaptchaValidationException();
                 voteService.Create(vote);
-                return View("AddResult");
+                return View("Ok");
+            }
+            catch (CaptchaValidationException ex) 
+            {
+                return View("Invalid", new Error { Description = "Captcha non valido." });
             }
             catch (AlreadyExistingUserException ex)
             {
-                return View("AddResult", new Error { Description = ex.Message });
+                return View("AlreadyRegistered");
             }
             catch (ValidationException ex)
             {
                 return View("AddResult", new Error { Description = ex.Message });
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
-                return View("AddResult", new Error { Description = "Siamo spiacenti ma si è verificato un errore." });
+                return View("Error");
             }
         }
     }

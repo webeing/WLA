@@ -17,8 +17,14 @@ namespace ArtPrize
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
-            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
+            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");            
+         
+            routes.MapRoute(
+                "OnlyAction", // Route name
+                "{action}", // URL with parameters
+                new { controller = "Home", action = "Index"} // Parameter defaults
+            );
+            
             routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
@@ -46,6 +52,8 @@ namespace ArtPrize
             System.Web.Mvc.ModelBinders.Binders.Add(typeof(Vote), new VoteModelBinder());
 
             RegisterRoutes(RouteTable.Routes);
+
+            //RouteDebug.RouteDebugger.RewriteRoutesForTesting(RouteTable.Routes);
         }
     }
 }

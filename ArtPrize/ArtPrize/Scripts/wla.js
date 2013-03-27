@@ -66,6 +66,10 @@ function ajax_submit(form) {
                 url: form.attr("action"),
                 success: function (data) {
                     $('body').append(data);
+                    $('.unsuccess').dialog({
+                        modal: true
+                    });
+                    //Recaptcha.reload();
                 },
                 error: function () {
                     $('body').append("<div>sembra che qualcosa sia andato storto</div>");

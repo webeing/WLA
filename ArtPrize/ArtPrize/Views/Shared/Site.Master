@@ -20,15 +20,15 @@
 
         <!-- header -->
         <div id="header">
-            <a href="<%= Url.Content("~/Home/Index") %>" id="logo" title="Barclays Art Prize">
+            <a href="<%= Url.Content("~/Index") %>" id="logo" title="Barclays Art Prize">
                 <img alt="Barclays" src="<%= ConfigurationManager.AppSettings["BasePath"] %>/img/barclays-logo.gif">
             </a>
 
             <div id="primaryNavigation">
                 <ul>
-                    <li class="" id="about_artprize"><a href="<%= Url.Content("~/Home/About") %>" title="Barclays Art Prize: About Barclay">About Barclays Art Prize</a></li>
-                    <li class="" id="vota_artprize"><a href="<%= Url.Content("~/Home/Works") %>" title="Barclays Art Prize: Vota">Vota</a></li>
-                    <li class="" id="barclays_ic"><a href="<%= Url.Content("~/Home/Innovation") %>" title="Barclays Art Prize: Barclays Innovation Center">Barclays Innovation Center</a></li>
+                    <li class="" id="about_artprize"><a href="<%= Url.Content("~/About") %>" title="Barclays Art Prize: About Barclay">About Barclays Art Prize</a></li>
+                    <li class="" id="vota_artprize"><a href="<%= Url.Content("~/opere-in-gara") %>" title="Barclays Art Prize: Vota">Vota</a></li>
+                    <li class="" id="barclays_ic"><a href="<%= Url.Content("~/Innovation") %>" title="Barclays Art Prize: Barclays Innovation Center">Barclays Innovation Center</a></li>
                 </ul>
             </div>
 
@@ -45,9 +45,9 @@
         <footer id="footer" class="footer"><!--- INIZIO FOOTER --->
 
                 <ul id="footerLinks">
-                    <li><a href="<%= Url.Content("~/Home/Prize") %>" title="Barclays Art Prize: Premio" >Premio</a></li>
-                    <li><a href="<%= Url.Content("~/Home/Privacy") %>" title="Barclays Art Prize: Pravacy" >Privacy</a></li>
-                    <li><a href="<%= Url.Content("~/Home/Rule") %>" title="Barclays Art Prize: Regolamento" >Regolamento</a></li>
+                    <li><a href="<%= Url.Content("~/Premi") %>" title="Barclays Art Prize: Premio" >Premio</a></li>
+                    <li><a href="<%= Url.Content("~/Privacy") %>" title="Barclays Art Prize: Pravacy" >Privacy</a></li>
+                    <li><a href="<%= Url.Content("~/Regolamento") %>" title="Barclays Art Prize: Regolamento" >Regolamento</a></li>
                     <li class="copyright">&copy; Barclays 2013</li>
                 </ul>                
 

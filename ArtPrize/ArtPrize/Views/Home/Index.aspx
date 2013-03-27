@@ -45,8 +45,8 @@
 	                            </div>
 	
 	                            <ul class="listLinks">
-	                                <li><a href="<%= Url.Content("~/Home/About") %>" title="Barclays Art Prize: Il concorso">Il concorso</a></li>
-	                                <li><a href="<%= Url.Content("~/Home/Works") %>" title="Barclays Art Prize: Le opere in gara">Le opere in gara</a></li>
+	                                <li><a href="<%= Url.Content("~/About") %>" title="Barclays Art Prize: Il concorso">Il concorso</a></li>
+	                                <li><a href="<%= Url.Content("~/opere-in-gara") %>" title="Barclays Art Prize: Le opere in gara">Le opere in gara</a></li>
 	                            </ul>
 	
 	                        </div><!--/secondary-->
@@ -122,9 +122,9 @@
 	                            </div><!--/imageWithCaption-->
 	
 	                            <ul class="listLinks">
-	                                <li><a href="<%= Url.Content("~/Home/Works") %>" title="Barclays Art Prize: Vota la tua opera preferita">Vota la tua opera preferita</a></li>
-	                                <li><a href="<%= Url.Content("~/Home/Prize") %>" title="Barclays Art Prize: Premio">Premio</a></li>
-	                                <li><a href="<%= Url.Content("~/Home/Rule") %>" title="Barclays Art Prize: Regolamento">Regolamento</a></li>
+	                                <li><a href="<%= Url.Content("~/opere-in-gara") %>" title="Barclays Art Prize: Vota la tua opera preferita">Vota la tua opera preferita</a></li>
+	                                <li><a href="<%= Url.Content("~/Premi") %>" title="Barclays Art Prize: Premio">Premio</a></li>
+	                                <li><a href="<%= Url.Content("~/Regolamento") %>" title="Barclays Art Prize: Regolamento">Regolamento</a></li>
 	                            </ul>
 	
 	                        </div><!-- fine secondary -->
@@ -144,7 +144,7 @@
 	
 	                                <ul class="listLinks">
 	                                    <li>
-	                                        <a href="<%= Url.Content("~/Home/Innovation") %>" title="Barclays Art Prize: Scopri di più su Barclays Innovation Center">Scopri di pi&#249;</a>
+	                                        <a href="<%= Url.Content("~/Innovation") %>" title="Barclays Art Prize: Scopri di più su Barclays Innovation Center">Scopri di pi&#249;</a>
 	                                    </li>
 	                                </ul>
 	

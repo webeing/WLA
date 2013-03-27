@@ -15,9 +15,9 @@
 
 	                    
 	            <ul class="listLinks">
-	                <li><a href="<%= Url.Content("~/Home/Prize") %>" title="Barclays Art Prize: Premio">Premio</a></li>
-	                <li><a href="<%= Url.Content("~/Home/Rule") %>" title="Barclays Art Prize: Regolamento">Regolamento</a></li>
-	                <li><a href="<%= Url.Content("~/Home/Works") %>" title="Barclays Art Prize: Opere in gara">Torna alle altre opere</a></li>                    
+	                <li><a href="<%= Url.Content("~/Premi") %>" title="Barclays Art Prize: Premio">Premio</a></li>
+	                <li><a href="<%= Url.Content("~/Regolamento") %>" title="Barclays Art Prize: Regolamento">Regolamento</a></li>
+	                <li><a href="<%= Url.Content("~/opere-in-gara") %>" title="Barclays Art Prize: Opere in gara">Torna alle altre opere</a></li>                    
 	            </ul>
 	
 	        </div>
@@ -48,12 +48,12 @@
 					<ol>
 						<li class="preSelected">
 							<span id="home">
-							<a title="Home" href="<%= Url.Content("~/Home/Index") %>">Home</a>
+							<a title="Home" href="<%= Url.Content("~/Index") %>">Home</a>
 							</span>
 						</li>
 						<li class="selected">
 							<span>
-							<a href="<%= Url.Content("~/Home/Works") %>" id="link_vota_artprize">Vota</a>
+							<a href="<%= Url.Content("~/opere-in-gara") %>" id="link_vota_artprize">Vota</a>
 							</span>
 						</li>
 					</ol>
