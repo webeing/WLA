@@ -41,7 +41,7 @@
 	                            </li>
 	
 	                            <li>
-	                                <p></p><a href="#tab-2" title="Barclays Innovation Center di Piazza della Repubblica a Milano - Work in progress">
+	                                <p><a href="#tab-2" title="Barclays Innovation Center di Piazza della Repubblica a Milano - Work in progress">
                                       Barclays Innovation Center<br/>
                                       <small>Piazza della Repubblica a Milano<br/>Work in progress</small>
                                     </a></p>
@@ -170,8 +170,20 @@
 	            </div><!-- fine inner -->
 	
 	        </section>
-
+                
+            
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="footer" runat="server">
+
+</asp:Content>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="Script" runat="server">
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#barclays_ic').addClass("current");
+    });
+            </script>
+
 </asp:Content>

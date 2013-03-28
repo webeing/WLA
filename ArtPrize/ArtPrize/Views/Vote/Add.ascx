@@ -19,7 +19,7 @@
             
             <label for="birthday">
                 Data di nascita
-                <input type="text" value="" name="User.Birthday" id="User_Birthday" class="required dateIT"/>
+                <input type="text" value="" name="User.Birthday" id="User_Birthday" class="required dateIT is18"/>
             </label>
 
             <label for="gender">
@@ -211,7 +211,7 @@
 								
             <div class="clear"></div>
 
-            <%=  Html.GenerateCaptcha("recaptcha", "clean")%>
+                <%=  Html.GenerateCaptcha("recaptcha", "clean")%>
 
             <div class="dialogButtons">
                 <input type="submit" class="btn btn-cyan75" id="vote-btn" value="Accetta e vota">

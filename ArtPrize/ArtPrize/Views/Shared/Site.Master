@@ -26,7 +26,7 @@
             <a href="<%= Url.Content("~/Index") %>" id="logo" title="Barclays Art Prize">
                 <img alt="Barclays" src="<%= ConfigurationManager.AppSettings["BasePath"] %>/img/barclays-logo.gif">
             </a>
-
+            <a id="toggle-nav" href="#logo" title="Menu">Menu</a>
             <div id="primaryNavigation">
                 <ul>
                     <li class="" id="about_artprize"><a href="<%= Url.Content("~/About") %>" title="Barclays Art Prize: About Barclay">About Barclays Art Prize</a></li>
@@ -58,13 +58,13 @@
         </footer><!--- FINE FOOTER --->
     </div>
 </div>
-<asp:ContentPlaceHolder ID="Script" runat="server" />
+
 
 <script src="<%= ConfigurationManager.AppSettings["BasePath"] %>/Scripts/lib-and-custom-js-min.js"></script>
 <script src="<%= ConfigurationManager.AppSettings["BasePath"] %>/Scripts/jquery.validate.min.js"></script>
 <script src="<%= ConfigurationManager.AppSettings["BasePath"] %>/Scripts/additional-methods.min.js"></script>
 <script src="<%= ConfigurationManager.AppSettings["BasePath"] %>/Scripts/messages_it.js"></script>
 <script src="<%= ConfigurationManager.AppSettings["BasePath"] %>/Scripts/wla.js"></script>
-
+<asp:ContentPlaceHolder ID="Script" runat="server" />
 </body>
 </html>

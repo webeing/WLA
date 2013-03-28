@@ -14,7 +14,7 @@
     ajax_submit();
 });
 
-function enable_custom_validation() {
+function enable_custom_validation() {    
 
     jQuery.validator.addMethod(
         "dateIT",
@@ -34,24 +34,37 @@ function enable_custom_validation() {
                 else
                     check = false;
             } else
-                check = false;
-            /*var now = new Date();                                               
-            
-            now.setFullYear(date.getFullYear() - 18);            
-
-            return (this.optional(element) || check) && currdate > mydate;*/
+                check = false;         
+           
             return (this.optional(element) || check);
         },
         "La data inserita non è valida."
     );
 
+        $.validator.addMethod('is18', function (value, element) {
+            
+            var adata = value.split('/');
+            var dd = parseInt(adata[0], 10); // was gg (giorno / day)
+            var mm = parseInt(adata[1], 10); // was mm (mese / month)
+            var yyyy = parseInt(adata[2], 10); // was aaaa (anno / year)
+            var xdata = new Date(yyyy, mm - 1, dd);
+            var age = 18;
+
+            var mydate = new Date();
+            mydate.setFullYear(yyyy, mm - 1, dd);
+
+            var currdate = new Date();
+            currdate.setFullYear(currdate.getFullYear() - age);
+
+            return (currdate - mydate < 0 ? false : true);
+        },"Devi essere maggiorenne.");
     
     jQuery.validator.addMethod(
         "isTrue",
         function (value, element) {
             return value == "true";            
         },
-        "Devi accettare il regolamento."
+        "Obbligatorio  "
     );
 
         jQuery.validator.addMethod(
@@ -102,7 +115,7 @@ function enable_custom_validation() {
                     Recaptcha.reload();
                 },
                 error: function () {
-                    $('body').append('<div class="modal error" data-result="Error"><div class="dialog-wrap"><a class="close" href="#close" title="chiudi"><img src="<%= ConfigurationManager.AppSettings["BasePath"] %>"/img/icon-close.gif" alt="chiudi" /></a><h3>Siamo spiacenti</h3><p>Non è stato possibile completare l\'operazione di voto, riprova in seguito.</p></div><!--/dialog-wrap--></div><!--modal-->');
+                    $('body').append('<div class="modal error" data-result="Error"><div class="dialog-wrap"><a class="close" href="#close" title="chiudi"><img src="<%= ConfigurationManager.AppSettings["BasePath"] %>/img/icon-close.gif" alt="chiudi" /></a><h1>Siamo spiacenti</h1><h3>Non è stato possibile completare l\'operazione di voto, riprova in seguito.</h3></div><!--/dialog-wrap--></div><!--modal-->');
                     
                     $('.modal').dialog({
                         modal: true                        

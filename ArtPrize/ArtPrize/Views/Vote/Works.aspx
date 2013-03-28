@@ -66,4 +66,9 @@
 </asp:Content>
 
 <asp:Content ID="Content5" ContentPlaceHolderID="Script" runat="server">
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#vota_artprize').addClass("current");
+    });
+</script>
 </asp:Content>
