@@ -1,0 +1,284 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <!-- Custom meta og:facebook -->
+    <asp:ContentPlaceHolder ID="meta_og" runat="server"></asp:ContentPlaceHolder>
+
+    <title>Barclay Art Prize Home</title>
+    <link href="../css/style.css" rel="stylesheet" media="screen">
+    <link href="../img/icons/favicon.ico")" rel="shortcut icon">
+    <script src="../Scripts/modernizr.js"></script>
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+  </head>
+
+<body>
+
+<div class="pageLens" id="wrapper">
+    <div id="outer">
+
+        <!-- header -->
+        <div id="header">
+            <a href="./Index.htm" id="logo" title="Barclays Art Prize">
+                <img alt="Barclays" src="../img/barclays-logo.gif">
+            </a>
+            <a id="toggle-nav" href="#logo" title="Menu">Menu</a>
+            <div id="primaryNavigation">
+                <ul>
+                    <li class="" id="about_artprize"><a href="./About.htm" title="Barclays Art Prize: About Barclay">About Barclays Art Prize</a></li>
+                    <li class="" id="vota_artprize"><a href="./opere-in-gara" title="Barclays Art Prize: Vota">Vota</a></li>
+                    <li class="" id="barclays_ic"><a href="./Innovation" title="Barclays Art Prize: Barclays Innovation Center">Barclays Innovation Center</a></li>
+                </ul>
+            </div>
+
+            <!-- Breadcrumb nav -->
+			<div class="" id="secondaryNavigation">
+				<div class="secondaryNavigationContainer">
+					<ol>
+						<li class="preSelected">
+							<span id="home">
+							<a title="Home" href="./Index">Home</a>
+							</span>
+						</li>
+						<li class="selected">
+							<span>
+							<a href="./opere-in-gara" id="link_vota_artprize">Vota</a>
+							</span>
+						</li>
+					</ol>
+				</div>
+				<!--/secondaryNavigationContainer -->
+				
+                <!--//ancora da customizzare -->
+				<div id="lensIndicator" class="cycle-pager">
+					<span class="cycle-pager-active">•</span>
+                    <span class="">•</span>
+                    <span class="">•</span>
+				</div>
+               
+			</div>
+			<!-- /Breadcrumb nav -->
+            
+        </div><!-- ./header -->
+
+        <div id="content"><!--- CONTENT --->            
+
+            <div class="cycle-slideshow" 
+           data-cycle-fx="scrollHorz"
+           data-cycle-timeout="0"
+           data-cycle-swipe="true"
+           data-cycle-prev="#previous"
+           data-cycle-next="#next"
+           data-cycle-slides="> section"
+           >
+    <section id="opera-one" class="lens opera"><!-- PRIMA SLIDER --->
+            <div class="inner">
+                <div class="widthSix primary">
+                    <h2>Titolo opera 01<br/>
+                       Nome autore</h2>
+                    <div class="rte">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget justo magna, vel tempor risus. Aenean velit tortor, hendrerit ut lobortis non, scelerisque sit amet erat. Suspendisse non neque a libero dictum posuere. Aliquam pretium diam et elit aliquet dignissim vel commodo leo. Fusce tempus semper ultrices. Ut pellentesque malesuada viverra. Maecenas velit erat, blandit eu venenatis eu, porta nec metus. Quisque imperdiet tincidunt orci, nec ullamcorper metus ornare nec. Ut quis quam sit amet nisl congue hendrerit. Vivamus ligula libero, blandit eget pulvinar quis, lacinia eget enim. Aliquam lacinia, nulla sed auctor aliquet, tortor massa eleifend ipsum, quis facilisis mauris massa et ligula.</p>
+						<p>Sed sed dui ut velit facilisis malesuada a sit amet velit. Nam ipsum augue, tristique vel lacinia vitae, gravida id leo. Vivamus accumsan lobortis euismod. Aenean eget pellentesque augue. Pellentesque in lacus risus.
+                        </p>
+                    </div>
+                   <!--social links -->
+                    <ul class="social-links">
+                        <li>
+                            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-href="Like1.html"></div>
+                        </li>
+                        <li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it">Tweet</a>
+                        </li>
+                    </ul>
+                    <!--social links -->
+                </div><!--/primary-->
+
+                <div class="widthSix secondary">
+                    <div class="imageWithCaption">
+                        <img src="http://placehold.it/460x345&text=opera01" alt="Titolo opera 1" />
+                        <p data-artworkId="1"><strong>0</strong>
+                        persone hanno votato quest'opera</p>
+                    </div>
+                    
+                    <!--buttons-->
+                    <div class="dialogButtons">
+
+						<a href="#zoom-op01" id="zoom-op01" class="btn zoom-btn btn-grey75" title="Ingrandisci Opera 1">Ingrandisci</a>
+						<a href="Works1.html" id="vote-op01" class="btn vote-btn btn-cyan75">Vota questa opera</a>
+					</div><!--/dialogButton-->
+                    
+            	</div><!--/secondary-->
+            </div><!--/inner-->
+            	
+            </section><!-- OPERA 01 --->
+
+            <!-- OPERA 02 -->
+            <section id="opera-two" class="lens opera"><!-- PRIMA SLIDER --->
+            <div class="inner">
+                <div class="widthSix primary">
+                    <h2>Titolo opera 02<br/>
+                       Nome autore</h2>
+                    <div class="rte">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget justo magna, vel tempor risus. Aenean velit tortor, hendrerit ut lobortis non, scelerisque sit amet erat. Suspendisse non neque a libero dictum posuere. Aliquam pretium diam et elit aliquet dignissim vel commodo leo. Fusce tempus semper ultrices. Ut pellentesque malesuada viverra. Maecenas velit erat, blandit eu venenatis eu, porta nec metus. Quisque imperdiet tincidunt orci, nec ullamcorper metus ornare nec. Ut quis quam sit amet nisl congue hendrerit. Vivamus ligula libero, blandit eget pulvinar quis, lacinia eget enim. Aliquam lacinia, nulla sed auctor aliquet, tortor massa eleifend ipsum, quis facilisis mauris massa et ligula.</p>
+						<p>Sed sed dui ut velit facilisis malesuada a sit amet velit. Nam ipsum augue, tristique vel lacinia vitae, gravida id leo. Vivamus accumsan lobortis euismod. Aenean eget pellentesque augue. Pellentesque in lacus risus.
+                        </p>
+                    </div>
+                    <!--social links -->
+                    <ul class="social-links">
+                        <li>
+                            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-href="Like2.html"></div>
+                        </li>
+                        <li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it">Tweet</a>
+                        </li>
+                    </ul>
+                    <!--social links -->
+
+                </div><!--/primary-->
+
+                <div class="widthSix secondary">
+                    <div class="imageWithCaption">
+                        <img src="http://placehold.it/460x345&text=opera02" alt="Titolo opera 2" />
+                        <p data-artworkId="2"><strong>0</strong>
+                                                persone hanno votato quest'opera</p>
+                    </div>
+                    
+                    <!--buttons-->
+                    <div class="dialogButtons">
+
+						<a href="#zoom-op02" id="zoom-op02" class="btn zoom-btn btn-grey75" title="Ingrandisci Opera 2">Ingrandisci</a>
+						<a href="Works2.html" id="vote-op02" class="btn vote-btn btn-cyan75">Vota questa opera</a>
+					</div><!--/dialogButton-->
+                    
+            	</div><!--/secondary-->
+            </div><!--/inner-->
+            	
+        </section><!-- OPERA 02 --->
+
+        <!-- OPERA 03 -->
+        <section id="opera-three" class="lens opera"><!-- PRIMA SLIDER --->
+            <div class="inner">
+                <div class="widthSix primary">
+                    <h2>Titolo opera 03<br/>
+                       Nome autore</h2>
+                    <div class="rte">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget justo magna, vel tempor risus. Aenean velit tortor, hendrerit ut lobortis non, scelerisque sit amet erat. Suspendisse non neque a libero dictum posuere. Aliquam pretium diam et elit aliquet dignissim vel commodo leo. Fusce tempus semper ultrices. Ut pellentesque malesuada viverra. Maecenas velit erat, blandit eu venenatis eu, porta nec metus. Quisque imperdiet tincidunt orci, nec ullamcorper metus ornare nec. Ut quis quam sit amet nisl congue hendrerit. Vivamus ligula libero, blandit eget pulvinar quis, lacinia eget enim. Aliquam lacinia, nulla sed auctor aliquet, tortor massa eleifend ipsum, quis facilisis mauris massa et ligula.</p>
+						<p>Sed sed dui ut velit facilisis malesuada a sit amet velit. Nam ipsum augue, tristique vel lacinia vitae, gravida id leo. Vivamus accumsan lobortis euismod. Aenean eget pellentesque augue. Pellentesque in lacus risus.
+                        </p>
+                    </div>
+
+                    <!--social links -->
+                    <ul class="social-links">
+                        <!-- link button da modificare -->
+                        <li>
+                          <div class="fb-like" data-href="Like3.html" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+                        </li>
+                        <li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it">Tweet</a>
+                        </li>
+                    </ul>
+                    <!--social links -->
+                </div><!--/primary-->
+
+                <div class="widthSix secondary">
+                    <div class="imageWithCaption">
+                        <img src="http://placehold.it/460x345&text=opera03" alt="Titolo opera 3" />
+                        <p data-artworkId="3"><strong>0</strong>
+                                                                        persone hanno votato quest'opera</p>
+                    </div>
+                    
+                    <!--buttons-->
+                    <div class="dialogButtons">
+
+						<a href="#zoom-op03" id="zoom-op03" class="btn zoom-btn btn-grey75" title="Ingrandisci Opera 3">Ingrandisci</a>
+						<a href="Works3.html" id="vote-op03" class="btn vote-btn btn-cyan75">Vota questa opera</a>
+					</div><!--/dialogButton-->
+                    
+            	</div><!--/secondary-->
+            </div><!--/inner-->
+            	
+        </section><!-- OPERA 03 --->
+    </div><!--/cycle-slideshow-->
+
+
+       <!-- BIG IMG MODAL OPENING -->
+    <div id="opera-modal1" class="modal">
+        <div class="dialog-wrap">
+            <a id="close-op01" class="close" href="#close" title="chiudi"><img src="../img/icon-close.gif" alt="chiudi"/></a>
+            <img src="http://placehold.it/1024x1200&text=opera01%20big" alt="Opera 01 artista bla bla bla"/>
+        </div>
+    </div>
+
+    <div id="opera-modal2" class="modal">
+        <div class="dialog-wrap">
+            <a id="close-op02" class="close" href="#close" title="chiudi"><img src="../img/icon-close.gif" alt="chiudi"/></a>
+            <img src="http://placehold.it/1024x1200&text=opera02%20big" alt="Opera 01 artista bla bla bla"/>
+        </div>
+    </div>
+
+    <div id="opera-modal3" class="modal">
+        <div class="dialog-wrap">
+            <a id="close-op03" class="close" href="#close" title="chiudi"><img src="../img/icon-close.gif" alt="chiudi"/></a>
+            <img src="http://placehold.it/1024x1200&text=opera03%20big" alt="Opera 01 artista bla bla bla"/>
+        </div>
+    </div>
+    <!-- /BIG IMG MODAL OPENING -->
+            <div class="horizontal">
+    <ul id="lensNavigator">
+        <li id="previous"><a href="#" class="prev" title="">Previous</a></li>
+        <li id="next"><a href="#" class="next" title="">Next</a></li>
+    </ul>
+</div>
+	            
+        </div><!-- FINE CONTENT -->
+            
+        <footer id="footer" class="footer"><!--- INIZIO FOOTER --->
+
+                <ul id="footerLinks">
+                    <li><a href="Premi.html" title="Barclays Art Prize: Premio" >Premio</a></li>
+                    <li><a href="Privacy.html" title="Barclays Art Prize: Pravacy" >Privacy</a></li>
+                    <li><a href="Regolamento.html" title="Barclays Art Prize: Regolamento" >Regolamento</a></li>
+                    <li class="copyright">&copy; Barclays 2013</li>
+                </ul>                
+
+        </footer><!--- FINE FOOTER --->
+    </div>
+</div>
+
+
+<script src="../Scripts/lib-and-custom-js-min.js"></script>
+<script src="../Scripts/jquery.validate.min.js"></script>
+<script src="../Scripts/additional-methods.min.js"></script>
+<script src="../Scripts/messages_it.js"></script>
+<script src="../Scripts/wla.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('#vota_artprize').addClass("current");
+        read_votes();
+    });
+
+    function read_votes() {
+
+        $.ajax({
+            type: "POST",
+            url: "../Service.svc/Votes",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            processData: false,
+            success: function (data) {
+                console.log(data.d);
+                $.each(data.d, function (index, value) {
+                    $('p[data-artworkId="' + value.Key + '"] strong').html(value.Value);
+                });
+            },
+            error: function () {
+
+            }
+        });
+
+    }
+</script>
+</body>
+</html>
