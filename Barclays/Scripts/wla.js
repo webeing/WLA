@@ -87,12 +87,11 @@ function enable_custom_validation() {
     form.submit(function (event) {
         if (form.valid()) {
             $.ajax({
-                type: "POST",                
+                type: "POST",
                 contentType: "application/json; charset=utf-8",
-                dataType: "json",
                 processData: false,
                 data: get_form_content(),
-                url: form.attr("action"),                
+                url: form.attr("action"),
                 success: function (data) {
 
                     var result = $(data).attr('data-result');
@@ -103,8 +102,8 @@ function enable_custom_validation() {
 
                     if (result == 'Ok' || result == "AlreadyRegistered")
                         action = function () { window.location = redirectUrl; }
-                    else 
-                        action = function () { }                    
+                    else
+                        action = function () { }
 
                     $('.modal').dialog({
                         modal: true,
@@ -121,13 +120,14 @@ function enable_custom_validation() {
                 },
                 error: function () {
                     $('body').append('<div class="modal error" data-result="Error"><div class="dialog-wrap"><a class="close" href="#close" title="chiudi"><img src="<%= ConfigurationManager.AppSettings["BasePath"] %>/img/icon-close.gif" alt="chiudi" /></a><h1>Siamo spiacenti</h1><h3>Non è stato possibile completare l\'operazione di voto, riprova in seguito.</h3></div><!--/dialog-wrap--></div><!--modal-->');
-                    
+
                     $('.modal').dialog({
-                        modal: true                        
+                        modal: true
                     });
 
                     $('.dialog-wrap a.close').click(function () {
                         $('.modal').dialog('close');
+                        $('.modal').remove();
                     });
 
                     Recaptcha.reload();
@@ -152,8 +152,8 @@ function enable_custom_validation() {
      + '"address": "' + $('input[name="User.Address"]', form).val() + '"' + ','
      + '"district": "' + $('select[name="User.District"]', form).val() + '"' + ','
      + '"cap": "' + $('input[name="User.CAP"]', form).val() + '"' + ','
-     + '"rule": "' + $('input[name="User.RuleAcceptance"]', form).val() + '"' + ','
-     + '"privacy": "' + $('input[name="User.PrivacyRead"]', form).val() + '"' + ','
+     + '"rule": "' + $('input[name="User.RuleAcceptance"]:checked', form).val() + '"' + ','
+     + '"privacy": "' + $('input[name="User.PrivacyRead"]:checked', form).val() + '"' + ','
      + '"captchaResponse": "' + $('input[name="recaptcha_response_field"]', form).val() + '"' + ','
      + '"captchaChallenge": "' + $('input[name="recaptcha_challenge_field"]', form).val() + '"' + '}';
   }
