@@ -49,6 +49,13 @@ $(function() {
         	 $( '#opera-modal3' ).dialog( 'close' );
         });
         $('#innovation-center').tabs();
+
+        var defaultText = ""; 
+        $('input[type=text]#User_MobilePhone').click(function() {
+            defaultText = $(this).val();
+            $(this).val('');
+        });
+
         $('#toggle-nav').click(function(){
             $('#primaryNavigation').slideToggle('fast');
         });
