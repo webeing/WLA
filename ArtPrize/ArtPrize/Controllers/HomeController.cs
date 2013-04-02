@@ -10,8 +10,8 @@ using NLog;
 namespace ArtPrize.Controllers
 {    
     [LoggingAttribute]
-    [LogSetter]
-    [HandleException]
+    [LogSetter]    
+    [HandleError]
     public class HomeController : BaseController
     {
         VoteService service;        
