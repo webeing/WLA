@@ -169,21 +169,21 @@
        <!-- BIG IMG MODAL OPENING -->
     <div id="opera-modal1" class="modal">
         <div class="dialog-wrap">
-            <a id="close-op01" class="close" href="#close" title="chiudi"><img src="../img/icon-close.gif" alt="chiudi"/></a>
+            <a id="close-op01" class="close" href="#close" title="chiudi"><img src="<%= Url.Content("~/img/icon-close.gif") %>" alt="chiudi"/></a>
             <img src="http://placehold.it/1024x1200&text=opera01%20big" alt="Opera 01 artista bla bla bla"/>
         </div>
     </div>
 
     <div id="opera-modal2" class="modal">
         <div class="dialog-wrap">
-            <a id="close-op02" class="close" href="#close" title="chiudi"><img src="../img/icon-close.gif" alt="chiudi"/></a>
+            <a id="close-op02" class="close" href="#close" title="chiudi"><img src="<%= Url.Content("~/img/icon-close.gif") %>" alt="chiudi"/></a>
             <img src="http://placehold.it/1024x1200&text=opera02%20big" alt="Opera 01 artista bla bla bla"/>
         </div>
     </div>
 
     <div id="opera-modal3" class="modal">
         <div class="dialog-wrap">
-            <a id="close-op03" class="close" href="#close" title="chiudi"><img src="../img/icon-close.gif" alt="chiudi"/></a>
+            <a id="close-op03" class="close" href="#close" title="chiudi"><img src="<%= Url.Content("~/img/icon-close.gif") %>" alt="chiudi"/></a>
             <img src="http://placehold.it/1024x1200&text=opera03%20big" alt="Opera 01 artista bla bla bla"/>
         </div>
     </div>

@@ -38,7 +38,7 @@ namespace ArtPrize.Controllers
             return View();
         }
 
-        [ActionName("Premi")]
+        [ActionName("Premio")]
         public ActionResult Prize() 
         {
             return View("Prize");
