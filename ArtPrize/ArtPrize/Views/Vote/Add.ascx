@@ -220,7 +220,7 @@
     </form>
 
     <script type"text/javascript">
-        var redirectUrl = '<%= ConfigurationManager.AppSettings["BasePath"] %>/ArtPrize/opere-in-gara';
+        var redirectUrl = '<%= Url.Content("~/ArtPrize/opere-in-gara") %>';
     </script>
 
 

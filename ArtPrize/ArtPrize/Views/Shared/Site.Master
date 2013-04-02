@@ -9,9 +9,9 @@
     <asp:ContentPlaceHolder ID="meta_og" runat="server"></asp:ContentPlaceHolder>
 
     <title>Barclay Art Prize Home</title>
-    <link href="<%= ConfigurationManager.AppSettings["BasePath"] %>/css/style.css" rel="stylesheet" media="screen">
-    <link href="<%= ConfigurationManager.AppSettings["BasePath"] %>/img/icons/favicon.ico")" rel="shortcut icon">
-    <script src="<%= ConfigurationManager.AppSettings["BasePath"] %>/Scripts/modernizr.js"></script>
+    <link href="<%= Url.Content("~/css/style.css") %>" rel="stylesheet" media="screen">
+    <link href="<%= Url.Content("~/img/icons/favicon.ico")%>" rel="shortcut icon">
+    <script src="<%= Url.Content("~/Scripts/modernizr.js")%>" ></script>
     <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
   </head>
@@ -24,7 +24,7 @@
         <!-- header -->
         <div id="header">
             <a href="<%= Url.Content("~/Index") %>" id="logo" title="Barclays Art Prize">
-                <img alt="Barclays" src="<%= ConfigurationManager.AppSettings["BasePath"] %>/img/barclays-logo.gif">
+                <img alt="Barclays" src="<%= Url.Content("~/img/barclays-logo.gif")%>" >
             </a>
             <a id="toggle-nav" href="#logo" title="Menu">Menu</a>
             <div id="primaryNavigation">
@@ -60,11 +60,11 @@
 </div>
 
 
-<script src="<%= ConfigurationManager.AppSettings["BasePath"] %>/Scripts/lib-and-custom-js-min.js"></script>
-<script src="<%= ConfigurationManager.AppSettings["BasePath"] %>/Scripts/jquery.validate.min.js"></script>
-<script src="<%= ConfigurationManager.AppSettings["BasePath"] %>/Scripts/additional-methods.min.js"></script>
-<script src="<%= ConfigurationManager.AppSettings["BasePath"] %>/Scripts/messages_it.js"></script>
-<script src="<%= ConfigurationManager.AppSettings["BasePath"] %>/Scripts/wla.js"></script>
+<script src="<%= Url.Content("~/Scripts/lib-and-custom-js-min.js")%>"></script>
+<script src="<%= Url.Content("~/Scripts/jquery.validate.min.js")%>"></script>
+<script src="<%= Url.Content("~/Scripts/additional-methods.min.js")%>"></script>
+<script src="<%= Url.Content("~/Scripts/messages_it.js")%>"></script>
+<script src="<%= Url.Content("~/Scripts/wla.js")%>"></script>
 <asp:ContentPlaceHolder ID="Script" runat="server" />
 </body>
 </html>

@@ -8,3 +8,12 @@ C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\bin\N
 C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\bin\NLog.xml
 C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\bin\Recaptcha.pdb
 C:\Documents and Settings\emidio\My Documents\GitHub\WLA\ArtPrize\ArtPrize\bin\Recaptcha.dll
+E:\WLA\WLA\ArtPrize\ArtPrize\bin\NLog.config
+E:\WLA\WLA\ArtPrize\ArtPrize\bin\ArtPrize.dll
+E:\WLA\WLA\ArtPrize\ArtPrize\bin\ArtPrize.pdb
+E:\WLA\WLA\ArtPrize\ArtPrize\bin\NLog.dll
+E:\WLA\WLA\ArtPrize\ArtPrize\bin\NLog.xml
+E:\WLA\WLA\ArtPrize\ArtPrize\bin\Recaptcha.pdb
+E:\WLA\WLA\ArtPrize\ArtPrize\obj\Debug\ResolveAssemblyReference.cache
+E:\WLA\WLA\ArtPrize\ArtPrize\obj\Debug\ArtPrize.dll
+E:\WLA\WLA\ArtPrize\ArtPrize\obj\Debug\ArtPrize.pdb
