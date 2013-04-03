@@ -28,7 +28,7 @@
 	                    </span>
 	
 	                    <div class="imageWithCaption">
-	                        <img src="../img/home/01home_visual.png" alt="Barclays Art Prize"/>
+	                        <img src="<%= Url.Content("~/img/home/01home_visual.jpg") %>" alt="Barclays Art Prize <visual"/>
 	                    </div>
 	
 	                    <span class="curtain right">
@@ -68,32 +68,32 @@
 	                    <ul>
 	                        <li>
                                 <p>
-                                    <a href="#" title="Barclays Art Prize: Opera in gara - La barca che naviga, Andrea Silvestri">
-                                    La barca che naviga <br/>
-                                    Andrea Silvestri
+                                    <a href="#" title="Barclays Art Prize Uno, nessuno, centomila Clelia Scimone">
+                                    Uno, nessuno, centomila<br/>
+                                    Clelia Scimone
                                     </a>
                                 </p>
-                                <img src="../img/minion.jpg" alt="Barclays Art Prize: Opera in gara - La barca che naviga, Andrea Silvestri">
+                                <img src="<%= Url.Content("~/img/opere/uno-nessuno-centomila-min.jpg") %>" alt="Barclays Art Prize Uno, nessuno, centomila Clelia Scimone">
                             </li>
 	
                             <li>
                                 <p>
-                                    <a href="#" title="Barclays Art Prize: Opera in gara - La donna con i fiori, Chiara Stella">
-                                        La donna con i fiori <br/>
-                                        Chiara Stella
+                                    <a href="#" title="Barclays Art Prize Ti allungo una mano Giulio Pace">
+                                        Ti allungo una mano<br/>
+                                        Giulio Pace
                                     </a>
                                 </p>
-                                <img src="../img/minion.jpg" alt="Barclays Art Prize: Opera in gara - La donna con i fiori, Chiara Stella">
+                                <img src="<%= Url.Content("~/img/opere/ti-allungo-una-mano-min.jpg") %>" alt="Barclays Art Prize Ti allungo una mano Giulio Pace">
                             </li>
 	
                             <li class="last">
                                 <p>
-                                    <a href="#" title="Barclays Art Prize: Opera in gara - Explosion, Matteo Falcini">
-                                        Explosion <br/>
-                                        Matteo Falcini
+                                    <a href="#" title="Barclays Art Prize Arcano Maggiore n. 3 – L’Imperatrice Pietro Librici">
+                                        Arcano Maggiore n. 3 – L’Imperatrice<br/>
+                                        Pietro Librici
                                     </a>
                                 </p>
-                                <img src="../img/minion.jpg" alt="Barclays Art Prize: Opera in gara - Explosion, Matteo Falcini">
+                                <img src="<%= Url.Content("~/img/opere/arcano-maggiore-imperatrice-min.jpg") %>" alt="Barclays Art Prize Arcano Maggiore n. 3 – L’Imperatrice Pietro Librici">
                             </li>
 	                    </ul>
 	                </div>
@@ -109,16 +109,16 @@
 
 	                    <div class="cycle-pager"></div>
 	                    <figure class="image">
-		                    <img src="http://placehold.it/540x307&text=opera01" alt="Opera in gara: Explosion, Matteo Falcini" />
-		                    <p>Explosion, Matteo Falcini</p>
+		                    <img src="<%= Url.Content("~/img/opere/uno-nessuno-centomila.jpg") %>" alt="Uno, nessuno, centomila Clelia Scimone" />
+		                    <p>Uno, nessuno, centomila Clelia Scimone</p>
 	                    </figure>
 	                    <figure class="image">
-	                        <img src="http://placehold.it/540x307&text=opera02" alt="Opera in gara: Explosion, Matteo Falcini" />
-	                        <p>Didascalia opera 2</p>
+	                        <img src="<%= Url.Content("~/img/opere/ti-allungo-una-mano.jpg") %>" alt="Barclays Art Prize Ti allungo una mano Giulio Pace" />
+	                        <p>Ti allungo una mano Giulio Pace</p>
 	                    </figure>
 	                    <figure class="image">
-	                        <img src="http://placehold.it/540x307&text=opera03" alt="Opera in gara: Explosion, Matteo Falcini" />
-	                        <p>Didascalia opera 3</p>
+	                        <img src="<%= Url.Content("~/img/opere/arcano-maggiore-imperatrice.jpg") %>" alt="Barclays Art Prize Arcano Maggiore n. 3 – L’Imperatrice Pietro Librici" />
+	                        <p>Arcano Maggiore n. 3 – L’Imperatrice Pietro Librici</p>
 	                    </figure>
 	                </div><!--/imageWithCaption-->
 	
@@ -154,7 +154,7 @@
 	
 	            <div class="widthSix">
 	                <div class="imageWithCaption">
-	                    <img src="../img/Satellite_2.jpg" alt="Apertura nuovo centro di innovazione" />
+	                    <img src="<%= Url.Content("~/img/Satellite_2.jpg") %>" alt="Apertura nuovo centro di innovazione" />
 	                </div>
 	            </div><!--/widthSix-->
 	        </div><!--/inner-->
