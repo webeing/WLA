@@ -10,7 +10,7 @@
 	            
 	            <!-- imageWithCaption -->
 				<div class="imageWithCaption">
-					<img alt="Art Prize Barclay" src="<%= Url.Content("~/img/opere/" + Model.ArtworkId + ".jpg") %>" />
+					<img alt="Art Prize Barclay" src="<%= Url.Content("~/img/opere/" + Model + ".jpg") %>" />
 				</div><!--/imageWithCaption-->
 
 	                    
