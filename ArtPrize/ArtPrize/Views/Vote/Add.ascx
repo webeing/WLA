@@ -220,7 +220,7 @@
     </form>
 
     <script type"text/javascript">
-        var redirectUrl = '<%= Url.Content("~/ArtPrize/opere-in-gara") %>';
+        var redirectUrl = '<%= Url.Content("~/opere-in-gara") %>';
     </script>
 
 
