@@ -1,5 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %>
 
+<asp:Content ID="meta" ContentPlaceHolderID="meta_og" runat="server">
+    <meta name="description" content="Barclays e l’Accademia di Belle Arti di Brera hanno invitato i ragazzi a reinterpretare i valori su cui si fonda il marchio Barclays." />
+    <title>Barclay Art Prize Innovation Center</title>
+</asp:Content>
 <asp:Content ID="ContentHeader" ContentPlaceHolderID="header" runat="server">
 
     <!-- Breadcrumb nav -->
@@ -37,7 +41,7 @@
 	                                <p><a href="#tab-1" title="La nuova filiale Barclays nel cuore di Milano">Barclays Premier Flagship<br/>
                                         <small>Via dei Mercanti 10, Milano</small></a>
                                     </p>
-	                                <img src="http://placehold.it/180x110">
+	                                <img src="<%= Url.Content("~/img/innovation/flagship-min.jpg") %>">
 	                            </li>
 	
 	                            <li>
@@ -45,15 +49,15 @@
                                       Barclays Innovation Center<br/>
                                       <small>Piazza della Repubblica a Milano<br/>Work in progress</small>
                                     </a></p>
-	                                <img src="http://placehold.it/180x110">
+	                                <img src="<%= Url.Content("~/img/innovation/innoxcenter-min.jpg") %>">
 	                            </li>
 	                                
 	                            <li>
-	                                 <p><a href="#tab-3" title="Barclays fornitore globale di servizi finanziari">
+	                                 <p><a href="#tab-3" title="Barclays Art Prize for young talents">
                                        Barclays Art Prize <br/>
                                        <small>for young talents</small>
                                     </a></p>
-	                                <img src="http://placehold.it/180x110">
+	                                <img src="<%= Url.Content("~/img/innovation/visual-min.jpg") %>" alt="Barclays Art Prize for young talents">
 	                            </li>
 	                        </ul>
 	                    </div><!--/listNewsItems-->
@@ -72,24 +76,24 @@
                             <div class="cycle-pager"></div>
 
                             <figure>
-                                <img alt="Barclays Innovation Center" src="../img/Satellite.jpg">
-                                <p>Barclays Premier Flagship. La nuova filiale nel cuore di Milano</p>
+                                <img alt="Barclays Innovation Center" src="<%= Url.Content("~/img/Satellite.jpg") %>" />
+                                <p>Barclays Innovation Center</p>
                             </figure>
                             <figure>
-                                <img alt="Barclays Innovation Center" src="../img/Satellite_2.jpg">
-                                <p>Barclays Premier Flagship. La nuova filiale nel cuore di Milano</p>
+                                <img alt="Barclays Innovation Center" src="<%= Url.Content("~/img/Satellite_2.jpg")%>" />
+                                <p>Barclays Innovation Center</p>
                             </figure>
                             <figure>
-                                <img alt="Barclays Innovation Center" src="../img/Satellite_3.jpg">
-                                <p>Barclays Premier Flagship. La nuova filiale nel cuore di Milano</p>
+                                <img alt="Barclays Innovation Center" src="<%= Url.Content("~/img/Satellite_3.jpg") %>" />
+                                <p>Barclays Innovation Center</p>
                             </figure>
                             <figure>
-                                <img alt="Barclays Innovation Center" src="../img/Satellite_4.jpg">
-                                <p>Barclays Premier Flagship. La nuova filiale nel cuore di Milano</p>
+                                <img alt="Barclays Innovation Center" src="<%= Url.Content("~/img/Satellite_4.jpg") %>" />
+                                <p>Barclays Innovation Center</p>
                             </figure>
                             <figure>
-                                <img alt="Barclays Innovation Center" src="../img/Satellite_5.jpg">
-                                <p>Barclays Premier Flagship. La nuova filiale nel cuore di Milano</p>
+                                <img alt="Barclays Innovation Center" src="<%= Url.Content("~/img/Satellite_5.jpg") %>" />
+                                <p>Barclays Innovation Center</p>
                             </figure>
                        </div><!--/imageWithCaption-->
                             <h3>
@@ -127,20 +131,20 @@
                                  <div id="cycle-pager-tab-3" class="cycle-pager"></div>
 
                                 <figure>
-                                     <img alt="concorso Barclays Art Prize for young talents" src="../img/innovation/ic-visual.png">
+                                     <img alt="concorso Barclays Art Prize for young talents" src="<%= Url.Content("~/img/home/01home_visual.jpg") %>" />
                                      <p>La prima edizione del concorso Barclays Art Prize for young talents</p>
                                  </figure>
                                  <figure>
-                                     <img alt="concorso Barclays Art Prize for young talents opera 1" src="http://placehold.it/560x345&text=opera01">
-                                     <p>NOME AUTORE TITOLO OPERA 1</p>
+                                     <img alt="concorso Barclays Art Prize for young talents Uno, nessuno, centomila Clelia Scimone" src="<%= Url.Content("~/img/opere/uno-nessuno-centomila.jpg") %>" />
+                                     <p>Uno, nessuno, centomila Clelia Scimone</p>
                                  </figure>
                                  <figure>
-                                     <img alt="concorso Barclays Art Prize for young talents opera 2" src="http://placehold.it/560x345&text=opera02">
-                                     <p>NOME AUTORE TITOLO OPERA 2</p>
+                                     <img alt="concorso Barclays Art Prize for young talents Ti allungo una mano Giulio Pace" src="<%= Url.Content("~/img/opere/ti-allungo-una-mano.jpg") %>" />
+                                     <p>Ti allungo una mano Giulio Pace</p>
                                  </figure>
                                  <figure>
-                                     <img alt="concorso Barclays Art Prize for young talents opera 3" src="http://placehold.it/560x345&text=opera03">
-                                     <p>NOME AUTORE TITOLO OPERA 2</p>
+                                     <img alt="concorso Barclays Art Prize for young talents Arcano Maggiore n. 3 – L’Imperatrice Pietro Librici" src="<%= Url.Content("~/img/opere/arcano-maggiore-imperatrice.jpg") %>" />
+                                     <p>Arcano Maggiore n. 3 – L’Imperatrice Pietro Librici</p>
                                  </figure>
                             </div><!--/imageWithCaption-->
 
@@ -153,17 +157,11 @@
                             </p>
 
                             <ul class="listLinks">
-                                <li><a href="about.html" title="About Barclays Art Prize">Il concorso</a></li>
-                                <li><a href="opere-in-gara.html" title="Barclays Art Prize: Opera in gara">Vota le opere in gara</a></li>
+                                <li><a href="<%= Url.Content("~/About") %>" title="About Barclays Art Prize">Il concorso</a></li>
+                                <li><a href="<%= Url.Content("~/opere-in-gara") %>" title="Barclays Art Prize: Opera in gara">Vota le opere in gara</a></li>
                             </ul>
                         </div><!--tab3-->
 
-	                    <ul class="listLinks">
-							<li><a href="<%= Url.Content("~/About") %>" title="About Barclays Art Prize">Il concorso</a></li>
-							<li><a href="<%= Url.Content("~/opere-in-gara") %>" title="Barclays Art Prize: Opere in gara">Opere in gara</a></li>
-							<li><a href="<%= Url.Content("~/Regolamento") %>" title="Barclays Art Prize: Regolamento">Regolamento</a></li>
-							<li><a href="<%= Url.Content("~/Premi") %>" title="Barclays Art Prize: Premio">Premio</a></li>  
-	                    </ul>
 	
 	                </div><!-- fine secondary -->
 	
@@ -184,6 +182,6 @@
     $(document).ready(function () {
         $('#barclays_ic').addClass("current");
     });
-            </script>
+</script>
 
 </asp:Content>

@@ -1,5 +1,9 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %>
 
+<asp:Content ID="meta" ContentPlaceHolderID="meta_og" runat="server">
+    <meta name="description" content="Barclays e l’Accademia di Belle Arti di Brera hanno invitato i ragazzi a reinterpretare i valori su cui si fonda il marchio Barclays." />
+    <title>Barclay Art Prize About</title>
+</asp:Content>
 <asp:Content ID="ContentHeader" ContentPlaceHolderID="header" runat="server">
 
     <!-- Breadcrumb nav -->
@@ -101,6 +105,7 @@
         $('#about_artprize').addClass("current");
     });
 </script>
+<!-- Aggiungere script player video -->
 </asp:Content>
 
 
