@@ -11,9 +11,9 @@ namespace ArtPrize.Controllers
         //
         // GET: /Works/
 
-        public ActionResult Like(int artworkId)
+        public ActionResult Like(int id)
         {
-            return View("Like0" + artworkId);
+            return View("Like0" + id);
         }
 
     }

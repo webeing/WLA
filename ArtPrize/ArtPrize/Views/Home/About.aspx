@@ -42,11 +42,15 @@
 	                        
 	                        <!-- Video About -->
 	                        <div class="videoWithCaption">
-	    					    <div data-source="http://www.media.barclays.co.uk/player/?id=160023-6776516&amp;autostart=n&amp;enablesharing=n&amp;showrelated=n&amp;r=73893" data-height="259" data-width="460" class="linkToVideo">
-	    					    	<iframe width="460" scrolling="no" height="259" frameborder="0" id="video0" src="http://www.media.barclays.co.uk/player/?id=160023-6776516&amp;autostart=n&amp;enablesharing=n&amp;showrelated=n&amp;r=73893&amp;cookie=y">
-	    					    	</iframe>
-	    					    </div>
-	    					</div><!--/videoWithCaption-->
+                                <!--<a href="<%= Url.Content("~/img/video/Video barclays web.flv") %>" style="display:block;width:460px;height:259px" id="player"></a>
+	    					        -->
+                                    <div id="player" data-engine="flash">
+                                       <video preload="none">
+                                          <source type="video/x-flv" src="<%= Url.Content("~/img/video/Video barclays web.flv") %>"/>
+                                       </video>
+                                    </div>
+ 
+                            </div><!--/videoWithCaption-->
 	                        <!--/Video About -->
 	
 	                        <span class="curtain right">
@@ -68,7 +72,7 @@
 	
 	                    <ul class="listLinks">
 	                        <li><a href="<%= Url.Content("~/opere-in-gara") %>" title="Barclays Art Prize: Opere in gara">Opere in gara</a></li>
-	                        <li><a href="<%= Url.Content("~/Premi") %>" title="Barclays Art Prize: Premio">Premio</a></li>
+	                        <li><a href="<%= Url.Content("~/Premio") %>" title="Barclays Art Prize: Premio">Premio</a></li>
 	                        <li><a href="http://www.accademiadibrera.milano.it/" title="Barclays Art Prize: Premio" target="_blank">Accademia delle Belle Arti di Brera</a></li>                        
 	                    </ul>
                         <!--social links -->
@@ -105,7 +109,18 @@
         $('#about_artprize').addClass("current");
     });
 </script>
+<!-- 2. flowplayer -->
+<script src="http://releases.flowplayer.org/5.3.2/flowplayer.min.js"></script>
+ 
+<!-- 3. skin -->
+<link rel="stylesheet" type="text/css"
+   href="http://releases.flowplayer.org/5.3.2/skin/minimalist.css" />
 <!-- Aggiungere script player video -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#player').flowplayer({ engine: 'flash' });
+    });
+</script>
 </asp:Content>
 
 

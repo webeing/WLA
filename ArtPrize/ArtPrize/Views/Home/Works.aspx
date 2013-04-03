@@ -55,7 +55,7 @@
                    <!--social links -->
                     <ul class="social-links">
                         <li>
-                            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-href="<%= Url.Content("~/Works/Like01") %>"></div>
+                            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-href="http://www.barclays.it/ArtPrize/Works/Like/1"></div>
                         </li>
                         <li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it">Tweet</a>
                         </li>
@@ -94,7 +94,7 @@
                     <!--social links -->
                     <ul class="social-links">
                         <li>
-                            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-href="<%= Url.Content("~/Works/Like02") %>"></div>
+                            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-href="http://www.barclays.it/ArtPrize/Works/Like/2"></div>
                         </li>
                         <li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it">Tweet</a>
                         </li>
@@ -139,7 +139,7 @@
                     <ul class="social-links">
                         <!-- link button da modificare -->
                         <li>
-                          <div class="fb-like" data-href="<%= Url.Content("~/Works/Like03") %>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+                          <div class="fb-like" data-href="http://www.barclays.it/ArtPrize/Works/Like/3" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
                         </li>
                         <li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it">Tweet</a>
                         </li>
