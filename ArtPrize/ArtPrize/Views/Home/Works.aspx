@@ -1,5 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %>
 
+<asp:Content ID="meta" ContentPlaceHolderID="meta_og" runat="server">
+    <meta name="description" content="Barclays Vota la tua opera preferita e potrai essere estratto per vincere un viaggio per due persone in una città d’arte italiana" />
+    <title>Barclay Art Prize opere in gara</title>
+</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">
     <!-- Breadcrumb nav -->
 			<div class="" id="secondaryNavigation">
@@ -42,17 +46,16 @@
     <section id="opera-one" class="lens opera"><!-- PRIMA SLIDER --->
             <div class="inner">
                 <div class="widthSix primary">
-                    <h2>Titolo opera 01<br/>
-                       Nome autore</h2>
+                    <h2>Uno, nessuno, centomila <br/>
+                       Clelia Scimone</h2>
                     <div class="rte">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget justo magna, vel tempor risus. Aenean velit tortor, hendrerit ut lobortis non, scelerisque sit amet erat. Suspendisse non neque a libero dictum posuere. Aliquam pretium diam et elit aliquet dignissim vel commodo leo. Fusce tempus semper ultrices. Ut pellentesque malesuada viverra. Maecenas velit erat, blandit eu venenatis eu, porta nec metus. Quisque imperdiet tincidunt orci, nec ullamcorper metus ornare nec. Ut quis quam sit amet nisl congue hendrerit. Vivamus ligula libero, blandit eget pulvinar quis, lacinia eget enim. Aliquam lacinia, nulla sed auctor aliquet, tortor massa eleifend ipsum, quis facilisis mauris massa et ligula.</p>
-						<p>Sed sed dui ut velit facilisis malesuada a sit amet velit. Nam ipsum augue, tristique vel lacinia vitae, gravida id leo. Vivamus accumsan lobortis euismod. Aenean eget pellentesque augue. Pellentesque in lacus risus.
-                        </p>
+                        <p>Un viso che pian piano sembra confondersi con lo sfondo fino a quasi scomparire. Il volto di una generazione in difficoltà, che paradossalmente ci rende tutti uguali (o quasi). Così, nella continua ricerca di quel posto nel mondo che ci apparCene, ma che sembra esserci negato, ci impegniamo nella speranza che qualcuno ci noti, punti sulle nostre qualità e abbia fiducia in noi. Perché fiducia, onestà, rispetto e integrità sono i valori più importanti, necessari per ricominciare da capo e ritrovare, insieme, qualcosa che abbiamo perduto o che non abbiamo ancora trovato: la nostra identità.</p>
+                        <p>Tecnica: fotografia digitale.</p>
                     </div>
                    <!--social links -->
                     <ul class="social-links">
                         <li>
-                            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-href="<%= Url.Content("~/opere-in-gara/Like01") %>"></div>
+                            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-href="<%= Url.Content("~/Works/Like01") %>"></div>
                         </li>
                         <li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it">Tweet</a>
                         </li>
@@ -62,9 +65,9 @@
 
                 <div class="widthSix secondary">
                     <div class="imageWithCaption">
-                        <img src="http://placehold.it/460x345&text=opera01" alt="Titolo opera 1" />
+                        <img src="<%= Url.Content("~/img/opere/uno-nessuno-centomila.jpg") %>" alt="Barclays Art Prize Uno, nessuno, centomila Clelia Scimone" />
                         <p><strong><%= ((System.Collections.Generic.Dictionary<int,int>)ViewData["votes"])[1] %></strong>
-                        persone hanno votato quest'opera</p>
+                        persone hanno votato Uno, nessuno, centomila di Clelia Scimone</p>
                     </div>
                     
                     <!--buttons-->
@@ -83,17 +86,15 @@
             <section id="opera-two" class="lens opera"><!-- PRIMA SLIDER --->
             <div class="inner">
                 <div class="widthSix primary">
-                    <h2>Titolo opera 02<br/>
-                       Nome autore</h2>
+                    <h2>Ti allungo una mano <br />Giulio Pace</h2>
                     <div class="rte">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget justo magna, vel tempor risus. Aenean velit tortor, hendrerit ut lobortis non, scelerisque sit amet erat. Suspendisse non neque a libero dictum posuere. Aliquam pretium diam et elit aliquet dignissim vel commodo leo. Fusce tempus semper ultrices. Ut pellentesque malesuada viverra. Maecenas velit erat, blandit eu venenatis eu, porta nec metus. Quisque imperdiet tincidunt orci, nec ullamcorper metus ornare nec. Ut quis quam sit amet nisl congue hendrerit. Vivamus ligula libero, blandit eget pulvinar quis, lacinia eget enim. Aliquam lacinia, nulla sed auctor aliquet, tortor massa eleifend ipsum, quis facilisis mauris massa et ligula.</p>
-						<p>Sed sed dui ut velit facilisis malesuada a sit amet velit. Nam ipsum augue, tristique vel lacinia vitae, gravida id leo. Vivamus accumsan lobortis euismod. Aenean eget pellentesque augue. Pellentesque in lacus risus.
-                        </p>
+                        <p>L’opera è stata concepita per riassumere i caratteri richiesti dalla committenza: rispetto, integrità, servizio, eccellenza e stewardship. Per fare questo ho utilizzato il valore molteplice delle mani: tendere le mani, dare la mano, essere in buone mani... sono “frasi fatte” che dimostrano quanto la gestualità delle mani simboleggi, nell’uso comune, atti di sostegno e garanzia. L’opera è così formata da due grandi mani unite tra loro da una cerniera la quale aprendosi simula un gesto di accessibilità, di apertura.</p>
+                        <p>Tecnica: stampa su tessuto.</p>
                     </div>
                     <!--social links -->
                     <ul class="social-links">
                         <li>
-                            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-href="<%= Url.Content("~/opere-in-gara/Like02") %>"></div>
+                            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-href="<%= Url.Content("~/Works/Like02") %>"></div>
                         </li>
                         <li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it">Tweet</a>
                         </li>
@@ -104,9 +105,9 @@
 
                 <div class="widthSix secondary">
                     <div class="imageWithCaption">
-                        <img src="http://placehold.it/460x345&text=opera02" alt="Titolo opera 2" />
+                        <img src="<%= Url.Content("~/img/opere/ti-allungo-una-mano.jpg") %>" alt="Barclays Art Prize Ti allungo una mano Giulio Pace" />
                         <p><strong><%= ((System.Collections.Generic.Dictionary<int,int>)ViewData["votes"])[2] %></strong>
-                                                persone hanno votato quest'opera</p>
+                                                persone hanno votato Ti allungo una mano di Giulio Pace</p>
                     </div>
                     
                     <!--buttons-->
@@ -125,12 +126,13 @@
         <section id="opera-three" class="lens opera"><!-- PRIMA SLIDER --->
             <div class="inner">
                 <div class="widthSix primary">
-                    <h2>Titolo opera 03<br/>
-                       Nome autore</h2>
+                    <h2>Arcano Maggiore n. 3 – L’Imperatrice <br />
+                    Pietro Librici</h2>
                     <div class="rte">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget justo magna, vel tempor risus. Aenean velit tortor, hendrerit ut lobortis non, scelerisque sit amet erat. Suspendisse non neque a libero dictum posuere. Aliquam pretium diam et elit aliquet dignissim vel commodo leo. Fusce tempus semper ultrices. Ut pellentesque malesuada viverra. Maecenas velit erat, blandit eu venenatis eu, porta nec metus. Quisque imperdiet tincidunt orci, nec ullamcorper metus ornare nec. Ut quis quam sit amet nisl congue hendrerit. Vivamus ligula libero, blandit eget pulvinar quis, lacinia eget enim. Aliquam lacinia, nulla sed auctor aliquet, tortor massa eleifend ipsum, quis facilisis mauris massa et ligula.</p>
-						<p>Sed sed dui ut velit facilisis malesuada a sit amet velit. Nam ipsum augue, tristique vel lacinia vitae, gravida id leo. Vivamus accumsan lobortis euismod. Aenean eget pellentesque augue. Pellentesque in lacus risus.
-                        </p>
+                        <p>Il dipinto riattualizza la grande tradizione della raffigurazione di persone illustri usando in maniera moderna la luce e il colore ma anche la fonte ispiratrice. Infatti, rifacendosi alle tavole dei Tarocchi, Pietro Librici ha rielaborato la carta dell’Imperatrice, simbolo dell’azione futura e della benevolenza, dandole il volto della regina inglese Elisabetta I sotto il cui regno anche le arti conobbero grande fioritura. Dall’intenso e profondo sfondo blu notte si stagliano il blu, il bianco e il rosso, colori del brand inglese Barclays.
+                        <br />
+                        (Commento di Mariella De Santis)</p>
+                        <p>Tecnica: olio su tela.</p>
                     </div>
 
                     <!--social links -->
@@ -147,9 +149,9 @@
 
                 <div class="widthSix secondary">
                     <div class="imageWithCaption">
-                        <img src="http://placehold.it/460x345&text=opera03" alt="Titolo opera 3" />
+                        <img src="<%= Url.Content("~/img/opere/arcano-maggiore-imperatrice.jpg") %>" alt="Barclays Art Prize Arcano Maggiore n. 3 – L’Imperatrice Pietro Librici" />
                         <p><strong><%= ((System.Collections.Generic.Dictionary<int,int>)ViewData["votes"])[3] %></strong>
-                                                                        persone hanno votato quest'opera</p>
+                                                                        persone hanno votato Arcano Maggiore di Pietro Librici</p>
                     </div>
                     
                     <!--buttons-->
@@ -166,25 +168,25 @@
     </div><!--/cycle-slideshow-->
 
 
-       <!-- BIG IMG MODAL OPENING -->
+    <!-- BIG IMG MODAL OPENING -->
     <div id="opera-modal1" class="modal">
         <div class="dialog-wrap">
             <a id="close-op01" class="close" href="#close" title="chiudi"><img src="<%= Url.Content("~/img/icon-close.gif") %>" alt="chiudi"/></a>
-            <img src="http://placehold.it/1024x1200&text=opera01%20big" alt="Opera 01 artista bla bla bla"/>
+            <img src="<%= Url.Content("~/img/opere/uno-nessuno-centomila-big.jpg") %>" alt="Barclays Art Prize Uno, nessuno, centomila Clelia Scimone"/>
         </div>
     </div>
 
     <div id="opera-modal2" class="modal">
         <div class="dialog-wrap">
             <a id="close-op02" class="close" href="#close" title="chiudi"><img src="<%= Url.Content("~/img/icon-close.gif") %>" alt="chiudi"/></a>
-            <img src="http://placehold.it/1024x1200&text=opera02%20big" alt="Opera 01 artista bla bla bla"/>
+            <img src="<%= Url.Content("~/img/opere/ti-allungo-una-mano-big.jpg") %>" alt="Barclays Art Prize Ti allungo una mano Giulio Pace"/>
         </div>
     </div>
 
     <div id="opera-modal3" class="modal">
         <div class="dialog-wrap">
             <a id="close-op03" class="close" href="#close" title="chiudi"><img src="<%= Url.Content("~/img/icon-close.gif") %>" alt="chiudi"/></a>
-            <img src="http://placehold.it/1024x1200&text=opera03%20big" alt="Opera 01 artista bla bla bla"/>
+            <img src="<%= Url.Content("~/img/opere/arcano-maggiore-imperatrice-big.jpg") %>" alt="Barclays Art Prize Arcano Maggiore n. 3 – L’Imperatrice Pietro Librici"/>
         </div>
     </div>
     <!-- /BIG IMG MODAL OPENING -->

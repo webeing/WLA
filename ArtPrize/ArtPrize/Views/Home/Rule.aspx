@@ -1,5 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %>
 
+<asp:Content ID="meta" ContentPlaceHolderID="meta_og" runat="server">
+    <meta name="description" content="Barclays Art Prize Regolamento" />
+    <title>Barclay Art Prize Regolamento</title>
+</asp:Content>
 <asp:Content ID="ContentHeader" ContentPlaceHolderID="header" runat="server">
     <!-- Breadcrumb nav -->
 			<div class="" id="secondaryNavigation">
@@ -260,18 +264,15 @@
                             <ul class="twoLevels">
 
                                 <li>
-                                    <h3><a href="<%= Url.Content("~/Privacy") %>" title="Barclays Art Prize: Premio">Premio</a></h3>
-
+                                    <h3><a href="<%= Url.Content("~/Premio") %>" title="Barclays Art Prize: Premio">Premio</a></h3>
                                 </li>
 
                                 <li>
-                                    <h3><a href="<%= Url.Content("~/Premi") %>" title="Barclays Art Prize: Regolamento">Regolamento</a></h3>
+                                    <h3><a href="<%= Url.Content("~/Privacy") %>" title="Barclays Art Prize: Privacy">Privacy</a></h3>
                                 </li>
-
                             </ul>
                         </div>
-                    </div>
-                    
+                    </div>   
                 </div>
             </div>
 

@@ -10,12 +10,12 @@
 	            
 	            <!-- imageWithCaption -->
 				<div class="imageWithCaption">
-					<img alt="Art Prize Barclay" src="http://placehold.it/460x546&amp;text=opera0<%= Model %>" />
+					<img alt="Art Prize Barclay" src="<%= Url.Content("~/img/opere/" + Model.ArtworkId + ".jpg") %>" />
 				</div><!--/imageWithCaption-->
 
 	                    
 	            <ul class="listLinks">
-	                <li><a href="<%= Url.Content("~/Premi") %>" title="Barclays Art Prize: Premio">Premio</a></li>
+	                <li><a href="<%= Url.Content("~/Premio") %>" title="Barclays Art Prize: Premio">Premio</a></li>
 	                <li><a href="<%= Url.Content("~/Regolamento") %>" title="Barclays Art Prize: Regolamento">Regolamento</a></li>
 	                <li><a href="<%= Url.Content("~/opere-in-gara") %>" title="Barclays Art Prize: Opere in gara">Torna alle altre opere</a></li>                    
 	            </ul>
@@ -23,7 +23,7 @@
 	        </div>
 	
 	        <div class="widthSix secondary">
-	            <h2>Vota la tua opera preferita, partecipa al concorso e vinci un week end d’arte. Registrati subito.</h2>
+	            <h2>Vota la tua opera preferita, partecipa al concorso e vinci un weekend d’arte.<br />Registrati subito.</h2>
 	            <div class="rte">
 					<% Html.RenderPartial("Add", new ArtPrize.Models.Vote() { ArtworkId = Model }); %>
 	            </div>
@@ -71,4 +71,8 @@
         $('#vota_artprize').addClass("current");
     });
 </script>
+<script src="<%= Url.Content("~/Scripts/jquery.validate.min.js")%>"></script>
+<script src="<%= Url.Content("~/Scripts/additional-methods.min.js")%>"></script>
+<script src="<%= Url.Content("~/Scripts/messages_it.js")%>"></script>
+<script src="<%= Url.Content("~/Scripts/wla.js")%>"></script>
 </asp:Content>

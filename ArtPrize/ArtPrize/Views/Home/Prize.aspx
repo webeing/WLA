@@ -1,5 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %>
 
+<asp:Content ID="meta" ContentPlaceHolderID="meta_og" runat="server">
+    <meta name="description" content="Barclays Vota la tua opera preferita e potrai essere estratto per vincere un viaggio per due persone in una città d’arte italiana" />
+    <title>Barclay Art Prize Premio</title>
+</asp:Content>
 <asp:Content ID="ContentHeader" ContentPlaceHolderID="header" runat="server">
     <!-- Breadcrumb nav -->
 			<div class="" id="secondaryNavigation">
@@ -63,7 +67,7 @@
 					</span>
 						
 					<div class="imageWithCaption">
-						<img src="../img/premio.jpg" alt="Barclays Art Prize premio"/>
+						<img src="<%= Url.Content("~/img/premio.jpg") %>" alt="Barclays Art Prize premio"/>
 					</div>
 						
 					<span class="curtain right">

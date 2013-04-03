@@ -2,22 +2,21 @@
 
 <!DOCTYPE html>
 <html>
-
   <head>
-      <meta charset="utf-8">
-      <meta name="description" content="Vota anche tu l’opera TITOLO OPERA e fai vincere a NOME AUTORE un viaggio a Londra. Potresti aggiudicarti un weekend per due persone in una città d’arte italiana" />
-      <meta property="og:title" content="Testo vincente Opera #3" />
-      <meta property="og:description" content="Vota anche tu l’opera TITOLO OPERA e fai vincere a NOME AUTORE un viaggio a Londra. Potresti aggiudicarti un weekend per due persone in una città d’arte italiana "/>
+    <meta charset="utf-8">
+    <meta name="description" content="Vota anche tu l’opera Arcano Maggiore n. 3 – L’Imperatrice e fai vincere a Pietro Librici un viaggio a Londra. Potresti aggiudicarti un weekend per due persone in una città d’arte italiana" />
+    <meta property="og:title" content="Arcano Maggiore n. 3 – L’Imperatrice di Pietro Librici" />
+    <meta property="og:description" content="Vota anche tu l’opera Arcano Maggiore n. 3 – L’Imperatrice e fai vincere a Pietro Librici un viaggio a Londra. Potresti aggiudicarti un weekend per due persone in una città d’arte italiana "/>
 
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="http://landings.essereweb.net/preview/barclays/artprize/fb/vote1.html" />
-      <meta property="og:image" content="http://placehold.it/200x200&text=opera03" />
-      <meta property="og:site_name" content="Barclay Artprize" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= Url.Content("~/opere-in-gara") %>" />
+    <meta property="og:image" content="<%= Url.Content("~/img/opere/uno-nessuno-centomila.jpg") %>" />
+    <meta property="og:site_name" content="Barclay Artprize" />
 
-      <title>Barclay Art Prize. Vota anche tu l’opera TITOLO OPERA e fai vincere a NOME AUTORE un viaggio a Londra. Potresti aggiudicarti un weekend per due persone in una città d’arte italiana</title>
-    </head>
+    <title>Barclay Art Prize. Vota anche tu l’opera Arcano Maggiore n. 3 – L’Imperatrice e fai vincere a Pietro Librici un viaggio a Londra. Potresti aggiudicarti un weekend per due persone in una città d’arte italiana</title>
+  </head>
 
 <body>
-<h3>Barclay Art Prize. Vota anche tu l’opera TITOLO OPERA e fai vincere a NOME AUTORE un viaggio a Londra. Potresti aggiudicarti un weekend per due persone in una città d’arte italiana</h3>
+<h3>Barclay Art Prize. Vota anche tu l’opera Arcano Maggiore n. 3 – L’Imperatrice e fai vincere a Pietro Librici un viaggio a Londra. Potresti aggiudicarti un weekend per due persone in una città d’arte italiana</h3>
 </body>
 </html>
