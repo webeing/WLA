@@ -1,7 +1,8 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<ArtPrize.Models.Vote>" %>    
 <%@ Import Namespace="Recaptcha" %>
    
- <form method="post" id="vota-artprize" action="/Vote/Add" novalidate="novalidate">
+ <form method="post" id="vota-artprize" action="<%= Url.Action("Add","Vote") %>" novalidate="novalidate">
+ 
  
             <input type="hidden" value="<%= Model.ArtworkId %>" name="ArtworkId" id="ArtworkId">           
 

@@ -3,7 +3,8 @@
         changeMonth: true,
         changeYear: true,
         dateFormat: "dd/mm/yy",
-        yearRange: "-100:-18",
+        //minDate: -100,
+        yearRange: "-100:-0",        
         monthNamesShort: ["Gen", "Feb", "Mar", "Apr", "Mag", "Giu", "Lug", "Ago", "Set", "Ott", "Nov", "Dic"],
         dayNamesMin: [ "Do", "Lu", "Ma", "Me", "Gi", "Ve", "Sa"]
     });
@@ -115,7 +116,7 @@ function enable_custom_validation() {
                     Recaptcha.reload();
                 },
                 error: function () {
-                    $('body').append('<div class="modal error" data-result="Error"><div class="dialog-wrap"><a class="close" href="#close" title="chiudi"><img src="<%= Url.Content("~/img/icon-close.gif")%>" alt="chiudi" /></a><h1>Siamo spiacenti</h1><h3>Non è stato possibile completare l\'operazione di voto, riprova in seguito.</h3></div><!--/dialog-wrap--></div><!--modal-->');
+                    $('body').append('<div class="modal error" data-result="Error"><div class="dialog-wrap"><a class="close" href="#close" title="chiudi"><img src="../../../img/icon-close.gif" alt="chiudi" /></a><h1>Siamo spiacenti</h1><h3>Non è stato possibile completare l\'operazione di voto, riprova in seguito.</h3></div><!--/dialog-wrap--></div><!--modal-->');
                     
                     $('.modal').dialog({
                         modal: true                        

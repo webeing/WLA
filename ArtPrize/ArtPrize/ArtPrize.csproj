@@ -84,6 +84,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\barclays-tablet.css" />
     <Content Include="css\style.css" />
     <Content Include="Global.asax" />
     <Content Include="css\barclays-min.css" />
@@ -117,7 +118,6 @@
     <Content Include="img\opere\arcano-maggiore-imperatrice-big.jpg" />
     <Content Include="img\opere\arcano-maggiore-imperatrice-min.jpg" />
     <Content Include="img\opere\arcano-maggiore-imperatrice.jpg" />
-    <Content Include="img\opere\artprize-opera01-big.jpg" />
     <Content Include="img\opere\ti-allungo-una-mano-big.jpg" />
     <Content Include="img\opere\ti-allungo-una-mano-min.jpg" />
     <Content Include="img\opere\ti-allungo-una-mano.jpg" />
