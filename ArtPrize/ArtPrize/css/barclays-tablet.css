@@ -426,6 +426,7 @@ body #secondaryNavigation.empty{
     position:relative;
     bottom:inherit;
     margin-left: -10px;
+    margin-top:50px;
     width: 100%;
 }
 
@@ -444,6 +445,15 @@ body #secondaryNavigation.empty{
     padding: 10px 30px;
     text-align: center;
 }
+#primaryNavigation li.current
+{
+    background-color:#fff;
+}
+#primaryNavigation li.current a
+{
+    color:#00AEEF;
+    text-decoration:underline;
+} 
 
 #primaryNavigation li a {
    color: #ffffff;
