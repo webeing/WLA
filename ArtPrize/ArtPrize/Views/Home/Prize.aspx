@@ -67,7 +67,7 @@
 					</span>
 						
 					<div class="imageWithCaption">
-						<img src="<%= Url.Content("~/img/premio.jpg") %>" alt="Barclays Art Prize premio"/>
+						<img src="<%= Url.Content("~/img/premio.png") %>" alt="Barclays Art Prize premio"/>
 					</div>
 						
 					<span class="curtain right">

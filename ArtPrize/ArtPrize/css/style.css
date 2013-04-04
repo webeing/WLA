@@ -118,6 +118,9 @@ body section.lens {
     padding-bottom: 20px;
     height: 460px !important;
 }
+body #artprize-preview, body #home-cycle{
+    height:500px!important;
+}
 
 /* List item */
 
@@ -126,7 +129,9 @@ body .listNewsItems {
     overflow-y: inherit !important;
     border-bottom: none!important;
 }
-
+body .inner .listNewsItems ul{
+    width:100%!important;
+}
 .listNewsItems a {
 color: #007EB6 !important;
 }

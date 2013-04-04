@@ -41,7 +41,7 @@
 	                                <p><a href="#tab-1" title="La nuova filiale Barclays nel cuore di Milano">Barclays Premier Flagship<br/>
                                         <small>Via dei Mercanti 10, Milano</small></a>
                                     </p>
-	                                <img src="<%= Url.Content("~/img/innovation/flagship-min.jpg") %>">
+	                                <img src="<%= Url.Content("~/img/innovation/01innovation-min.png") %>" alt="Barclays Premier Flagship" />
 	                            </li>
 	
 	                            <li>
@@ -49,7 +49,7 @@
                                       Barclays Innovation Center<br/>
                                       <small>Piazza della Repubblica a Milano<br/>Work in progress</small>
                                     </a></p>
-	                                <img src="<%= Url.Content("~/img/innovation/innoxcenter-min.jpg") %>">
+                                    <img src="<%= Url.Content("~/img/innovation/02innovation-min.jpg") %>" alt="Barclays Innovation Center di Piazza della Repubblica a Milan" />
 	                            </li>
 	                                
 	                            <li>
@@ -57,7 +57,7 @@
                                        Barclays Art Prize <br/>
                                        <small>for young talents</small>
                                     </a></p>
-	                                <img src="<%= Url.Content("~/img/innovation/visual-min.jpg") %>" alt="Barclays Art Prize for young talents">
+	                                <img src="<%= Url.Content("~/img/innovation/03innovation-min.jpg") %>" alt="Barclays Art Prize for young talents">
 	                            </li>
 	                        </ul>
 	                    </div><!--/listNewsItems-->
@@ -76,25 +76,18 @@
                             <div class="cycle-pager"></div>
 
                             <figure>
-                                <img alt="Barclays Innovation Center" src="<%= Url.Content("~/img/Satellite.jpg") %>" />
+                                <img alt="Barclays Innovation Center" src="<%= Url.Content("~/img/innovation/01innovation01.png") %>" />
                                 <p>Barclays Innovation Center</p>
                             </figure>
                             <figure>
-                                <img alt="Barclays Innovation Center" src="<%= Url.Content("~/img/Satellite_2.jpg")%>" />
+                                <img alt="Barclays Innovation Center" src="<%= Url.Content("~/img/innovation/01innovation02.png")%>" />
                                 <p>Barclays Innovation Center</p>
                             </figure>
                             <figure>
-                                <img alt="Barclays Innovation Center" src="<%= Url.Content("~/img/Satellite_3.jpg") %>" />
+                                <img alt="Barclays Innovation Center" src="<%= Url.Content("~/img/innovation/01innovation03.png") %>" />
                                 <p>Barclays Innovation Center</p>
                             </figure>
-                            <figure>
-                                <img alt="Barclays Innovation Center" src="<%= Url.Content("~/img/Satellite_4.jpg") %>" />
-                                <p>Barclays Innovation Center</p>
-                            </figure>
-                            <figure>
-                                <img alt="Barclays Innovation Center" src="<%= Url.Content("~/img/Satellite_5.jpg") %>" />
-                                <p>Barclays Innovation Center</p>
-                            </figure>
+                            
                        </div><!--/imageWithCaption-->
                             <h3>
                                 Barclays Premier Flagship - Via dei Mercanti 10, Milano
@@ -108,7 +101,7 @@
                         <div id="tab-2">
                             <div class="imageWithCaption">
                                 <figure>
-                                    <img alt="Barclays Innovation Center di Piazza della Repubblica a Milano" src="http://placehold.it/560x345">
+                                    <img alt="Barclays Innovation Center di Piazza della Repubblica a Milano" src="<%= Url.Content("~/img/innovation/02innovation.png") %>">
                                     <p>Barclays Innovation Center di Piazza della Repubblica a Milano</p>
                                 </figure>
                             </div>	<!--/imageWithCaption-->

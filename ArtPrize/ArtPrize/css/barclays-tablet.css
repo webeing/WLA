@@ -180,10 +180,45 @@ body .bleedHalf .imageWithCaption p {
     width: 95% !important;
 }
 
-#tabs-innovation .listNewsItems ul li p a {
+/*#tabs-innovation .listNewsItems ul li p a {
     line-height: 15px;
     margin-top: -8px;
+}*/
+
+body #tabs-innovation .listNewsItems img {
+    height: 97% !important;
+    top: inherit;
 }
+
+.ui-tabs .ui-tabs-nav li {
+    border-bottom-width: 0;
+    float: left;
+    height: 100% !important;
+    list-style: none outside none;
+    margin: 1px 0.2em 0 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+}
+
+/*body #tabs-innovation .listNewsItems li p a {
+    font-size: 13px !important;
+    padding-left: 65px !important;
+    padding-top: 0px !important;
+    margin-left: -10px;
+}*/
+
+body #tabs-innovation .listNewsItems li p a {
+    font-size: 13px !important;
+    margin-left: 16px;
+    margin-top: -10px;
+    padding-top: 0 !important;
+}
+
+body .listNewsItems{
+    height: inherit !important;
+}
+
 /* About Barclays ArtPrize */
 
 .widthSix .videoWithCaption iframe#video1 {
@@ -390,13 +425,16 @@ body #secondaryNavigation.empty{
 #primaryNavigation {
     position:relative;
     bottom:inherit;
+    margin-left: -10px;
+    width: 100%;
 }
 
 #primaryNavigation ul{
     float:none;
     position: relative;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
     z-index: 200;
+    margin: auto;
 }
 
 #primaryNavigation li{
@@ -506,6 +544,75 @@ figure.cycle-slide {
     width: 100%;
 }
 
+.cycle-slide > img {
+    width: 100%;
+}
+
+#tabs-innovation p a {
+    font-size: 14px !important;
+    min-height: 70px;
+}
+
+body #tabs-innovation .listNewsItems img {
+    height: 97% !important;
+    top: inherit;
+}
+
+body #tabs-innovation .listNewsItems li p a {
+    font-size: 13px !important;
+    margin-left: -75px;
+    margin-top: -10px;
+    padding-top: 0 !important;
+}
+
+/*body #tabs-innovation .listNewsItems img {
+    height: 100% !important;
+    top: inherit;
+}*/
+
+.ui-tabs .ui-tabs-nav li {
+    border-bottom-width: 0;
+    float: left;
+    height: 100% !important;
+    list-style: none outside none;
+    margin: 1px 0.2em 0 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+}
+
+/*body #tabs-innovation .listNewsItems li p a {
+    font-size: 11px !important;
+    padding-left: 0 !important;
+    padding-top: 0px !important;
+    margin-left: -10px;
+}*/
+
+body .listNewsItems{
+    height: inherit !important;
+}
+
+#tab-2 .imageWithCaption img {
+    width: 100%;
+}
+
+#tab-2 .bleedHalf .imageWithCaption p{
+    width: 97%;
+}
+
+.bleedHalf .imageWithCaption p {
+    width: 97%;
+    height: auto !important;
+}
+
+.cycle-slide > p {
+    height: inherit !important;
+}
+
+.imageWithCaption > img {
+    width: 100%;
+}
+
 /* SEZIONE OPERE IN GARA */
 
 #opera-one img, #opera-two img, #opera-three img {
@@ -531,6 +638,7 @@ section#opera-one, section#opera-two, section#opera-three{
 #opere ul.social-links {
     display: none;
 }
+
 /* VOTA */
 
 #vote-art-01 .widthSix .imageWithCaption img, #vote-art-02 .widthSix .imageWithCaption img, #vote-art-03 .widthSix .imageWithCaption img, {
@@ -568,19 +676,23 @@ section#opera-one, section#opera-two, section#opera-three{
 
 #tabs-innovation p a {
     font-size: 14px !important;
+    /*margin-left: -20px;*/
 }
 
-body #tabs-innovation .listNewsItems li p {
+/*body #tabs-innovation .listNewsItems li p {
     font-size: 11px !important;
     padding-left: 160px !important;
     padding-top: 7px;
-}
+}*/
 
 body #tabs-innovation .listNewsItems img {
-    height: 85% !important;
+    height: 97% !important;
     top: inherit;
 }
 
+body #tabs-innovation .listNewsItems {
+    height: inherit !important;
+}
 /* Button */
 
 .dialogButtons a#zoom-op01, .dialogButtons a#zoom-op02, .dialogButtons a#zoom-op03 {

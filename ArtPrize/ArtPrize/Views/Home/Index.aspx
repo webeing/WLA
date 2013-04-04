@@ -8,7 +8,7 @@
     <div class="empty" id="secondaryNavigation"></div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="cycle-slideshow" 
+    <div id="home-cycle" class="cycle-slideshow" 
             data-cycle-fx="scrollHorz"
             data-cycle-timeout="0"
             data-cycle-swipe="true"
@@ -140,7 +140,7 @@
 	
 	                <div class="rte">
 	                    <p>
-	                        We&#8217;re using our skills, time, money and expertise to support the communities in which we operate.
+	                        I lavori di ristrutturazione del nuovo centro di innovazione Barclays di Piazza della Repubblica a Milano sono quasi ultimati. Scopri questa e altre novità relative alla Barclays Premier Flagship di via dei Mercanti a Milano.
 	                    </p>
 	
 	                    <ul class="listLinks">
@@ -154,7 +154,7 @@
 	
 	            <div class="widthSix">
 	                <div class="imageWithCaption">
-	                    <img src="<%= Url.Content("~/img/Satellite_2.jpg") %>" alt="Apertura nuovo centro di innovazione" />
+	                    <img src="<%= Url.Content("~/img/innovation/01innovation01.png") %>" alt="Apertura nuovo centro di innovazione" />
 	                </div>
 	            </div><!--/widthSix-->
 	        </div><!--/inner-->

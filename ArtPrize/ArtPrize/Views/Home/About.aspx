@@ -42,11 +42,9 @@
 	                        
 	                        <!-- Video About -->
 	                        <div class="videoWithCaption">
-                                <!--<a href="<%= Url.Content("~/img/video/Video barclays web.flv") %>" style="display:block;width:460px;height:259px" id="player"></a>
-	    					        -->
                                     <div id="player" data-engine="flash">
                                        <video preload="none">
-                                          <source type="video/x-flv" src="<%= Url.Content("~/img/video/Video barclays web.flv") %>"/>
+                                          <source type="video/mp4" src="<%= Url.Content("~/img/video/Video Barclays Light.mp4") %>"/>
                                        </video>
                                     </div>
  
@@ -67,7 +65,6 @@
 	                        <h3>for young talents</h3>
 	                    <div class="rte">
 	                        <p>Barclays e l’Accademia di Belle Arti di Brera hanno invitato i ragazzi a reinterpretare i valori su cui si fonda il marchio Barclays. Intorno al tema del concorso `Accessible Art' sono state realizzate opere che raccontano l'affermazione della cultura dell’Accessibilità ad ogni sistema, da quello della finanza a quello dell’arte contemporanea. I brand values del gruppo, Rispetto, Integrità, Servizio, Eccellenza e Stewardship, hanno inspirato anche le due commissioni composte dai professori Andrea del Guercio, Elisabetta Longari, Anna Mariani, e da esponenti del gruppo Barclays, che hanno selezionato le tre opere finaliste secondo il merito artistico dei partecipanti e il rispetto della tematica del concorso. Adesso tocca a te esprimere la tua preferenza. L’autore dell’opera più votata vincerà un viaggio per due persone, destinazione Tate Modern di Londra. Tu potresti essere estratto e aggiudicarti un viaggio per due persone in una città d’arte italiana.</p>
-	                        
 	                    </div>
 	
 	                    <ul class="listLinks">
@@ -105,20 +102,17 @@
     !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } } (document, "script", "twitter-wjs");
 </script>
 <script type="text/javascript">
-    $(document).ready(function () {
+    $(function () {
         $('#about_artprize').addClass("current");
     });
 </script>
-<!-- 2. flowplayer -->
 <script src="http://releases.flowplayer.org/5.3.2/flowplayer.min.js"></script>
- 
-<!-- 3. skin -->
 <link rel="stylesheet" type="text/css"
-   href="http://releases.flowplayer.org/5.3.2/skin/minimalist.css" />
+href="http://releases.flowplayer.org/5.3.2/skin/minimalist.css" />
 <!-- Aggiungere script player video -->
 <script type="text/javascript">
-    $(document).ready(function () {
-        $('#player').flowplayer({ engine: 'flash' });
+    $(function () {
+        $('#player').flowplayer();
     });
 </script>
 </asp:Content>
