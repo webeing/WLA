@@ -42,7 +42,7 @@
 	                        
 	                        <!-- Video About -->
 	                        <div class="videoWithCaption">
-                                    <div id="player" data-engine="flash">
+                                    <div id="player" class="player is-splash">
                                        <video preload="none">
                                           <source type="video/mp4" src="<%= Url.Content("~/img/video/Video Barclays Light.mp4") %>"/>
                                        </video>
@@ -112,7 +112,9 @@ href="http://releases.flowplayer.org/5.3.2/skin/minimalist.css" />
 <!-- Aggiungere script player video -->
 <script type="text/javascript">
     $(function () {
-        $('#player').flowplayer();
+        $('#player').flowplayer({
+            'splash': true
+        });
     });
 </script>
 </asp:Content>

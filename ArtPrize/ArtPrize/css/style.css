@@ -332,3 +332,6 @@ input[type="radio"] {
 section.opera, body .opera{
     min-height:500px!important;
 }
+.is-splash{
+    background: transparent url('../img/about/barclay-sartprize-video.png') no-repeat;
+    }
