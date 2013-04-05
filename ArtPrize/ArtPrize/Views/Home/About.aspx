@@ -77,7 +77,7 @@
 	                    	<li>
 	                    		<div class="fb-like" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
 	                    	</li>
-	                    	<li><a href="https://twitter.com/share" class="twitter-share-button" data-via="agatacruciani" data-lang="it">Tweet</a>
+	                    	<li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it" data-text="Vota anche tu la tua opera preferita su">Tweet</a>
 	                    	</li>
 	                    </ul>
 	                    <!--social links -->
