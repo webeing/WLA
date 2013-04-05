@@ -2,7 +2,7 @@
 
 <asp:Content ID="meta" ContentPlaceHolderID="meta_og" runat="server">
     <meta name="description" content="Barclays Privacy" />
-    <title>Barclay Art Prize Privacy</title>
+    <title>Barclays Art Prize Privacy</title>
 </asp:Content>
 <asp:Content ID="ContentHeader" ContentPlaceHolderID="header" runat="server">
     <!-- Breadcrumb nav -->

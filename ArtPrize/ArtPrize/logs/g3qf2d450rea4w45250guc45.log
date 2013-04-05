@@ -1,0 +1,12 @@
+2013-04-05 17:09:39.0542 DEBUG Executing action Add on controller Vote. Input parameters: vote: ArtPrize.Models.Vote
+2013-04-05 17:09:41.4634 DEBUG Started Vote.Service execution.
+2013-04-05 17:09:41.4634 DEBUG Vote: ArworkId: 1, SessionId: g3qf2d450rea4w45250guc45, VoteDate: 4/5/2013 5:09:39 PM
+2013-04-05 17:09:41.4634 DEBUG Validating vote...
+2013-04-05 17:09:41.4634 DEBUG The vote is valid. Entering transaction...
+2013-04-05 17:09:41.4832 DEBUG Creating user...
+2013-04-05 17:09:41.5031 DEBUG User correctly created.
+2013-04-05 17:09:41.5031 DEBUG Now saving the vote
+2013-04-05 17:09:41.5229 INFO Vote 5 correctly saved in the database.
+2013-04-05 17:09:41.5229 DEBUG Completed Vote.Service execution.
+2013-04-05 17:09:42.8613 INFO Action Add on controller Vote executed.
+2013-04-05 17:09:42.8613 DEBUG Executed action Add on controller Vote. Result: 200 OK

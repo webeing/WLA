@@ -12,6 +12,9 @@
     <script src="<%= Url.Content("~/Scripts/modernizr.js")%>" ></script>
     <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <!--[if lte IE 8]>
+        <link href="<%= Url.Content("~/css/styleIE.css") %>" rel="stylesheet" media="screen">
+    <![endif]-->
   </head>
 
 <body>

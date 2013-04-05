@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Qr</title>
+    <script type="text/javascript" src="http://barclays.ssh22.net/script/barclays.js"></script>
 </head>
 <body>
     <div>

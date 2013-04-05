@@ -2,7 +2,7 @@
 
 <asp:Content ID="meta" ContentPlaceHolderID="meta_og" runat="server">
     <meta name="description" content="Barclays e l’Accademia di Belle Arti di Brera hanno invitato i ragazzi a reinterpretare i valori su cui si fonda il marchio Barclays." />
-    <title>Barclay Art Prize About</title>
+    <title>Barclays Art Prize About</title>
 </asp:Content>
 <asp:Content ID="ContentHeader" ContentPlaceHolderID="header" runat="server">
 
@@ -17,7 +17,7 @@
 						</li>
 						<li class="selected">
 							<span>
-							<a href="<%= Url.Content("~/About") %>" id="about_artprize">About Barclay Art Prize</a>
+							<a href="<%= Url.Content("~/About") %>" id="about_artprize">About Barclays Art Prize</a>
 							</span>
 						</li>
 					</ol>

@@ -2,7 +2,7 @@
 
 <asp:Content ID="meta" ContentPlaceHolderID="meta_og" runat="server">
     <meta name="description" content="La prima edizione del concorso Barclays Art Prize for young talents si rivolge agli studenti e agli ex studenti dell'Accademia di Belle Arti di Brera." />
-    <title>Barclay Art Prize Home</title>
+    <title>Barclays Art Prize Home</title>
 </asp:Content>
 <asp:Content ID="SecondaryNav" ContentPlaceHolderID="header" runat="server">
     <div class="empty" id="secondaryNavigation"></div>
@@ -124,7 +124,7 @@
 	
 	                <ul class="listLinks">
 	                    <li><a href="<%= Url.Content("~/opere-in-gara") %>" title="Barclays Art Prize: Vota la tua opera preferita">Vota la tua opera preferita</a></li>
-	                    <li><a href="<%= Url.Content("~/Premi") %>" title="Barclays Art Prize: Premio">Premio</a></li>
+	                    <li><a href="<%= Url.Content("~/Premio") %>" title="Barclays Art Prize: Premio">Premio</a></li>
 	                    <li><a href="<%= Url.Content("~/Regolamento") %>" title="Barclays Art Prize: Regolamento">Regolamento</a></li>
 	                </ul>
 	

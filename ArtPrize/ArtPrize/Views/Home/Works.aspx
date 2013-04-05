@@ -2,7 +2,7 @@
 
 <asp:Content ID="meta" ContentPlaceHolderID="meta_og" runat="server">
     <meta name="description" content="Barclays Vota la tua opera preferita e potrai essere estratto per vincere un viaggio per due persone in una città d’arte italiana" />
-    <title>Barclay Art Prize opere in gara</title>
+    <title>Barclays Art Prize opere in gara</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">
     <!-- Breadcrumb nav -->

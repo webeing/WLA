@@ -115,7 +115,7 @@ figure.cycle-slide {
 }
 
 .listNewsItems img{
-    height: 70% !important;
+    height: 97% !important;
 }
 
 body .listNewsItems ul {
@@ -193,7 +193,7 @@ body #tabs-innovation .listNewsItems img {
 .ui-tabs .ui-tabs-nav li {
     border-bottom-width: 0;
     float: left;
-    height: 100% !important;
+    height: 112px!important;
     list-style: none outside none;
     margin: 1px 0.2em 0 0;
     padding: 0;
@@ -708,4 +708,7 @@ body #tabs-innovation .listNewsItems {
 .dialogButtons a#zoom-op01, .dialogButtons a#zoom-op02, .dialogButtons a#zoom-op03 {
     display: none;
 }
+body #lensNavigator{
+    bottom:-60px;
+    }
 }

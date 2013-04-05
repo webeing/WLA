@@ -36,15 +36,12 @@ namespace ArtPrize.Controllers
         //
         // POST: /Vote/Create
 
-        [HttpPost]
-        [Recaptcha.RecaptchaControlMvc.CaptchaValidator]
-        public ActionResult Add(Vote vote, bool captchaValid)
+        [HttpPost]        
+        public ActionResult Add(Vote vote)
         {
             try
             {
-                voteService.Logger = Logger;
-                if (!captchaValid)
-                    throw new CaptchaValidationException();
+                voteService.Logger = Logger;                
                 voteService.Create(vote);
                 return View("Ok",vote.ArtworkId);
             }

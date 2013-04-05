@@ -210,9 +210,7 @@
                 Messaggio pubblicitario con finalità promozionale. Regolamento completo disponibile sul sito Barclays/artprize.it. La durata complessiva del concorso è dal 05/03/2013 al 30/04/2013 (votazione online dal 9/4/2013 al 30/04/2013); l'assegnazione finale sarà effettuata entro il02/05/2013. Il montepremi complessivo è di € 1.500 (IVA non esposta). La partecipazione al concorso è gratuita. La votazione online è consentita a tutti i residenti in Italia di età superiore a 18 anni. Sono esclusi dalla partecipazione i dipendenti della società organizzatrice e delle società appartenenti al Gruppo Barclays.
             </p>
 								
-            <div class="clear"></div>
-
-                <%=  Html.GenerateCaptcha("recaptcha", "clean")%>
+            <div class="clear"></div>                
 
             <div class="dialogButtons">
                 <input type="submit" class="btn btn-cyan75" id="vote-btn" value="Accetta e vota">

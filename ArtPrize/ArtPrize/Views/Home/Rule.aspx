@@ -2,7 +2,7 @@
 
 <asp:Content ID="meta" ContentPlaceHolderID="meta_og" runat="server">
     <meta name="description" content="Barclays Art Prize Regolamento" />
-    <title>Barclay Art Prize Regolamento</title>
+    <title>Barclays Art Prize Regolamento</title>
 </asp:Content>
 <asp:Content ID="ContentHeader" ContentPlaceHolderID="header" runat="server">
     <!-- Breadcrumb nav -->
@@ -11,12 +11,12 @@
 					<ol>
 						<li class="preSelected">
 							<span id="home">
-							<a title="Home" href="http://www.barclays.it/artprize/" title="">Home</a>
+							<a title="Barclays Art Prize" href="<%= Url.Content("~/Index") %>" title="">Home</a>
 							</span>
 						</li>
 						<li class="selected">
 							<span>
-							<a href="http://www.barclays.it/artprize/about.html" title="" id="about_artprize">Regolamento</a>
+							<a href="<%= Url.Content("~/Rule") %>" title="Barclays Art Prize regolamento" id="about_artprize">Regolamento</a>
 							</span>
 						</li>
 					</ol>
