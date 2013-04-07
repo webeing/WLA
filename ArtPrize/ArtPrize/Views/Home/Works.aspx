@@ -55,9 +55,9 @@
                    <!--social links -->
                     <ul class="social-links">
                         <li>
-                            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-href="http://www.barclays.it/ArtPrize/Works/Like/1"></div>
+                            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-href="http://essereweb.net/like1.html"></div>
                         </li>
-                        <li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it">Tweet</a>
+                        <li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it" data-text="Vota anche tu l'opera 'Uno, nessuno, centomila' di Clelia Scimone">Tweet</a>
                         </li>
                     </ul>
                     <!--social links -->
@@ -96,7 +96,7 @@
                         <li>
                             <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-href="http://www.barclays.it/ArtPrize/Works/Like/2"></div>
                         </li>
-                        <li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it">Tweet</a>
+                        <li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it" data-text="Vota anche tu l'opera 'Ti allungo una mano' di Giulio Pace">Tweet</a>
                         </li>
                     </ul>
                     <!--social links -->
@@ -141,7 +141,7 @@
                         <li>
                           <div class="fb-like" data-href="http://www.barclays.it/ArtPrize/Works/Like/3" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
                         </li>
-                        <li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it">Tweet</a>
+                        <li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it" data-text="Vota anche tu l'opera 'Arcano Maggiore n.3 - L' Imperatrice' di Pietro Librici">Tweet</a>
                         </li>
                     </ul>
                     <!--social links -->
@@ -203,7 +203,9 @@
 
 <asp:Content ID="socialScript" ContentPlaceHolderID="Script" runat="server">
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
+<script>
+
+(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
@@ -215,6 +217,12 @@
 </script>
 <script type="text/javascript">
     $(document).ready(function () {
+
+        $('.cycle-slideshow').on('cycle-next', function (event, opts) {
+            
+            FB.XFBML.parse();
+        });
+
         $('#vota_artprize').addClass("current");
     });
 </script>

@@ -85,6 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\barclays-tablet.css" />
+    <Content Include="css\styleIE.css" />
     <Content Include="css\style.css" />
     <Content Include="Global.asax" />
     <Content Include="css\barclays-min.css" />
