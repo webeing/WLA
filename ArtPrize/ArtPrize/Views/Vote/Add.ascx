@@ -7,24 +7,24 @@
             <input type="hidden" value="<%= Model.ArtworkId %>" name="ArtworkId" id="ArtworkId">           
 
             <label for="Name">
-				Nome
+				Nome <small>*</small>
 				<input type="text" value="" name="User.Name" id="User_Name" class="required"/>
                 
 			</label>                                    
             
             <label for="surname">
-				Cognome
+				Cognome <small>*</small>
 				<input type="text" value="" name="User.LastName" id="User_LastName" class="required"/>
                 
 			</label>                                    
             
             <label for="birthday">
-                Data di nascita
+                Data di nascita <small>*</small>
                 <input type="text" value="" name="User.Birthday" id="User_Birthday" class="required dateIT is18"/>
             </label>
 
             <label for="gender">
-                Sesso<br>
+                Sesso <small>*</small><br>
                 <span>F
                 <input type="radio" value="f" name="User.Gender" id="User_Gender_M" class="required"/> </span>
                 <span>M
@@ -32,7 +32,7 @@
 
             </label>
             <label for="phone">
-                Telefono cellulare
+                Telefono cellulare <small>*</small>
                 <!--
                 //dovremmo inserire un valore "finto" iniziale a titolo di esempio
                 //value="es. 33x xxxxxxx"
@@ -41,22 +41,22 @@
 
             </label>
             <label for="mail">
-                e-mail
+                e-mail <small>*</small>
                 <input type="text" value="" name="User.Email" id="User_Email" class="required email"/>
 
             </label>
             <label for="address">
-                Indirizzo
+                Indirizzo <small>*</small>
                 <input type="text" value="" name="User.Address" id="User_Address" class="required"/>
 
             </label>
             <label for="country">
-                Comune
+                Comune <small>*</small>
                 <input type="text" value="" name="User.City" id="User_City" class="required"/>
 
             </label>
             <label for="prov">
-                Provincia
+                Provincia <small>*</small>
                 <select name="User.District" id="User_District" class="selected">
                     <option value="">- -</option>
                     <option value="AG">AGRIGENTO</option>
@@ -68,7 +68,7 @@
                     <option value="AT">ASTI</option>
                     <option value="AV">AVELLINO</option>
                     <option value="BA">BARI</option>
-                    <option value="BT">Barletta-Andria-Trani</option>
+                    <option value="BT">BARLETTA-ANDRIA-TRANI</option>
                     <option value="BL">BELLUNO</option>
                     <option value="BN">BENEVENTO</option>
                     <option value="BG">BERGAMO</option>
@@ -80,7 +80,7 @@
                     <option value="CA">CAGLIARI</option>
                     <option value="CL">CALTANISSETTA</option>
                     <option value="CB">CAMPOBASSO</option>
-                    <option value="CI">Carbonia-Iglesias</option>
+                    <option value="CI">CARBONIA-IGLESIAS</option>
                     <option value="CE">CASERTA</option>
                     <option value="CT">CATANIA</option>
                     <option value="CZ">CATANZARO</option>
@@ -114,7 +114,7 @@
                     <option value="MN">MANTOVA</option>
                     <option value="MS">MASSA-CARRARA</option>
                     <option value="MT">MATERA</option>
-                    <option value="VS"> MEDIO CAMPIDANO</option>
+                    <option value="VS">MEDIO CAMPIDANO</option>
                     <option value="ME">MESSINA</option>
                     <option value="MI">MILANO</option>
                     <option value="MO">MODENA</option>
@@ -174,7 +174,7 @@
 
             </label>
             <label for="cap">
-                CAP
+                CAP <small>*</small>
                 <input type="text" value="" name="User.CAP" id="User_CAP" class="required digits"/>
 
             </label>
@@ -182,34 +182,34 @@
             <br/>
 
             <p class="rule_accept">
-                Accetto il <a title="regolamento del concorso" href="/Home/Rule">regolamento del concorso</a> a  premi “Barclays Art Prize for young talents”
+                Accetto il <a title="regolamento del concorso" href="<%= Url.Content("~/Regolamento") %>" target="_blank">regolamento del concorso</a> a  premi “Barclays Art Prize for young talents”
                 <br>
                 <span>
-                        <input type="radio" value="true" name="User.RuleAcceptance" id="User_RuleAcceptance" class="isTrue"/>Accetto
+                        <input type="radio" value="true" name="User.RuleAcceptance" id="User_RuleAcceptance" class="isTrue" checked="checked"/>Accetto
                 </span>
                 <span>
-                    <input type="radio" value="false" name="User.RuleAcceptance" id="FalseRulesAcceptance_NO" checked="checked"/>Non accetto
+                    <input type="radio" value="false" name="User.RuleAcceptance" id="FalseRulesAcceptance_NO"/>Non accetto
                 </span>
 
             </p>
 
             <p class="privacy_accept">
-                Dichiaro di aver preso visione dell’<a title="informativa sulla privacy" href="/Home/Privacy">informativa sulla privacy</a> e di acconsentire al trattamento dei miei dati da parte della Banca per le finalità menzionate alle lettere (a) e (b) della suddetta informativa. Inoltre
+                Dichiaro di aver preso visione dell’<a title="informativa sulla privacy" href="<%= Url.Content("~/Privacy") %>" target="_blank">informativa sulla privacy</a> e di acconsentire al trattamento dei miei dati da parte della Banca per le finalità menzionate alle lettere (a) e (b) della suddetta informativa. Inoltre
                 <br>
                 <span>
-                    <input type="radio" value="true" name="User.PrivacyRead" id="User_PrivacyRead"/>do il consenso
+                    <input type="radio" value="true" name="User.PrivacyRead" id="User_PrivacyRead" checked="checked"/>do il consenso
                 </span>
                 <span>
-                    <input type="radio" value="false" name="User.PrivacyRead" id="User_PrivacyRead_NO" checked="checked"/>nego il consenso
+                    <input type="radio" value="false" name="User.PrivacyRead" id="User_PrivacyRead_NO"/>nego il consenso
                 </span>
                 <br/>al trattamento dei miei dati da parte della Banca per finalità di informazione commerciale, promozione e vendita di prodotti e servizi offerti dalla Banca medesima o da società appartenenti al medesimo Gruppo Barclays, consapevole che tale consenso è facoltativo.
             </p>
 
             <div class="clear"></div>
             <p class="disclaimer">
-                Messaggio pubblicitario con finalità promozionale. Regolamento completo disponibile sul sito Barclays/artprize.it. La durata complessiva del concorso è dal 05/03/2013 al 30/04/2013 (votazione online dal 9/4/2013 al 30/04/2013); l'assegnazione finale sarà effettuata entro il02/05/2013. Il montepremi complessivo è di € 1.500 (IVA non esposta). La partecipazione al concorso è gratuita. La votazione online è consentita a tutti i residenti in Italia di età superiore a 18 anni. Sono esclusi dalla partecipazione i dipendenti della società organizzatrice e delle società appartenenti al Gruppo Barclays.
+                Messaggio pubblicitario con finalità promozionale. Regolamento completo disponibile sul sito Barclays.it/artprize. La durata complessiva del concorso è dal 5/03/2013 al 30/04/2013 (votazione online dal 9/04/2013 al 30/04/2013); l’assegnazione finale sarà effettuata entro il 2/05/2013. Il montepremi complessivo è di € 1.500 (IVA non esposta). La partecipazione al concorso è gratuita. La votazione online è consentita a tutti i residenti in Italia di età superiore a 18 anni. Sono esclusi dalla partecipazione i dipendenti della società organizzatrice e delle società appartenenti al Gruppo Barclays.
             </p>
-								
+			<small class="legend">* Dati obbligatori.</small>					
             <div class="clear"></div>                
 
             <div class="dialogButtons">

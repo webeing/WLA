@@ -68,30 +68,24 @@
 	                    <ul>
 	                        <li>
                                 <p>
-                                    <a href="#" title="Barclays Art Prize Uno, nessuno, centomila Clelia Scimone">
                                     Uno, nessuno, centomila<br/>
-                                    Clelia Scimone
-                                    </a>
+                                    Clelia Scimone  
                                 </p>
                                 <img src="<%= Url.Content("~/img/opere/uno-nessuno-centomila-min.jpg") %>" alt="Barclays Art Prize Uno, nessuno, centomila Clelia Scimone">
                             </li>
 	
                             <li>
                                 <p>
-                                    <a href="#" title="Barclays Art Prize Ti allungo una mano Giulio Pace">
-                                        Ti allungo una mano<br/>
-                                        Giulio Pace
-                                    </a>
+                                    Ti allungo una mano<br/>
+                                    Giulio Pace
                                 </p>
                                 <img src="<%= Url.Content("~/img/opere/ti-allungo-una-mano-min.jpg") %>" alt="Barclays Art Prize Ti allungo una mano Giulio Pace">
                             </li>
 	
                             <li class="last">
                                 <p>
-                                    <a href="#" title="Barclays Art Prize Arcano Maggiore n. 3 – L’Imperatrice Pietro Librici">
-                                        Arcano Maggiore n. 3 – L’Imperatrice<br/>
-                                        Pietro Librici
-                                    </a>
+                                    Arcano Maggiore n. 3 – L’Imperatrice<br/>
+                                    Pietro Librici
                                 </p>
                                 <img src="<%= Url.Content("~/img/opere/arcano-maggiore-imperatrice-min.jpg") %>" alt="Barclays Art Prize Arcano Maggiore n. 3 – L’Imperatrice Pietro Librici">
                             </li>

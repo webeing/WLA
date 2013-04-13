@@ -131,7 +131,7 @@
                         I premi non attribuiti ai vincitori saranno assegnati ai nominativi di riserva in ordine di estrazione degli stessi.
                         </li>
                        <li><strong>Premi in palio</strong>
-                        <table>
+                        <table width="100%">
                             <thead>
                                 <tr>
                                     <th>PREMIO</th>

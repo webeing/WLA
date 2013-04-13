@@ -13,7 +13,13 @@ body {
 section {
     width: 100%;
 }
-
+body #content{
+    padding-top:60px;
+}
+body #lensNavigator{
+    top: 0;
+    bottom: inherit;
+}
 section#barclays-artprize {
     width: 100%;
 }
@@ -89,8 +95,9 @@ body .inner{
 .aperture {
     width: 100% !important;
 }
-
-.aperture .curtain {
+body #content .aperture .curtain {
+    background: transparent none!important;}
+/*body .aperture .curtain {
     background-size: 84% !important;
 }
 
@@ -99,7 +106,7 @@ body .inner{
     float: right;
     margin-top: -235px;
 }
-
+*/
 /* figure home slide2*/
 
 body .listNewsItems {
@@ -115,7 +122,7 @@ figure.cycle-slide {
 }
 
 .listNewsItems img{
-    height: 97% !important;
+    height: 80px !important;
 }
 
 body .listNewsItems ul {
@@ -139,11 +146,15 @@ body .listNewsItems li{
 }*/
 
 body .listNewsItems li p {
-    font-size: 9px !important;
-    padding-left: 132px !important;
+    font-size: 17px !important;
+    padding-left: 150px !important;
     padding-top: 15px;
 }
-
+body .listNewsItems li p a, 
+body .ui-tabs .ui-tabs-nav li a{
+    font-size: inherit!important;
+    line-height:1em!important;
+}
 #opere .social-links {
     border: medium none !important;
     float: left;
@@ -161,9 +172,11 @@ body .listNewsItems li p {
 html body #opere .dialogButtons .btn, html body #opere .dialogButtons .button {
     width: 33% !important;
 }
-
 section#artprize-preview .widthSeven {
     width: 40.447%;
+}
+section#artprize-preview .secondary {
+    margin-top: 150px!important;
 }
 /* innovation center */
 
@@ -186,19 +199,20 @@ body .bleedHalf .imageWithCaption p {
 }*/
 
 body #tabs-innovation .listNewsItems img {
-    height: 97% !important;
+    height: 80px !important;
     top: inherit;
 }
 
 .ui-tabs .ui-tabs-nav li {
     border-bottom-width: 0;
     float: left;
-    height: 112px!important;
+    height: 90px!important;
     list-style: none outside none;
     margin: 1px 0.2em 0 0;
     padding: 0;
     position: relative;
     top: 0;
+    overflow:hidden;
 }
 
 /*body #tabs-innovation .listNewsItems li p a {
@@ -206,13 +220,18 @@ body #tabs-innovation .listNewsItems img {
     padding-left: 65px !important;
     padding-top: 0px !important;
     margin-left: -10px;
-}*/
+}
 
 body #tabs-innovation .listNewsItems li p a {
     font-size: 13px !important;
     margin-left: 16px;
     margin-top: -10px;
     padding-top: 0 !important;
+}*/
+body .listNewsItems li p a, 
+body .ui-tabs .ui-tabs-nav li a{
+    font-size: inherit!important;
+    line-height:1em!important;
 }
 
 body .listNewsItems{
@@ -226,14 +245,14 @@ body .listNewsItems{
     height: 200px !important;
 }
 
-#barclays-about-artprize .aperture .curtain {
+/*#barclays-about-artprize .aperture .curtain {
     background-size: 90% auto !important;
 }
 
 #barclays-about-artprize .aperture .curtain.right {
     margin-top: -224px;
 }
-
+*/
 #player_wrapper {
     height: 200px !important;
     position: relative;
@@ -294,7 +313,7 @@ ul.listLinks li {
     font-size: 12px;
 }
 
-body .aperture .curtain {
+body #content .aperture .curtain {
     background-image: none !important;
 }
 
@@ -459,9 +478,9 @@ body #secondaryNavigation.empty{
    color: #ffffff;
 }
 
-#lensNavigator{
+/*#lensNavigator{
     bottom:-75px
-}
+}*/
 
 #secondaryNavigation #home a {
     left: 15px;
@@ -499,7 +518,7 @@ body .listNewsItems {
 }
 
 .listNewsItems img{
-    height: 97% !important;
+    height: 80px !important;
 }
 
 .js .listNewsItems li.column{
@@ -510,12 +529,6 @@ body .listNewsItems li {
     float: left;
     padding: 0 2% 0 0 !important;
     width: 100%;
-}
-
-body .listNewsItems li p {
-    font-size: 11px !important;
-    padding-left: 200px !important;
-    padding-top: 15px;
 }
 
 figure.cycle-slide {
@@ -564,7 +577,7 @@ figure.cycle-slide {
 }
 
 body #tabs-innovation .listNewsItems img {
-    height: 97% !important;
+    height: 80px !important;
     top: inherit;
 }
 
@@ -583,12 +596,13 @@ body #tabs-innovation .listNewsItems li p a {
 .ui-tabs .ui-tabs-nav li {
     border-bottom-width: 0;
     float: left;
-    height: 100% !important;
+    height: 90px !important;
     list-style: none outside none;
     margin: 1px 0.2em 0 0;
     padding: 0;
     position: relative;
     top: 0;
+    overflow:hidden;
 }
 
 /*body #tabs-innovation .listNewsItems li p a {
@@ -624,6 +638,8 @@ body .listNewsItems{
 }
 
 /* SEZIONE OPERE IN GARA */
+body .opera, body .cycle-slideshow .lens, body .cycle-slideshow .lens {
+    height:800px!important; }
 
 #opera-one img, #opera-two img, #opera-three img {
     width: 100%;
@@ -656,7 +672,16 @@ section#opera-one, section#opera-two, section#opera-three{
     height: auto;
     margin: 0 auto;
 }
-
+body .opera .secondary{
+    margin-top: 30px!important;
+}
+body .vote-btn{
+    position: relative;
+    z-index: 1000;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
 /*REGOLAMENTO */
 
 .panelSectionLinks h3{
@@ -679,7 +704,8 @@ section#opera-one, section#opera-two, section#opera-three{
     width: 100%;
 }
 /* INNOVATION */
-
+body #innovation-center .listNewsItems {
+    height: 300px!important;}
 .ui-tabs .ui-tabs-panel{
     width: 95%;
 }
@@ -696,7 +722,7 @@ section#opera-one, section#opera-two, section#opera-three{
 }*/
 
 body #tabs-innovation .listNewsItems img {
-    height: 97% !important;
+    height: 80px !important;
     top: inherit;
 }
 
@@ -708,7 +734,16 @@ body #tabs-innovation .listNewsItems {
 .dialogButtons a#zoom-op01, .dialogButtons a#zoom-op02, .dialogButtons a#zoom-op03 {
     display: none;
 }
+body #content{
+    padding-top: 60px!important;
+}
 body #lensNavigator{
-    bottom:-60px;
+    /*bottom:-60px;*/
+    top: 0px;
     }
+section#artprize-preview{
+    height:1000px!important;
+    }
+body #home-cycle {
+    overflow:inherit!important;}
 }

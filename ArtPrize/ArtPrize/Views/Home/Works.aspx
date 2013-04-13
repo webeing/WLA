@@ -49,13 +49,13 @@
                     <h2>Uno, nessuno, centomila <br/>
                        Clelia Scimone</h2>
                     <div class="rte">
-                        <p>Un viso che pian piano sembra confondersi con lo sfondo fino a quasi scomparire. Il volto di una generazione in difficoltà, che paradossalmente ci rende tutti uguali (o quasi). Così, nella continua ricerca di quel posto nel mondo che ci apparCene, ma che sembra esserci negato, ci impegniamo nella speranza che qualcuno ci noti, punti sulle nostre qualità e abbia fiducia in noi. Perché fiducia, onestà, rispetto e integrità sono i valori più importanti, necessari per ricominciare da capo e ritrovare, insieme, qualcosa che abbiamo perduto o che non abbiamo ancora trovato: la nostra identità.</p>
+                        <p>Un viso che pian piano sembra confondersi con lo sfondo fino a quasi scomparire. Il volto di una generazione in difficoltà, che paradossalmente ci rende tutti uguali (o quasi). Così, nella continua ricerca di quel posto nel mondo che ci appartiene, ma che sembra esserci negato, ci impegniamo nella speranza che qualcuno ci noti, punti sulle nostre qualità e abbia fiducia in noi. Perché fiducia, onestà, rispetto e integrità sono i valori più importanti, necessari per ricominciare da capo e ritrovare, insieme, qualcosa che abbiamo perduto o che non abbiamo ancora trovato: la nostra identità.</p>
                         <p>Tecnica: fotografia digitale.</p>
                     </div>
                    <!--social links -->
                     <ul class="social-links">
                         <li>
-                            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-href="http://essereweb.net/like1.html"></div>
+                            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-href="http://www.barclays.it/ArtPrize/Works/Like/1"></div>
                         </li>
                         <li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it" data-text="Vota anche tu l'opera 'Uno, nessuno, centomila' di Clelia Scimone">Tweet</a>
                         </li>
@@ -151,7 +151,7 @@
                     <div class="imageWithCaption">
                         <img src="<%= Url.Content("~/img/opere/arcano-maggiore-imperatrice.jpg") %>" alt="Barclays Art Prize Arcano Maggiore n. 3 – L’Imperatrice Pietro Librici" />
                         <p><strong><%= ((System.Collections.Generic.Dictionary<int,int>)ViewData["votes"])[3] %></strong>
-                                                                        persone hanno votato Arcano Maggiore di Pietro Librici</p>
+                                                                        persone hanno votato Arcano Maggiore n. 3 – L’Imperatrice di Pietro Librici</p>
                     </div>
                     
                     <!--buttons-->

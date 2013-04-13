@@ -1,0 +1,3 @@
+2013-04-09 17:10:15.9352 DEBUG Executing action About on controller Home. Input parameters: 
+2013-04-09 17:10:15.9352 INFO Action About on controller Home executed.
+2013-04-09 17:10:15.9352 DEBUG Executed action About on controller Home. Result: 200 OK

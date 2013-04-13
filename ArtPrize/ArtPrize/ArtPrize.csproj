@@ -90,7 +90,7 @@
     <Content Include="Global.asax" />
     <Content Include="css\barclays-min.css" />
     <Content Include="css\fonts-min.css" />
-    <Content Include="img\about\barclay-sartprize-video.png" />
+    <Content Include="img\about\barclays-artprize-about.png" />
     <Content Include="img\arrow-back.png" />
     <Content Include="img\arrows-sprite.png" />
     <Content Include="img\barclays-logo.gif" />
@@ -194,7 +194,7 @@
     <None Include="css\fonts\expertsans-regularitalic-webfont.eot" />
     <None Include="css\fonts\expertsans-regularitalic-webfont.svg" />
     <None Include="css\fonts\expertsans-regularitalic-webfont.ttf" />
-    <None Include="img\about\Video Barclays Light.mp4" />
+    <None Include="img\about\Video-Barclays-Light.mp4" />
     <None Include="img\icons\Thumbs.db" />
     <None Include="img\secondary-navigation\Thumbs.db" />
     <None Include="NLog.xsd" />
@@ -214,7 +214,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>1030</DevelopmentServerPort>
+          <DevelopmentServerPort>2443</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

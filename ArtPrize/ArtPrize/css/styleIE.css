@@ -2,3 +2,5 @@
 
 #footerLinks{ width: 980px;}
 #home-cycle .lens{ position: relative; }
+body .listNewsItems li p a, body .ui-tabs .ui-tabs-nav li a{
+    font-size: 17px;}

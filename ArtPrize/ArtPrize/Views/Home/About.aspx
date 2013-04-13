@@ -2,6 +2,13 @@
 
 <asp:Content ID="meta" ContentPlaceHolderID="meta_og" runat="server">
     <meta name="description" content="Barclays e l’Accademia di Belle Arti di Brera hanno invitato i ragazzi a reinterpretare i valori su cui si fonda il marchio Barclays." />
+    <meta property="og:title" content="Barclays Art Prize for young talents" />
+    <meta property="og:description" content="Barclays e l’Accademia di Belle Arti di Brera hanno invitato i ragazzi a reinterpretare i valori su cui si fonda il marchio Barclays"/>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.barclays.it/ArtPrize/About" />
+    <meta property="og:image" content="http://www.barclays.it/ArtPrize/img/about/barclays-artprize-about.png" />
+    <meta property="og:site_name" content="Barclays Art Prize" />
     <title>Barclays Art Prize About</title>
 </asp:Content>
 <asp:Content ID="ContentHeader" ContentPlaceHolderID="header" runat="server">
@@ -42,12 +49,14 @@
 	                        
 	                        <!-- Video About -->
 	                        <div class="videoWithCaption">
-                                    <div id="player" class="player is-splash">
-                                       <video preload="none">
-                                          <source type="video/mp4" src="<%= Url.Content("~/img/video/Video Barclays Light.mp4") %>"/>
-                                       </video>
+                                <div id="player" class="player is-splash">
+                                    <video preload="none">
+                                        <source type="video/mp4" src="<%= Url.Content("~/img/about/Video-Barclays-Light.mp4") %>"/>
+                                    </video>
+                                    <div id="info" class="info">
+                                        
                                     </div>
- 
+                                </div>
                             </div><!--/videoWithCaption-->
 	                        <!--/Video About -->
 	
@@ -75,7 +84,7 @@
                         <!--social links -->
 	                    <ul class="social-links">
 	                    	<li>
-	                    		<div class="fb-like" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+	                    		<div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
 	                    	</li>
 	                    	<li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it" data-text="Vota anche tu la tua opera preferita su">Tweet</a>
 	                    	</li>
@@ -89,6 +98,7 @@
 	        </section>
 </asp:Content>
 <asp:Content ContentPlaceHolderID="Script" ID="socialScript" runat="server">
+<div id="fb-root"></div>
 <script>
     /* facebook button */
     (function (d, s, id) {
@@ -113,7 +123,11 @@ href="http://releases.flowplayer.org/5.3.2/skin/minimalist.css" />
 <script type="text/javascript">
     $(function () {
         $('#player').flowplayer({
-            'splash': true
+            'splash': true,
+            onFail: function () {
+                document.getElementById("info").innerHTML =
+              "Visualizza il video installando l'ultima versione di Flash Player";
+            }
         });
     });
 </script>

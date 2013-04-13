@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ArtPrize.Models;
 
 namespace ArtPrize.Controllers
 {
@@ -13,7 +14,11 @@ namespace ArtPrize.Controllers
 
         public ActionResult Like(int id)
         {
-            return View("Like0" + id);
+            //if true we come from facebook
+            if (Request.QueryString.Count > 0)
+                return RedirectToAction("Works", "Vote", new { id = id });
+            else
+                return View("Like0" + id);
         }
 
     }

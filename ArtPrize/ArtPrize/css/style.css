@@ -144,6 +144,10 @@ body .listNewsItems li {
 .listNewsItems li p {
     padding-left: 190px !important;
     padding-top: 15px;
+    font-family: 'Expert-Sans-Light',verdana,arial,helvetica,clean,sans-serif;
+    line-height: 1.2em;
+    font-size: 17px!important;
+    color: #007EB6 !important;
 }
 .listNewsItems li p small{
 	font-size: 12px;
@@ -272,11 +276,14 @@ input[type="radio"] {
 }
 
 .dialogButtons {
-    border-top: 1px solid #CCCCCC;
+    /*border-top: 1px solid #CCCCCC;*/
     clear: both;
     margin-top: 20px;
     padding: 15px 0;
     text-align: right;
+}
+#vota-artprize .legend {
+    color:#017EB4;
 }
 .ui-widget-overlay	
 {
@@ -333,5 +340,18 @@ section.opera, body .opera{
     min-height:500px!important;
 }
 .is-splash{
-    background: transparent url('../img/about/barclay-sartprize-video.png') no-repeat;
+    background: transparent url('../img/about/barclays-artprize-about.png') no-repeat;
     }
+.player{
+    height: 259px;
+    text-align:center;
+}
+.player #info{
+    text-align: center;
+    font-size: 14px;
+}
+.videoWithCaption img {
+    max-width:100%!important;
+    }
+body .listNewsItems li p a, body .ui-tabs .ui-tabs-nav li a{
+    font-size: 17px;}

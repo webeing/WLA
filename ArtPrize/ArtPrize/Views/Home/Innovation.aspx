@@ -34,7 +34,7 @@
 	            <div class="inner">
 	                <div class="widthFive primary">
 	                    <h2>Barclays Innovation Center</h2>
-	                    <h3>di piazza della Repubblica, Milano</h3>
+	                    <h3>Milano</h3>
 	                    <div class="listNewsItems">
 	                        <ul>
 	                            <li>
@@ -47,7 +47,7 @@
 	                            <li>
 	                                <p><a href="#tab-2" title="Barclays Innovation Center di Piazza della Repubblica a Milano - Work in progress">
                                       Barclays Innovation Center<br/>
-                                      <small>Piazza della Repubblica a Milano<br/>Work in progress</small>
+                                      <small>Piazza della Repubblica 8, Milano<br/>Work in progress</small>
                                     </a></p>
                                     <img src="<%= Url.Content("~/img/innovation/02innovation-min.jpg") %>" alt="Barclays Innovation Center di Piazza della Repubblica a Milan" />
 	                            </li>
@@ -77,15 +77,15 @@
 
                             <figure>
                                 <img alt="Barclays Innovation Center" src="<%= Url.Content("~/img/innovation/01innovation01.png") %>" />
-                                <p>Barclays Innovation Center</p>
+                                <p>Barclays Premier Flagship - Via dei Mercanti 10, Milano</p>
                             </figure>
                             <figure>
                                 <img alt="Barclays Innovation Center" src="<%= Url.Content("~/img/innovation/01innovation02.png")%>" />
-                                <p>Barclays Innovation Center</p>
+                                <p>Barclays Premier Flagship - Via dei Mercanti 10, Milano</p>
                             </figure>
                             <figure>
                                 <img alt="Barclays Innovation Center" src="<%= Url.Content("~/img/innovation/01innovation03.png") %>" />
-                                <p>Barclays Innovation Center</p>
+                                <p>Barclays Premier Flagship - Via dei Mercanti 10, Milano</p>
                             </figure>
                             
                        </div><!--/imageWithCaption-->
@@ -102,11 +102,11 @@
                             <div class="imageWithCaption">
                                 <figure>
                                     <img alt="Barclays Innovation Center di Piazza della Repubblica a Milano" src="<%= Url.Content("~/img/innovation/02innovation.png") %>">
-                                    <p>Barclays Innovation Center di Piazza della Repubblica a Milano</p>
+                                    <p>Barclays Innovation Center di Piazza della Repubblica 8, Milano</p>
                                 </figure>
                             </div>	<!--/imageWithCaption-->
 
-                            <h3>Barclays Innovation Center di Piazza della Repubblica a Milano - Work in progress</h3>
+                            <h3>Barclays Innovation Center <br />Piazza della Repubblica 8, Milano</h3>
                             <p class="">
                             I lavori di restyling della filiale sono quasi terminati. La nuova flagship rappresenterà un luogo di eccellenza tecnologica e sperimentazione di tutte le innovazioni del mondo del banking. Saranno a disposizione della clientela tool finanziari e supporti tecnologici, insieme ad aree dedicate ai bambini, spazi per incontri ed eventi.
                             </p>
