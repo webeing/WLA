@@ -71,5 +71,7 @@ namespace ArtPrize.Models
         public bool RuleAcceptance { get; set; }
         [Required]
         public char Gender { get; set; }
+        [Required]
+        public bool IsCustomer { get; set; }
     }
 }

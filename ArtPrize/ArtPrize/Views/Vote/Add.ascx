@@ -218,6 +218,18 @@
                 <br/>al trattamento dei miei dati da parte della Banca per finalità di informazione commerciale, promozione e vendita di prodotti e servizi offerti dalla Banca medesima o da società appartenenti al medesimo Gruppo Barclays, consapevole che tale consenso è facoltativo.
             </p>
 
+            <p class="privacy_accept">
+                Sei già cliente Barclays?
+                <br/>
+                <span>
+                    <input type="radio" value="true" name="User.IsCustomer" id="Radio1" class="required"/>si
+                </span>
+                <span>
+                    <input type="radio" value="false" name="User.IsCustomer" id="Radio2"/>no
+                </span>
+                <br/>
+            </p>
+
             <div class="clear"></div>
             <p class="disclaimer">
                 Messaggio pubblicitario con finalità promozionale. Regolamento completo disponibile sul sito Barclays.it/artprize. La durata complessiva del concorso è dal 5/03/2013 al 30/04/2013 (votazione online dal 9/04/2013 al 30/04/2013); l’assegnazione finale sarà effettuata entro il 2/05/2013. Il montepremi complessivo è di € 1.500 (IVA non esposta). La partecipazione al concorso è gratuita. La votazione online è consentita a tutti i residenti in Italia di età superiore a 18 anni. Sono esclusi dalla partecipazione i dipendenti della società organizzatrice e delle società appartenenti al Gruppo Barclays.
