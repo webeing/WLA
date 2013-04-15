@@ -37,7 +37,7 @@
 
         <!-- header -->
         <div id="header">
-            <a href="<%= Url.Content("~/Index") %>" id="logo" title="Barclays Art Prize">
+            <a href="http://www.barclays.it" id="logo" title="Barclays Art Prize" target="_blank">
                 <img alt="Barclays" src="<%= Url.Content("~/img/barclays-logo.gif")%>" >
             </a>
             <a id="toggle-nav" href="#logo" title="Menu">Menu</a>

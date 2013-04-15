@@ -675,11 +675,14 @@ section#opera-one, section#opera-two, section#opera-three{
 body .opera .secondary{
     margin-top: 30px!important;
 }
-body .vote-btn{
+body .vote-btn, body #vote-btn, body #vota-artprize input.btn-cyan75{
     position: relative;
     z-index: 1000;
     cursor: pointer;
     display: block;
+    text-align: center;
+    width: 100%;
+    max-width: 100%!important;
     text-align: center;
 }
 /*REGOLAMENTO */

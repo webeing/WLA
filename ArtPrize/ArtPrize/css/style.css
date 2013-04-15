@@ -213,6 +213,13 @@ body .pageLens h1 {
     width: 50%;
     min-height:65px;
 }
+#vota-artprize .client{
+    font-size: 12px!important;
+    color: #017EB4;
+    background: #efefef;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
 label label.error, label.error {
     color: #D5630A !important;
     float: none !important;

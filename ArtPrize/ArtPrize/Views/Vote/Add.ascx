@@ -6,6 +6,19 @@
  
             <input type="hidden" value="<%= Model.ArtworkId %>" name="ArtworkId" id="ArtworkId">           
 
+            <p class="client">
+                <!-- required una delle due risposte -->
+				Sei già cliente Barclays? <small>*</small>
+                
+                <span>
+                    <input type="radio" name="clientyes" id="User_Client_Yes" value="false"/> Sì
+                </span>
+                <span>
+                    <input type="radio" name="clientno" id="User_Client_No" value="false"/> No
+                </span>
+                
+			</p>
+            
             <label for="Name">
 				Nome <small>*</small>
 				<input type="text" value="" name="User.Name" id="User_Name" class="required"/>
