@@ -6,18 +6,16 @@
  
             <input type="hidden" value="<%= Model.ArtworkId %>" name="ArtworkId" id="ArtworkId">           
 
-            <p class="client">
-                <!-- required una delle due risposte -->
-				Sei già cliente Barclays? <small>*</small>
-                
+            <p class="privacy_accept client">
+                Sei già cliente Barclays?
                 <span>
-                    <input type="radio" name="clientyes" id="User_Client_Yes" value="false"/> Sì
+                    <input type="radio" value="true" name="User.IsCustomer" id="Radio3" class="required"/>si
                 </span>
                 <span>
-                    <input type="radio" name="clientno" id="User_Client_No" value="false"/> No
+                    <input type="radio" value="false" name="User.IsCustomer" id="Radio4"/>no
                 </span>
-                
-			</p>
+                <br/>
+            </p>
             
             <label for="Name">
 				Nome <small>*</small>
@@ -216,18 +214,6 @@
                     <input type="radio" value="false" name="User.PrivacyRead" id="User_PrivacyRead_NO"/>nego il consenso
                 </span>
                 <br/>al trattamento dei miei dati da parte della Banca per finalità di informazione commerciale, promozione e vendita di prodotti e servizi offerti dalla Banca medesima o da società appartenenti al medesimo Gruppo Barclays, consapevole che tale consenso è facoltativo.
-            </p>
-
-            <p class="privacy_accept">
-                Sei già cliente Barclays?
-                <br/>
-                <span>
-                    <input type="radio" value="true" name="User.IsCustomer" id="Radio1" class="required"/>si
-                </span>
-                <span>
-                    <input type="radio" value="false" name="User.IsCustomer" id="Radio2"/>no
-                </span>
-                <br/>
             </p>
 
             <div class="clear"></div>
