@@ -1,3 +1,0 @@
-2013-04-08 13:26:35.0515 DEBUG Executing action Works on controller Vote. Input parameters: id: 1
-2013-04-08 13:26:35.0515 INFO Action Works on controller Vote executed.
-2013-04-08 13:26:35.0515 DEBUG Executed action Works on controller Vote. Result: 200 OK

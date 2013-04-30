@@ -7,6 +7,14 @@ using PetaPoco;
 
 namespace ArtPrize.Models
 {
+    public class ValidVoteDateAttribute : ValidationAttribute
+    {
+        public override bool IsValid(object value)
+        {            
+            return new DateTime(2013, 05, 01, 0, 0, 0).Subtract(DateTime.Now).Ticks > 0;
+        }
+    }
+
     [PetaPoco.TableName("Votes")]
     [PetaPoco.PrimaryKey("Id")]
     public class Vote
@@ -16,6 +24,7 @@ namespace ArtPrize.Models
         public int ArtworkId { get; set; }
         [Required]
         public string SessionId { get; set; }
+        [ValidVoteDate]        
         public DateTime VoteDate { get; set; }
         [Ignore]
         public User User { get; set; }        
@@ -73,6 +82,7 @@ namespace ArtPrize.Models
                 vote.SessionId = value;
             }
         }
+        
         public DateTime VoteDate
         {
             get

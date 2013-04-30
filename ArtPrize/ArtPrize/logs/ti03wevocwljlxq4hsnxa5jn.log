@@ -1,5 +1,0 @@
-2013-04-15 17:20:08.8265 DEBUG Executing action opere-in-gara on controller Home. Input parameters: 
-2013-04-15 17:20:08.8265 TRACE Retrieving votes from database
-2013-04-15 17:20:09.8380 DEBUG Retrieved votes. Votes: Artwork: 1 -> 5
-2013-04-15 17:20:09.8780 INFO Action opere-in-gara on controller Home executed.
-2013-04-15 17:20:09.8780 DEBUG Executed action opere-in-gara on controller Home. Result: 200 OK

@@ -35,6 +35,7 @@
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
 <div class="cycle-slideshow" 
            data-cycle-fx="scrollHorz"
            data-cycle-timeout="0"
@@ -74,7 +75,7 @@
                     <div class="dialogButtons">
 
 						<a href="#zoom-op01" id="zoom-op01" class="btn zoom-btn btn-grey75" title="Ingrandisci Opera 1">Ingrandisci</a>
-						<a href="<%= Url.Content("~/Vote/Works/1") %>" id="vote-op01" class="btn vote-btn btn-cyan75">Vota questa opera</a>
+						<a href="<%= (new DateTime(2013, 05, 01, 0, 0, 0).Subtract(DateTime.Now).Ticks > 0) ? Url.Content("~/Vote/Works/1") : "#" %>" id="vote-op01" class="btn vote-btn btn-cyan75">Vota questa opera</a>
 					</div><!--/dialogButton-->
                     
             	</div><!--/secondary-->
@@ -114,7 +115,7 @@
                     <div class="dialogButtons">
 
 						<a href="#zoom-op02" id="zoom-op02" class="btn zoom-btn btn-grey75" title="Ingrandisci Opera 2">Ingrandisci</a>
-						<a href="<%= Url.Content("~/Vote/Works/2") %>" id="vote-op02" class="btn vote-btn btn-cyan75">Vota questa opera</a>
+						<a href="<%= (new DateTime(2013, 05, 01, 0, 0, 0).Subtract(DateTime.Now).Ticks > 0) ? Url.Content("~/Vote/Works/2") : "#" %>" id="vote-op02" class="btn vote-btn btn-cyan75">Vota questa opera</a>
 					</div><!--/dialogButton-->
                     
             	</div><!--/secondary-->
@@ -158,7 +159,7 @@
                     <div class="dialogButtons">
 
 						<a href="#zoom-op03" id="zoom-op03" class="btn zoom-btn btn-grey75" title="Ingrandisci Opera 3">Ingrandisci</a>
-						<a href="<%= Url.Content("~/Vote/Works/3") %>" id="vote-op03" class="btn vote-btn btn-cyan75">Vota questa opera</a>
+						<a href="<%= (new DateTime(2013, 05, 01, 0, 0, 0).Subtract(DateTime.Now).Ticks > 0) ? Url.Content("~/Vote/Works/3") : "#" %>" id="vote-op03" class="btn vote-btn btn-cyan75">Vota questa opera</a>
 					</div><!--/dialogButton-->
                     
             	</div><!--/secondary-->
@@ -190,7 +191,16 @@
         </div>
     </div>
     <!-- /BIG IMG MODAL OPENING -->
-</asp:Content>
+
+    <div class="expired" style="display: none;">
+        <div class="dialog-wrap">
+                    <a class="close" href="#close" title="chiudi"><img src="<%= Url.Content("~/img/icon-close.gif") %>" alt="chiudi" /></a>
+        <h1>Votazioni chiuse</h1>
+        <h3>Le votazioni delle opere in gara si sono chiuse il 30 Aprile 2013. Scopri l’opera e l’artista vincitore di Barclays Artprize.</h3>
+
+        </div><!--/dialog-wrap-->
+    </div><!--modal-->
+    </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="server">
  <div class="horizontal">
@@ -216,10 +226,25 @@
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 </script>
 <script type="text/javascript">
+
+    var isValidDate = "<%= (new DateTime(2013, 05, 01, 0, 0, 0).Subtract(DateTime.Now).Ticks > 0) %>";
+
     $(document).ready(function () {
 
+        if (isValidDate === "False")
+            $('.vote-btn').on('click', function () {                
+
+                $('.expired').dialog({
+                    modal: true
+                });
+
+                $('.dialog-wrap a.close').click(function () {
+                    $('.expired').dialog('close');
+                });
+            });
+
         $('.cycle-slideshow').on('cycle-next', function (event, opts) {
-            
+
             FB.XFBML.parse();
         });
 

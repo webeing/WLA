@@ -55,7 +55,10 @@ namespace ArtPrize.Controllers
             }
             catch (ValidationException ex)
             {
-                return View("Invalid", new Error { Description = ex.Message });
+                if(ex.Message.Contains("VoteDate"))
+                    return View("Invalid", new Error { Description = "Le votazioni delle opere in gara si sono chiuse il 30 Aprile 2013. Scopri l’opera e l’artista vincitore di Barclays Artprize" });
+                else 
+                    return View("Invalid", new Error { Description = ex.Message });
             }
             catch (Exception ex)
             {
