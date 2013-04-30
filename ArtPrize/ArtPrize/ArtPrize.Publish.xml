@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
-  <publishProfile publishUrl="C:\Documents and Settings\emidio\Desktop\artprizebin" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+  <publishProfile publishUrl="C:\Documents and Settings\emidio\Desktop\Artprize-close-vote" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
     <file relUrl="img/header_shadow.png" publishTime="04/04/2013 17:39:00" />
     <file relUrl="img/opere/2.jpg" publishTime="04/04/2013 17:39:00" />
     <file relUrl="img/innovation/01innovation03.png" publishTime="04/04/2013 19:36:28" />
@@ -10,7 +10,7 @@
     <file relUrl="Scripts/additional-methods.min.js" publishTime="04/04/2013 17:39:00" />
     <file relUrl="Scripts/wla.js" publishTime="04/04/2013 17:39:00" />
     <file relUrl="img/opere/ti-allungo-una-mano-big.jpg" publishTime="04/04/2013 17:39:00" />
-    <file relUrl="Views/Vote/Add.ascx" publishTime="04/09/2013 18:08:48" />
+    <file relUrl="Views/Vote/Add.ascx" publishTime="04/16/2013 11:58:07" />
     <file relUrl="img/opere/visual-min.jpg" publishTime="04/04/2013 17:39:00" />
     <file relUrl="img/opere/arcano-maggiore-imperatrice-min.jpg" publishTime="04/04/2013 17:39:00" />
     <file relUrl="img/innovation/02innovation.png" publishTime="04/04/2013 19:54:40" />
@@ -19,7 +19,7 @@
     <file relUrl="Views/Vote/AlreadyRegistered.ascx" publishTime="04/04/2013 17:39:00" />
     <file relUrl="Views/Vote/Invalid.ascx" publishTime="04/04/2013 17:39:00" />
     <file relUrl="img/innovation/01innovation-min.png" publishTime="04/04/2013 19:47:53" />
-    <file relUrl="css/barclays-tablet.css" publishTime="04/09/2013 12:41:42" />
+    <file relUrl="css/barclays-tablet.css" publishTime="04/16/2013 14:25:53" />
     <file relUrl="Views/Works/Like01.aspx" publishTime="04/08/2013 15:08:13" />
     <file relUrl="css/fonts-min.css" publishTime="04/04/2013 17:39:00" />
     <file relUrl="img/innovation/01innovation02.png" publishTime="04/04/2013 19:36:36" />
@@ -34,26 +34,26 @@
     <file relUrl="img/opere/arcano-maggiore-imperatrice-big.jpg" publishTime="04/04/2013 17:39:00" />
     <file relUrl="img/opere/3.jpg" publishTime="04/04/2013 17:39:00" />
     <file relUrl="img/lens-navigator-arrows.gif" publishTime="04/04/2013 17:39:00" />
-    <file relUrl="Views/Vote/Ok.ascx" publishTime="04/04/2013 17:39:00" />
+    <file relUrl="Views/Vote/Ok.ascx" publishTime="04/16/2013 11:35:42" />
     <file relUrl="img/icon-search.gif" publishTime="04/04/2013 17:39:00" />
     <file relUrl="img/arrow-back.png" publishTime="04/04/2013 17:39:00" />
     <file relUrl="bin/NLog.dll" publishTime="04/04/2013 17:39:00" />
     <file relUrl="css/styleIE.css" publishTime="04/08/2013 15:45:28" />
-    <file relUrl="bin/ArtPrize.pdb" publishTime="04/09/2013 12:48:55" />
+    <file relUrl="bin/ArtPrize.pdb" publishTime="04/30/2013 11:18:55" />
     <file relUrl="img/social-sprite.png" publishTime="04/04/2013 17:39:00" />
     <file relUrl="Views/Home/About.aspx" publishTime="04/09/2013 17:10:39" />
     <file relUrl="packages.config" publishTime="04/04/2013 17:39:00" />
     <file relUrl="img/secondary-navigation/flyout-arrow_current.gif" publishTime="04/04/2013 17:39:00" />
     <file relUrl="img/secondary-navigation/repeater.gif" publishTime="04/04/2013 17:39:00" />
-    <file relUrl="Views/Home/Index.aspx" publishTime="04/08/2013 15:41:55" />
+    <file relUrl="Views/Home/Index.aspx" publishTime="04/30/2013 11:17:08" />
     <file relUrl="img/icons/favicon.ico" publishTime="04/04/2013 17:39:00" />
     <file relUrl="img/opere/uno-nessuno-centomila.jpg" publishTime="04/04/2013 17:39:00" />
     <file relUrl="img/menu.png" publishTime="04/04/2013 17:39:00" />
     <file relUrl="img/opere/uno-nessuno-centomila-min.jpg" publishTime="04/04/2013 17:39:00" />
     <file relUrl="Scripts/modernizr.js" publishTime="04/04/2013 17:39:00" />
-    <file relUrl="Views/Home/Works.aspx" publishTime="04/08/2013 11:41:52" />
+    <file relUrl="Views/Home/Works.aspx" publishTime="04/30/2013 11:14:01" />
     <file relUrl="bin/NLog.xml" publishTime="04/04/2013 17:39:00" />
-    <file relUrl="Views/Shared/Site.Master" publishTime="04/09/2013 11:24:03" />
+    <file relUrl="Views/Shared/Site.Master" publishTime="04/15/2013 17:22:18" />
     <file relUrl="Scripts/jquery.validate.min.js" publishTime="04/04/2013 17:39:00" />
     <file relUrl="img/opere/ti-allungo-una-mano-min.jpg" publishTime="04/04/2013 17:39:00" />
     <file relUrl="img/secondary-navigation/tab-selected-repeter.gif" publishTime="04/04/2013 17:39:00" />
@@ -71,7 +71,7 @@
     <file relUrl="img/icon-close.gif" publishTime="04/04/2013 17:39:00" />
     <file relUrl="img/innovation/03innovation-min.jpg" publishTime="04/04/2013 17:39:00" />
     <file relUrl="Scripts/messages_it.js" publishTime="04/04/2013 17:39:00" />
-    <file relUrl="css/style.css" publishTime="04/09/2013 17:11:50" />
+    <file relUrl="css/style.css" publishTime="04/15/2013 19:42:10" />
     <file relUrl="Views/Shared/Error.aspx" publishTime="04/04/2013 17:39:00" />
     <file relUrl="Views/Home/Privacy.aspx" publishTime="04/08/2013 12:32:33" />
     <file relUrl="img/about/barclays-artprize-about.png" publishTime="04/04/2013 19:36:19" />
@@ -87,7 +87,7 @@
     <file relUrl="img/top-navigation-repeater.gif" publishTime="04/04/2013 17:39:00" />
     <file relUrl="NLog.config" publishTime="04/04/2013 17:39:00" />
     <file relUrl="Scripts/jquery.validate.js" publishTime="04/04/2013 17:39:00" />
-    <file relUrl="bin/ArtPrize.dll" publishTime="04/09/2013 12:48:55" />
+    <file relUrl="bin/ArtPrize.dll" publishTime="04/30/2013 11:18:55" />
     <file relUrl="Global.asax" publishTime="04/04/2013 17:39:00" />
     <file relUrl="img/innovation/02innovation-min.jpg" publishTime="04/04/2013 17:39:00" />
   </publishProfile>

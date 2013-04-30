@@ -683,7 +683,8 @@ body .vote-btn, body #vote-btn, body #vota-artprize input.btn-cyan75{
     text-align: center;
     width: 100%;
     max-width: 100%!important;
-    text-align: center;
+    background-color: #40c2f3!important;
+	color: #fff!important;
 }
 /*REGOLAMENTO */
 

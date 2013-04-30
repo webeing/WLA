@@ -28,7 +28,7 @@
 	                    </span>
 	
 	                    <div class="imageWithCaption">
-	                        <img src="<%= Url.Content("~/img/home/01home_visual.jpg") %>" alt="Barclays Art Prize <visual"/>
+	                        <img src="<%= Url.Content("~/img/opere/uno-nessuno-centomila.jpg") %>" alt="Uno, Nessuno, Centomila di Clelia Scimone si aggiudica il premio dell'edizione del Barclays Art Prize 2013"/>
 	                    </div>
 	
 	                    <span class="curtain right">
@@ -41,11 +41,12 @@
 	            </div><!--/primary-->
 	
 	            <div class="widthSix secondary">
-	                <h2>Barclays Art Prize</h2>
-	                <h3>for young talents</h3>
+	                <h2>Barclays Art Prize 2013</h2>
+	                <h3>A Clelia Scimone il primo premio</h3>
 	                <div class="rte">
-	                    <p>Barclays investe nel talento dei giovani artisti emergenti. La prima edizione del concorso Barclays Art Prize for young talents si rivolge agli studenti e agli ex studenti dell'Accademia di Belle Arti di Brera.
-	                        Vota la tua opera preferita e scopri come vincere un weekend in una citt&agrave; d'arte italiana.</p>
+	                    <p>Con <strong>"Uno, Nessuno, Centomila"</strong> Clelia Scimone si è aggiudicata il primo premio dell'edizione del Barclays Art Prize 2013.<br />
+                            Il secondo classificato è "Arcano Maggiore n. 3 - L'Imperatrice" di Pietro Librici; terzo classificato, "Ti allungo una mano" di Giulio Pace.<br />
+                            Ringraziamo tutti coloro che hanno con il loro voto sostenuto il talento.</p>
 	                </div>
 	
 	                <ul class="listLinks">

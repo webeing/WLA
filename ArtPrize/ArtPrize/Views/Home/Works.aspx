@@ -196,7 +196,8 @@
         <div class="dialog-wrap">
                     <a class="close" href="#close" title="chiudi"><img src="<%= Url.Content("~/img/icon-close.gif") %>" alt="chiudi" /></a>
         <h1>Votazioni chiuse</h1>
-        <h3>Le votazioni delle opere in gara si sono chiuse il 30 Aprile 2013. Scopri l’opera e l’artista vincitore di Barclays Artprize.</h3>
+        <h3>Le votazioni delle opere in gara si sono chiuse il 30 Aprile 2013.<br />
+        Torna a trovarci nei prossimi giorni per scoprire il vincitore di Barclays Art Prize.</h3>
 
         </div><!--/dialog-wrap-->
     </div><!--modal-->
